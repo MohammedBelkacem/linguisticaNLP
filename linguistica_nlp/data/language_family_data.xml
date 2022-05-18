@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+
+		<record id="fam_01" model="language.family">
+			<field name="code">aav</field>
+			<field name="name">Austro Asiatic languages</field>
+		</record>
+
+
+
+		<record id="fam_02" model="language.family">
+			<field name="code">mkh</field>
+			<field name="name">Mon-Khmer languages</field>
+		</record>
+		<record id="fam_03" model="language.family">
+			<field name="code">mun</field>
+			<field name="name">Munda languages</field>
+		</record>
+		<record id="fam_04" model="language.family">
+			<field name="code">afa</field>
+			<field name="name">Afro-Asiatic languages</field>
+		</record>
+		<record id="fam_05" model="language.family">
+			<field name="code">ber</field>
+			<field name="name">Berber languages</field>
+		</record>
+		<record id="fam_06" model="language.family">
+			<field name="code">cdc</field>
+			<field name="name">Chadic languages</field>
+		</record>
+		<record id="fam_07" model="language.family">
+			<field name="code">cus</field>
+			<field name="name">Cushitic languages</field>
+		</record>
+		<record id="fam_08" model="language.family">
+			<field name="code">egx</field>
+			<field name="name">Egyptian languages</field>
+		</record>
+		<record id="fam_09" model="language.family">
+			<field name="code">omv</field>
+			<field name="name">Omotic languages</field>
+		</record>
+		<record id="fam_10" model="language.family">
+			<field name="code">sem</field>
+			<field name="name">Semitic languages</field>
+		</record>
+		<record id="fam_11" model="language.family">
+			<field name="code">art</field>
+			<field name="name">Artificial languages</field>
+		</record>
+		<record id="fam_12" model="language.family">
+			<field name="code">aus</field>
+			<field name="name">Australian languages</field>
+		</record>
+		<record id="fam_13" model="language.family">
+			<field name="code">cai</field>
+			<field name="name">Central American Indian languages</field>
+		</record>
+		<record id="fam_14" model="language.family">
+			<field name="code">myn</field>
+			<field name="name">Mayan languages</field>
+		</record>
+		<record id="fam_15" model="language.family">
+			<field name="code">omq</field>
+			<field name="name">Oto-Manguean languages</field>
+		</record>
+		<record id="fam_16" model="language.family">
+			<field name="code">oto</field>
+			<field name="name">Otomian languages</field>
+		</record>
+		<record id="fam_17" model="language.family">
+			<field name="code">cau</field>
+			<field name="name">Caucasian languages</field>
+		</record>
+		<record id="fam_18" model="language.family">
+			<field name="code">ccn</field>
+			<field name="name">North Caucasian languages</field>
+		</record>
+		<record id="fam_19" model="language.family">
+			<field name="code">ccs</field>
+			<field name="name">South Caucasian languages</field>
+		</record>
+		<record id="fam_20" model="language.family">
+			<field name="code">crp</field>
+			<field name="name">creoles and pidgins</field>
+		</record>
+		<record id="fam_21" model="language.family">
+			<field name="code">cpe</field>
+			<field name="name">creoles and pidgins, English-based</field>
+		</record>
+		<record id="fam_22" model="language.family">
+			<field name="code">cpf</field>
+			<field name="name">creoles and pidgins, French-based</field>
+		</record>
+		<record id="fam_23" model="language.family">
+			<field name="code">cpp</field>
+			<field name="name">creoles and pidgins, Portuguese-based</field>
+		</record>
+		<record id="fam_24" model="language.family">
+			<field name="code">day</field>
+			<field name="name">Land Dayak languages</field>
+		</record>
+		<record id="fam_25" model="language.family">
+			<field name="code">dra</field>
+			<field name="name">Dravidian languages</field>
+		</record>
+		<record id="fam_26" model="language.family">
+			<field name="code">esx</field>
+			<field name="name">Eskimo-Aleut languages</field>
+		</record>
+		<record id="fam_27" model="language.family">
+			<field name="code">ypk</field>
+			<field name="name">Yupik languages</field>
+		</record>
+		<record id="fam_28" model="language.family">
+			<field name="code">euq</field>
+			<field name="name">Basque (family)</field>
+		</record>
+		<record id="fam_29" model="language.family">
+			<field name="code">hmx</field>
+			<field name="name">Hmong-Mien languages</field>
+		</record>
+		<record id="fam_30" model="language.family">
+			<field name="code">ine</field>
+			<field name="name">Indo-European languages</field>
+		</record>
+		<record id="fam_31" model="language.family">
+			<field name="code">bat</field>
+			<field name="name">Baltic languages</field>
+		</record>
+		<record id="fam_32" model="language.family">
+			<field name="code">cel</field>
+			<field name="name">Celtic languages</field>
+		</record>
+		<record id="fam_33" model="language.family">
+			<field name="code">gem</field>
+			<field name="name">Germanic languages</field>
+		</record>
+		<record id="fam_34" model="language.family">
+			<field name="code">gme</field>
+			<field name="name">East Germanic languages</field>
+		</record>
+		<record id="fam_35" model="language.family">
+			<field name="code">gmq</field>
+			<field name="name">North Germanic languages</field>
+		</record>
+		<record id="fam_36" model="language.family">
+			<field name="code">gmw</field>
+			<field name="name">West Germanic languages</field>
+		</record>
+		<record id="fam_37" model="language.family">
+			<field name="code">grk</field>
+			<field name="name">Greek languages</field>
+		</record>
+		<record id="fam_38" model="language.family">
+			<field name="code">hyx</field>
+			<field name="name">Armenian (family)</field>
+		</record>
+		<record id="fam_39" model="language.family">
+			<field name="code">iir</field>
+			<field name="name">Indo-Iranian languages</field>
+		</record>
+		<record id="fam_40" model="language.family">
+			<field name="code">bih</field>
+			<field name="name">Bihari languages</field>
+		</record>
+		<record id="fam_41" model="language.family">
+			<field name="code">inc</field>
+			<field name="name">Indic languages</field>
+		</record>
+		<record id="fam_42" model="language.family">
+			<field name="code">pra</field>
+			<field name="name">Prakrit languages</field>
+		</record>
+		<record id="fam_43" model="language.family">
+			<field name="code">ira</field>
+			<field name="name">Iranian languages</field>
+		</record>
+		<record id="fam_44" model="language.family">
+			<field name="code">itc</field>
+			<field name="name">Italic languages</field>
+		</record>
+		<record id="fam_45" model="language.family">
+			<field name="code">roa</field>
+			<field name="name">Romance languages</field>
+		</record>
+		<record id="fam_46" model="language.family">
+			<field name="code">sla</field>
+			<field name="name">Slavic languages</field>
+		</record>
+		<record id="fam_47" model="language.family">
+			<field name="code">zle</field>
+			<field name="name">East Slavic languages</field>
+		</record>
+		<record id="fam_48" model="language.family">
+			<field name="code">zls</field>
+			<field name="name">South Slavic languages</field>
+		</record>
+		<record id="fam_49" model="language.family">
+			<field name="code">zlw</field>
+			<field name="name">West Slavic languages</field>
+		</record>
+		<record id="fam_50" model="language.family">
+			<field name="code">wen</field>
+			<field name="name">Sorbian languages</field>
+		</record>
+		<record id="fam_51" model="language.family">
+			<field name="code">sqj</field>
+			<field name="name">Albanian languages</field>
+		</record>
+		<record id="fam_52" model="language.family">
+			<field name="code">jpx</field>
+			<field name="name">Japanese (family)</field>
+		</record>
+		<record id="fam_53" model="language.family">
+			<field name="code">khi</field>
+			<field name="name">Khoisan languages</field>
+		</record>
+		<record id="fam_54" model="language.family">
+			<field name="code">map</field>
+			<field name="name">Austronesian languages</field>
+		</record>
+		<record id="fam_55" model="language.family">
+			<field name="code">fox</field>
+			<field name="name">Formosan languages</field>
+		</record>
+		<record id="fam_56" model="language.family">
+			<field name="code">poz</field>
+			<field name="name">Malayo-Polynesian languages</field>
+		</record>
+		<record id="fam_57" model="language.family">
+			<field name="code">plf</field>
+			<field name="name">Central Malayo-Polynesian languages</field>
+		</record>
+		<record id="fam_58" model="language.family">
+			<field name="code">pqe</field>
+			<field name="name">Eastern Malayo-Polynesian languages</field>
+		</record>
+		<record id="fam_59" model="language.family">
+			<field name="code">pqw</field>
+			<field name="name">Western Malayo-Polynesian languages</field>
+		</record>
+		<record id="fam_60" model="language.family">
+			<field name="code">btk</field>
+			<field name="name">Batak languages</field>
+		</record>
+		<record id="fam_61" model="language.family">
+			<field name="code">cmc</field>
+			<field name="name">Chamic languages</field>
+		</record>
+		<record id="fam_62" model="language.family">
+			<field name="code">phi</field>
+			<field name="name">Philippine languages</field>
+		</record>
+		<record id="fam_63" model="language.family">
+			<field name="code">mno</field>
+			<field name="name">Manobo languages</field>
+		</record>
+		<record id="fam_64" model="language.family">
+			<field name="code">nai</field>
+			<field name="name">North American Indian languages</field>
+		</record>
+		<record id="fam_65" model="language.family">
+			<field name="code">aql</field>
+			<field name="name">Algic languages</field>
+		</record>
+		<record id="fam_66" model="language.family">
+			<field name="code">alg</field>
+			<field name="name">Algonquian languages</field>
+		</record>
+		<record id="fam_67" model="language.family">
+			<field name="code">azc</field>
+			<field name="name">Uto-Aztecan languages</field>
+		</record>
+		<record id="fam_68" model="language.family">
+			<field name="code">nah</field>
+			<field name="name">Nahuatl languages</field>
+		</record>
+		<record id="fam_69" model="language.family">
+			<field name="code">cdd</field>
+			<field name="name">Caddoan languages</field>
+		</record>
+		<record id="fam_70" model="language.family">
+			<field name="code">hok</field>
+			<field name="name">Hokan languages</field>
+		</record>
+		<record id="fam_71" model="language.family">
+			<field name="code">iro</field>
+			<field name="name">Iroquoian languages</field>
+		</record>
+		<record id="fam_72" model="language.family">
+			<field name="code">sal</field>
+			<field name="name">Salishan languages</field>
+		</record>
+		<record id="fam_73" model="language.family">
+			<field name="code">sio</field>
+			<field name="name">Siouan languages</field>
+		</record>
+		<record id="fam_74" model="language.family">
+			<field name="code">wak</field>
+			<field name="name">Wakashan languages</field>
+		</record>
+		<record id="fam_75" model="language.family">
+			<field name="code">xnd</field>
+			<field name="name">Na-Dene languages</field>
+		</record>
+		<record id="fam_76" model="language.family">
+			<field name="code">ath</field>
+			<field name="name">Athapascan languages</field>
+		</record>
+		<record id="fam_77" model="language.family">
+			<field name="code">apa</field>
+			<field name="name">Apache languages</field>
+		</record>
+		<record id="fam_78" model="language.family">
+			<field name="code">nic</field>
+			<field name="name">Niger-Kordofanian languages</field>
+		</record>
+		<record id="fam_79" model="language.family">
+			<field name="code">alv</field>
+			<field name="name">Atlantic-Congo languages</field>
+		</record>
+		<record id="fam_80" model="language.family">
+			<field name="code">bad</field>
+			<field name="name">Banda languages</field>
+		</record>
+		<record id="fam_81" model="language.family">
+			<field name="code">bai</field>
+			<field name="name">Bamileke languages</field>
+		</record>
+		<record id="fam_82" model="language.family">
+			<field name="code">bnt</field>
+			<field name="name">Bantu languages</field>
+		</record>
+		<record id="fam_83" model="language.family">
+			<field name="code">ijo</field>
+			<field name="name">Ijo languages</field>
+		</record>
+		<record id="fam_84" model="language.family">
+			<field name="code">kro</field>
+			<field name="name">Kru languages</field>
+		</record>
+		<record id="fam_85" model="language.family">
+			<field name="code">znd</field>
+			<field name="name">Zande languages</field>
+		</record>
+		<record id="fam_86" model="language.family">
+			<field name="code">dmn</field>
+			<field name="name">Mande languages</field>
+		</record>
+		<record id="fam_87" model="language.family">
+			<field name="code">kdo</field>
+			<field name="name">Kordofanian languages</field>
+		</record>
+		<record id="fam_88" model="language.family">
+			<field name="code">paa</field>
+			<field name="name">Papuan languages</field>
+		</record>
+		<record id="fam_89" model="language.family">
+			<field name="code">ngf</field>
+			<field name="name">Trans-New Guinea languages</field>
+		</record>
+		<record id="fam_90" model="language.family">
+			<field name="code">sai</field>
+			<field name="name">South American Indian languages</field>
+		</record>
+		<record id="fam_91" model="language.family">
+			<field name="code">aqa</field>
+			<field name="name">Alacalufan languages</field>
+		</record>
+		<record id="fam_92" model="language.family">
+			<field name="code">awd</field>
+			<field name="name">Arawakan languages</field>
+		</record>
+		<record id="fam_93" model="language.family">
+			<field name="code">auf</field>
+			<field name="name">Arauan languages</field>
+		</record>
+		<record id="fam_94" model="language.family">
+			<field name="code">cba</field>
+			<field name="name">Chibchan languages</field>
+		</record>
+		<record id="fam_95" model="language.family">
+			<field name="code">qwe</field>
+			<field name="name">Quechuan (family)</field>
+		</record>
+		<record id="fam_96" model="language.family">
+			<field name="code">tup</field>
+			<field name="name">Tupi languages</field>
+		</record>
+		<record id="fam_97" model="language.family">
+			<field name="code">sgn</field>
+			<field name="name">sign languages</field>
+		</record>
+		<record id="fam_98" model="language.family">
+			<field name="code">sit</field>
+			<field name="name">Sino-Tibetan languages</field>
+		</record>
+		<record id="fam_99" model="language.family">
+			<field name="code">tbq</field>
+			<field name="name">Tibeto-Burman languages</field>
+		</record>
+		<record id="fam_100" model="language.family">
+			<field name="code">kar</field>
+			<field name="name">Karen languages</field>
+		</record>
+		<record id="fam_101" model="language.family">
+			<field name="code">zhx</field>
+			<field name="name">Chinese (family)</field>
+		</record>
+		<record id="fam_102" model="language.family">
+			<field name="code">ssa</field>
+			<field name="name">Nilo-Saharan languages</field>
+		</record>
+		<record id="fam_103" model="language.family">
+			<field name="code">csu</field>
+			<field name="name">Central Sudanic languages</field>
+		</record>
+		<record id="fam_104" model="language.family">
+			<field name="code">sdv</field>
+			<field name="name">Eastern Sudanic languages</field>
+		</record>
+		<record id="fam_105" model="language.family">
+			<field name="code">nub</field>
+			<field name="name">Nubian languages</field>
+		</record>
+		<record id="fam_106" model="language.family">
+			<field name="code">son</field>
+			<field name="name">Songhai languages</field>
+		</record>
+		<record id="fam_107" model="language.family">
+			<field name="code">tai</field>
+			<field name="name">Tai languages</field>
+		</record>
+		<record id="fam_108" model="language.family">
+			<field name="code">tut</field>
+			<field name="name">Altaic languages</field>
+		</record>
+		<record id="fam_109" model="language.family">
+			<field name="code">trk</field>
+			<field name="name">Turkic languages</field>
+		</record>
+		<record id="fam_110" model="language.family">
+			<field name="code">tuw</field>
+			<field name="name">Tungus languages</field>
+		</record>
+		<record id="fam_111" model="language.family">
+			<field name="code">xgn</field>
+			<field name="name">Mongolian languages</field>
+		</record>
+		<record id="fam_112" model="language.family">
+			<field name="code">urj</field>
+			<field name="name">Uralic languages</field>
+		</record>
+		<record id="fam_113" model="language.family">
+			<field name="code">fiu</field>
+			<field name="name">Finno-Ugrian languages</field>
+		</record>
+		<record id="fam_114" model="language.family">
+			<field name="code">smi</field>
+			<field name="name">Sami languages</field>
+		</record>
+		<record id="fam_115" model="language.family">
+			<field name="code">syd</field>
+			<field name="name">Samoyedic languages</field>
+		</record>
+	</data>
+</odoo>

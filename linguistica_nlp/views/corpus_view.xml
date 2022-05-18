@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+        <record model='ir.ui.view' id='corpus_form'>
+            <field name="name">corpus.form</field>
+            <field name="model">corpus</field>
+            <field name="arch" type="xml">
+                <form string="Corpus">
+                <header>
+                       <!--<button name="create_units" type="object"  string="Add sentences"/>-->
+                </header>
+
+                <group>
+                    <field name="name" />
+                    <field name="language_id" />
+
+                </group>
+
+                <notebook>
+                <page string="Sentences">
+                                  <field name="sentences_ids">
+
+                        </field>
+
+                   </page>
+                  <page string="Models">
+                                  <field name="model_ids">
+                            <tree string="Models" editable="bottom">
+                                <field name="model_name"/>
+                                <field name="model_algorithm"/>
+
+
+
+                            </tree>
+                        </field>
+
+                   </page>
+
+                </notebook>
+
+
+                </form>
+            </field>
+        </record>
+
+            <record model='ir.ui.view' id='model_form'>
+            <field name="name">model.form</field>
+            <field name="model">model</field>
+            <field name="arch" type="xml">
+                <form string="Model">
+                   <header>
+                        <button name="train_pos_tag_model" type="object"  string="Train and save model"/>
+                        <button name="load_algo_default_parameters" type="object"  string="Load default params"/>
+                        <button name="load_lang_default_features" type="object"  string="Load default feature"/>
+                   </header>
+
+                <group>
+                    <field name="model_name" />
+                    <field name="model_algorithm" />
+                    <field name="file_model" />
+                    <field name="file_path" />
+                    <field name="corpus_id" />
+               </group>
+               <notebook>
+                  <page string="Params">
+                                  <field name="param_ids">
+                            <tree string="Params" editable="bottom">
+                                <field name="param_id"/>
+                                <field name="value"/>
+
+
+
+                            </tree>
+                        </field>
+
+                   </page>
+                <page string="Features">
+                                  <field name="feature_ids">
+                            <tree string="Features" editable="bottom">
+                                <field name="feature_id"/>
+
+
+
+
+                            </tree>
+                        </field>
+
+                   </page>
+                <page string="flat f1 score">
+                                  <field name="flat_f1_score"/>
+
+                   </page>
+                <page string="flat accuracy score">
+                                  <field name="flat_accuracy_score"/>
+
+                   </page>
+                    <page string="sequence accuracy score">
+                                  <field name="sequence_accuracy_score"/>
+
+                   </page>
+
+
+                </notebook>
+
+                </form>
+            </field>
+        </record>
+
+         <record model='ir.ui.view' id='model_tree'>
+            <field name="name">model.tree</field>
+            <field name="model">model</field>
+            <field name="arch" type="xml">
+                <tree string="Model">
+                   <field name="model_name" />
+                    <field name="model_algorithm" />
+                </tree>
+            </field>
+        </record>
+
+
+        <record model='ir.ui.view' id='corpus_tree'>
+            <field name="name">corpus.tree</field>
+            <field name="model">corpus</field>
+            <field name="arch" type="xml">
+                <tree string="Corpus">
+                    <field name="name" />
+                    <field name="language_id" />
+
+
+
+                </tree>
+            </field>
+        </record>
+
+
+
+
+
+
+
+
+          <record model='ir.actions.act_window' id='corpus_act'>
+            <field name="name">Corpus</field>
+            <field name="res_model">corpus</field>
+            <field name="view_mode">tree,form</field>
+              <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first corpus
+              </p>
+            </field>
+        </record>
+
+
+        <record model='ir.actions.act_window' id='model_act'>
+            <field name="name">Model</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">model</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first model
+              </p>
+            </field>
+        </record>
+
+
+        <menuitem name="POS Tag Corpus" parent="postag" id="corpus_menu" sequence="1"/>
+        <menuitem id="corpus_train_menu" name="Corpus" parent="corpus_menu"
+                  action="corpus_act"/>
+        <menuitem id="model_train_menu" name="Models" parent="corpus_menu"
+                  action="model_act"/>
+
+
+
+         </data>
+</odoo>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+
+            <record model='ir.ui.view' id='language_model_form'>
+            <field name="name">language.model.form</field>
+            <field name="model">language.model</field>
+            <field name="arch" type="xml">
+                <form string="Language Model">
+                <header>
+                 <button name="train_model" type="object"  string="Train/Generate model"/>
+                 </header>
+                <group>
+                    <field name="model_name" />
+                    <field name="model_algorithm" />
+
+                    <field name="file_path_model" />
+                    <field name="file_path_label_encoder" />
+                    <field name="file_path_count_vectorizer" />
+
+                    <field name="corpus_id" />
+                    <field name="model_accuracy" />
+                       </group>
+
+                </form>
+            </field>
+        </record>
+
+        <record model='ir.ui.view' id='language_model_tree'>
+            <field name="name">language.model.tree</field>
+            <field name="model">language.model</field>
+            <field name="arch" type="xml">
+            <tree string="Language Model">
+                   <field name="model_name" />
+                    <field name="model_algorithm" />
+
+                    <field name="file_path_model" />
+                   <field name="model_accuracy" />
+                   <field name="corpus_id" />
+                </tree>
+            </field>
+        </record>
+
+
+
+
+         <record model='ir.actions.act_window' id='language_model_act'>
+            <field name="name">Language Model</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">language.model</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain"></field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first language model
+              </p>
+            </field>
+        </record>
+
+<!-- -->
+<record model='ir.ui.view' id='language_corpus_form'>
+            <field name="name">language.corpus.form</field>
+            <field name="model">language.corpus</field>
+            <field name="arch" type="xml">
+                <form string="Language Corpus">
+                <header>
+                 <button name="download_corpora_from_tatoeba" type="object"  string="Dowload"/>
+                 </header>
+
+                <group>
+                    <field name="name" />
+                    <field name="number_of_sentences" />
+                    <field name="sentence_max_length" />
+                    <field name="sentence_min_length" />
+                    <field name="corpora_languages_ids" widget="many2many_tags"	/>
+                    <field name="sentences_ids" />
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+        <record model='ir.ui.view' id='language_corpus_tree'>
+            <field name="name">language.corpus.tree</field>
+            <field name="model">language.corpus</field>
+            <field name="arch" type="xml">
+            <tree string="Corpus">
+                 <field name="name" />
+                 <field name="number_of_sentences" sum="Total Sentence" />
+                 <field name="sentence_max_length" avg="Max" />
+                    <field name="sentence_min_length"  avg="Max"/>
+                    <field name="corpora_languages_ids" widget="many2many_tags"	/>
+                </tree>
+            </field>
+        </record>
+
+
+
+
+         <record model='ir.actions.act_window' id='language_corpus_act'>
+            <field name="name">Language Corpus</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">language.corpus</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain"></field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first language corpus
+              </p>
+            </field>
+        </record>
+
+
+
+        <menuitem name="Language detection" parent="morphology" id="language_detection_menu" sequence="0" />
+        <menuitem id="language_model_menu" name="Language detection" parent="language_detection_menu"
+                  action="language_model_act" sequence="0"/>
+        <menuitem id="language_corpus_menu" name="Language Corpus" parent="language_detection_menu"
+                  action="language_corpus_act" sequence="0"/>
+
+
+         </data>
+</odoo>

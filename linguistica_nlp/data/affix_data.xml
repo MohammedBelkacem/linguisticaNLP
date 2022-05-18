@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+
+
+
+
+<record id="affix_01" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tenteɣ</field>
+ <field name="type_aff">suffix</field>
+</record>
+
+
+<record id="affix_02" model="affix"><field name="language_id" ref="kab_language"/>
+
+	<field name="name">-a</field>
+	<field name="type_aff">suffix</field>
+</record>
+
+<record id="affix_03" model="affix"><field name="language_id" ref="kab_language"/>
+
+	<field name="name">aɣ-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_04" model="affix"><field name="language_id" ref="kab_language"/>
+
+	<field name="name">-aɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_05" model="affix"><field name="language_id" ref="kab_language"/>
+
+
+	<field name="name">-agi</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_06" model="affix"><field name="language_id" ref="kab_language"/>
+
+	<field name="name">ak-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_07" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ak</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_08" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">akem-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_09" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">aken-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_10" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">akent-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_11" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-akent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_12" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-aki</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_13" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">am-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_14" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-am</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_15" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-anaɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_16" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-aneɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_17" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-anteɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_18" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">as-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_19" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-as</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_20" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">asen-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_21" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-asen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_22" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-asent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_23" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-atkent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_24" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-atneɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_25" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-atsen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_26" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-atsent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_27" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-atwen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_28" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">awen-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_29" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-awen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_30" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ayi</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_31" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">d-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_32" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-d</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_33" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">ɣ-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_34" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_35" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">i-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_36" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-i</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_37" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">id-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_38" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-id</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_39" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ik</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_40" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-iken</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_41" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-im</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_42" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">in-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_43" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-in</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_44" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-inek</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_45" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-inem</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_46" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ines</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_47" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-inu</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_48" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-is</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_49" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-it</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_50" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-iten</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_51" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-itent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_52" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-itt</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_53" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-iw</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_54" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">iyi-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_55" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-iyi</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_56" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">k-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_57" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-k</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_58" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">kem-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_59" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-kem</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_60" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">ken-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_61" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ken</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_62" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">kent-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_63" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-kent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_64" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-m</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_65" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">n-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_66" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-n</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_67" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-neɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_68" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-niḍen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_69" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nkent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_70" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nneɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_71" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nnek</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_72" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nnem</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_73" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nnes</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_74" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nni</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_75" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nniḍen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_76" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nnteɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_77" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nsen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_78" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nsent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_79" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nteɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_80" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-nwen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_81" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">s-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_82" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-s</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_83" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">sen-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_84" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-sen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_85" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">sent-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_86" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-sent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_87" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">t-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_88" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-t</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_89" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">ten-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_90" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ten</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_91" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">tent-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_92" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_93" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tenteɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_94" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tkent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_95" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tnaɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_96" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tneɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_97" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tsen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_98" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tsent</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_99" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">tt-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_100" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-tt</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_101" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-twen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_102" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-w</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_103" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-wamt</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_104" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-wat</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_105" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">wen-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_106" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-wen</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_107" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">went-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_108" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-ya</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_109" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-yaɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_110" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-yanaɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_111" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-yanteɣ</field>
+	<field name="type_aff">suffix</field>
+</record>
+<record id="affix_112" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">yi-</field>
+	<field name="type_aff">prefix</field>
+</record>
+<record id="affix_113" model="affix"><field name="language_id" ref="kab_language"/>
+	<field name="name">-yi</field>
+	<field name="type_aff">suffix</field>
+
+</record>
+</data>
+</odoo>

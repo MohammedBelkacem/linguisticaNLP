@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+
+<!-- features-->
+<record id='feature_01' model='feature'>
+	<field name='name'>word</field>
+	<field name='description'> sentence[index]</field>
+</record>
+<record id='feature_02' model='feature'>
+	<field name='name'>is_first</field>
+	<field name='description'> index == 0</field>
+</record>
+<record id='feature_03' model='feature'>
+	<field name='name'>is_last</field>
+	<field name='description'> index == len(sentence) - 1</field>
+</record>
+<record id='feature_04' model='feature'>
+	<field name='name'>is_capitalized</field>
+	<field name='description'> sentence[index][0].upper() == sentence[index][0]</field>
+</record>
+<record id='feature_05' model='feature'>
+	<field name='name'>is_all_caps</field>
+	<field name='description'> sentence[index].upper() == sentence[index]</field>
+</record>
+<record id='feature_06' model='feature'>
+	<field name='name'>is_all_lower</field>
+	<field name='description'> sentence[index].lower() == sentence[index]</field>
+</record>
+<record id='feature_07' model='feature'>
+	<field name='name'>prefix_1</field>
+	<field name='description'> sentence[index][0]</field>
+</record>
+<record id='feature_08' model='feature'>
+	<field name='name'>prefix_2</field>
+	<field name='description'> sentence[index][:2]</field>
+</record>
+<record id='feature_09' model='feature'>
+	<field name='name'>prefix_3</field>
+	<field name='description'> sentence[index][:3]</field>
+</record>
+<record id='feature_10' model='feature'>
+	<field name='name'>prefix_4</field>
+	<field name='description'> sentence[index][:4]</field>
+</record>
+<record id='feature_11' model='feature'>
+	<field name='name'>prefix_5</field>
+	<field name='description'> sentence[index][:5]</field>
+</record>
+<record id='feature_12' model='feature'>
+	<field name='name'>suffix_1</field>
+	<field name='description'> sentence[index][-1]</field>
+</record>
+<record id='feature_13' model='feature'>
+	<field name='name'>suffix_2</field>
+	<field name='description'> sentence[index][-2:]</field>
+</record>
+<record id='feature_14' model='feature'>
+	<field name='name'>suffix_3</field>
+	<field name='description'> sentence[index][-3:]</field>
+</record>
+<record id='feature_15' model='feature'>
+	<field name='name'>suffix_4</field>
+	<field name='description'> sentence[index][-4:]</field>
+</record>
+<record id='feature_16' model='feature'>
+	<field name='name'>prev_word</field>
+	<field name='description'> '' if index == 0 else sentence[index - 1]</field>
+</record>
+<record id='feature_17' model='feature'>
+	<field name='name'>next_word</field>
+	<field name='description'> '' if index == len(sentence) - 1 else sentence[index + 1]</field>
+</record>
+<record id='feature_18' model='feature'>
+	<field name='name'>is_numeric</field>
+	<field name='description'> sentence[index].isdigit()</field>
+</record>
+<record id='feature_19' model='feature'>
+	<field name='name'>capitals_inside</field>
+	<field name='description'>sentence[index][1:].lower() != sentence[index][1:]</field>
+</record>
+
+
+
+
+	</data>
+</odoo>

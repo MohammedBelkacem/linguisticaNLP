@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sentence_validate_form" model="ir.ui.view">
+        <field name="name">sentence.validate.form</field>
+        <field name="model">sentence.validate</field>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <form>
+
+                <footer>
+                    <button name="validate_sentence" string="Validate" type="object" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+     <record model='ir.actions.act_window' id='sentence_validate_act'>
+            <field name="name">Sentence Validation</field>
+            <field name="res_model">sentence.validate</field>
+            <field name="view_mode">form</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_id" ref="sentence_validate_form"/>
+            <field name="binding_model_id" ref="model_sentence" />
+            <field name="binding_view_types">form,list</field>
+            <field name="target">new</field>
+
+        </record>
+
+         <record id="sentence_validate_act" model="ir.actions.act_window">
+        <field name="name">Validate</field>
+        <field name="res_model">sentence.validate</field>
+        <field name="view_ids"
+                eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('sentence_validate_form')})]" />
+        <field name="target">new</field>
+    </record>
+
+</odoo>

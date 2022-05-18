@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="lang_model_selection_form" model="ir.ui.view">
+        <field name="name">lang.model.selection.form</field>
+        <field name="model">lang.model.selection</field>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <form>
+                    <group>
+                        <field name="model_id"/>
+                    </group>
+
+                <footer>
+                    <button name="process" string="Detect language" type="object" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+     <record model='ir.actions.act_window' id='lang_model_selection_act'>
+            <field name="name">Language Model selection</field>
+            <field name="res_model">lang.model.selection</field>
+            <field name="view_mode">form</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_id" ref="lang_model_selection_form"/>
+            <field name="binding_model_id" ref="model_sentence" />
+            <field name="binding_view_types">form,list</field>
+            <field name="target">new</field>
+
+        </record>
+
+         <record id="lang_model_selection_act" model="ir.actions.act_window">
+        <field name="name">Select Model to detect</field>
+        <field name="res_model">lang.model.selection</field>
+        <field name="view_ids"
+                eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('lang_model_selection_form')})]" />
+        <field name="target">new</field>
+    </record>
+
+</odoo>

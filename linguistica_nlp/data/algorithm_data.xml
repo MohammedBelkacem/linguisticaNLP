@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<!--lbfgs-->
+   <record  id="algorithme_0" model="algorithm">
+            <field name="name" >lbfgs</field>
+            <field name="code">lbfgs</field>
+            <field name="description">Gradient descent using the L-BFGS method</field>
+        </record>
+
+<record  id="algo_param_0" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_01"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_1" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_02"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_2" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_03"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_3" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_04"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_4" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_05"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_5" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_06"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_6" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_07"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_7" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_08"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_8" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_09"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_9" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_10"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_10" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_11"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_11" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_12"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_12" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_13"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_13" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_14"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_14" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_15"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_15" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_16"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_16" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_17"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_17" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_18"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_18" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_19"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_19" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_20"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_20" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_21"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_21" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_22"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_22" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_23"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_23" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_24"/>
+
+            <field name="algorithm_id" ref="algorithme_0"/>
+            <field name="value">none</field>
+        </record>
+
+
+<!--l2sgd-->
+   <record  id="algorithme_1" model="algorithm">
+            <field name="name" >l2sgd</field>
+            <field name="code">l2sgd</field>
+            <field name="description">Stochastic Gradient Descent with L2 regularization term</field>
+        </record>
+
+<record  id="algo_param_24" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_01"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_25" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_02"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_26" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_03"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_27" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_04"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_28" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_05"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_29" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_06"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_30" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_07"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_31" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_08"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_32" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_09"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_33"
+ model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_10"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_34" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_11"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_35" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_12"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_36" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_13"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_37" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_14"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_38" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_15"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_39" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_16"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_40" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_17"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_41" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_18"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_42" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_19"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_43" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_20"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_44" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_21"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_45" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_22"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_46" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_23"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_47" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_24"/>
+
+            <field name="algorithm_id" ref="algorithme_1"/>
+            <field name="value">none</field>
+        </record>
+
+<!--ap-->
+   <record  id="algorithme_2" model="algorithm">
+            <field name="name" >ap</field>
+            <field name="code">ap</field>
+            <field name="description">Averaged Perceptron</field>
+        </record>
+
+<record  id="algo_param_48" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_01"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_49" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_02"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_50" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_03"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_51" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_04"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_52" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_05"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_53" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_06"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_54" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_07"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_55" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_08"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_56" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_09"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_57" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_10"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_58" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_11"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_59" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_12"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_60" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_13"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_61" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_14"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_62" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_15"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_63" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_16"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_64" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_17"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_65" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_18"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_66" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_19"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_67" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_20"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_68" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_21"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_69" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_22"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_70" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_23"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_71" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_24"/>
+
+            <field name="algorithm_id" ref="algorithme_2"/>
+            <field name="value">none</field>
+        </record>
+
+
+<!--pa-->
+   <record  id="algorithme_3" model="algorithm">
+            <field name="name" >pa</field>
+            <field name="code">pa</field>
+            <field name="description">Passive Aggressive (PA)</field>
+
+        </record>
+
+<record  id="algo_param_72" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_01"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_73" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_02"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_74" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_03"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_75" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_04"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_76" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_05"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_77" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_06"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_78" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_07"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_79" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_08"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_80" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_09"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_81" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_10"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_82" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_11"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_83" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_12"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_84" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_13"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_85" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_14"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_86" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_15"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_87" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_16"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_88" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_17"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_89" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_18"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_90" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_19"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_91" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_20"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_92" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_21"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_93" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_22"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_94" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_23"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_95" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_24"/>
+
+            <field name="algorithm_id" ref="algorithme_3"/>
+            <field name="value">none</field>
+        </record>
+
+<!--arow-->
+   <record  id="algorithme_4" model="algorithm">
+            <field name="name" >arow</field>
+            <field name="code">arow</field>
+            <field name="description">Adaptive Regularization Of Weight Vector (AROW)</field>
+        </record>
+
+<record  id="algo_param_90" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_01"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_97" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_02"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+
+<record  id="algo_param_98" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_03"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_99" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_04"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_100" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_05"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_101" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_06"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_102" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_07"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_103" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_08"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_104" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_09"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_105" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_10"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_106" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_11"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_107" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_12"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_108" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_13"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_109" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_14"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_110" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_15"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_111" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_16"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_112" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_17"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_113" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_18"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_114" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_19"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_115" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_20"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_116" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_21"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_117" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_22"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_118" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_23"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+<record  id="algo_param_119" model="algorithm.parameter">
+            <field name="parameter_id" ref="parameter_24"/>
+
+            <field name="algorithm_id" ref="algorithme_4"/>
+            <field name="value">none</field>
+        </record>
+
+   <record  id="algorithme_5" model="algorithm">
+            <field name="name" >gaussian</field>
+            <field name="code">gaussian</field>
+            <field name="description">Gaussian Naive Bayes</field>
+        </record>
+   <record  id="algorithme_6" model="algorithm">
+            <field name="name" >multinomial</field>
+            <field name="code">multinomial</field>
+            <field name="description">Multinomial Naive Bayes</field>
+        </record>
+   <record  id="algorithme_7" model="algorithm">
+            <field name="name" >complement</field>
+            <field name="code">complement</field>
+            <field name="description">Adaptive Regularization Of Weight Vector (AROW)</field>
+        </record>
+   <record  id="algorithme_8" model="algorithm">
+            <field name="name" >bernoulli</field>
+            <field name="code">bernoulli</field>
+            <field name="description">Bernoulli Naive Bayes</field>
+        </record>
+   <record  id="algorithme_9" model="algorithm">
+            <field name="name" >categorical</field>
+            <field name="code">categorical</field>
+            <field name="description">Categorical Naive Baye</field>
+        </record>
+
+
+	</data>
+</odoo>

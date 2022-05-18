@@ -1,0 +1,3270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="kab_language"
+      			model="language">
+			<field name="name" >kabyle</field>
+			<field name="code">kab</field>
+		</record>
+		<record id="fra_language"
+      			model="language">
+			<field name="name" >French</field>
+			<field name="code">fra</field>
+		</record>
+		<record id="eng_language"
+      			model="language">
+			<field name="name" >English</field>
+			<field name="code">eng</field>
+		</record>
+		<record id='aa_language'
+      			model='language'>
+			<field name='name' >Afar</field>
+			<field name='code' >aa</field>
+		</record>
+		<record id='ab_language'
+      			model='language'>
+			<field name='name' >Abkhazian</field>
+			<field name='code' >ab</field>
+		</record>
+		<record id='ace_language'
+      			model='language'>
+			<field name='name' >Achinese</field>
+			<field name='code' >ace</field>
+		</record>
+		<record id='ach_language'
+      			model='language'>
+			<field name='name' >Acoli</field>
+			<field name='code' >ach</field>
+		</record>
+		<record id='ada_language'
+      			model='language'>
+			<field name='name' >Adangme</field>
+			<field name='code' >ada</field>
+		</record>
+		<record id='ady_language'
+      			model='language'>
+			<field name='name' >Adyghe</field>
+			<field name='code' >ady</field>
+		</record>
+		<record id='ae_language'
+      			model='language'>
+			<field name='name' >Avestan</field>
+			<field name='code' >ae</field>
+		</record>
+		<record id='aeb_language'
+      			model='language'>
+			<field name='name' >Tunisian Arabic</field>
+			<field name='code' >aeb</field>
+		</record>
+		<record id='af_language'
+      			model='language'>
+			<field name='name' >Afrikaans</field>
+			<field name='code' >af</field>
+		</record>
+		<record id='afh_language'
+      			model='language'>
+			<field name='name' >Afrihili</field>
+			<field name='code' >afh</field>
+		</record>
+		<record id='agq_language'
+      			model='language'>
+			<field name='name' >Aghem</field>
+			<field name='code' >agq</field>
+		</record>
+		<record id='ain_language'
+      			model='language'>
+			<field name='name' >Ainu</field>
+			<field name='code' >ain</field>
+		</record>
+		<record id='ak_language'
+      			model='language'>
+			<field name='name' >Akan</field>
+			<field name='code' >ak</field>
+		</record>
+		<record id='akk_language'
+      			model='language'>
+			<field name='name' >Akkadian</field>
+			<field name='code' >akk</field>
+		</record>
+		<record id='akz_language'
+      			model='language'>
+			<field name='name' >Alabama</field>
+			<field name='code' >akz</field>
+		</record>
+		<record id='ale_language'
+      			model='language'>
+			<field name='name' >Aleut</field>
+			<field name='code' >ale</field>
+		</record>
+		<record id='aln_language'
+      			model='language'>
+			<field name='name' >Gheg Albanian</field>
+			<field name='code' >aln</field>
+		</record>
+		<record id='alt_language'
+      			model='language'>
+			<field name='name' >Southern Altai</field>
+			<field name='code' >alt</field>
+		</record>
+		<record id='am_language'
+      			model='language'>
+			<field name='name' >Amharic</field>
+			<field name='code' >am</field>
+		</record>
+		<record id='an_language'
+      			model='language'>
+			<field name='name' >Aragonese</field>
+			<field name='code' >an</field>
+		</record>
+		<record id='ang_language'
+      			model='language'>
+			<field name='name' >Old English</field>
+			<field name='code' >ang</field>
+		</record>
+		<record id='anp_language'
+      			model='language'>
+			<field name='name' >Angika</field>
+			<field name='code' >anp</field>
+		</record>
+		<record id='ar_language'
+      			model='language'>
+			<field name='name' >Arabic</field>
+			<field name='code' >ar</field>
+		</record>
+		<record id='arc_language'
+      			model='language'>
+			<field name='name' >Aramaic</field>
+			<field name='code' >arc</field>
+		</record>
+		<record id='arn_language'
+      			model='language'>
+			<field name='name' >Mapuche</field>
+			<field name='code' >arn</field>
+		</record>
+		<record id='aro_language'
+      			model='language'>
+			<field name='name' >Araona</field>
+			<field name='code' >aro</field>
+		</record>
+		<record id='arp_language'
+      			model='language'>
+			<field name='name' >Arapaho</field>
+			<field name='code' >arp</field>
+		</record>
+		<record id='arq_language'
+      			model='language'>
+			<field name='name' >Algerian Arabic</field>
+			<field name='code' >arq</field>
+		</record>
+		<record id='ars_language'
+      			model='language'>
+			<field name='name' >Najdi Arabic</field>
+			<field name='code' >ars</field>
+		</record>
+		<record id='arw_language'
+      			model='language'>
+			<field name='name' >Arawak</field>
+			<field name='code' >arw</field>
+		</record>
+		<record id='ary_language'
+      			model='language'>
+			<field name='name' >Moroccan Arabic</field>
+			<field name='code' >ary</field>
+		</record>
+		<record id='arz_language'
+      			model='language'>
+			<field name='name' >Egyptian Arabic</field>
+			<field name='code' >arz</field>
+		</record>
+		<record id='as_language'
+      			model='language'>
+			<field name='name' >Assamese</field>
+			<field name='code' >as</field>
+		</record>
+		<record id='asa_language'
+      			model='language'>
+			<field name='name' >Asu</field>
+			<field name='code' >asa</field>
+		</record>
+		<record id='ase_language'
+      			model='language'>
+			<field name='name' >American Sign Language</field>
+			<field name='code' >ase</field>
+		</record>
+		<record id='ast_language'
+      			model='language'>
+			<field name='name' >Asturian</field>
+			<field name='code' >ast</field>
+		</record>
+		<record id='atj_language'
+      			model='language'>
+			<field name='name' >Atikamekw</field>
+			<field name='code' >atj</field>
+		</record>
+		<record id='av_language'
+      			model='language'>
+			<field name='name' >Avaric</field>
+			<field name='code' >av</field>
+		</record>
+		<record id='avk_language'
+      			model='language'>
+			<field name='name' >Kotava</field>
+			<field name='code' >avk</field>
+		</record>
+		<record id='awa_language'
+      			model='language'>
+			<field name='name' >Awadhi</field>
+			<field name='code' >awa</field>
+		</record>
+		<record id='ay_language'
+      			model='language'>
+			<field name='name' >Aymara</field>
+			<field name='code' >ay</field>
+		</record>
+		<record id='az_language'
+      			model='language'>
+			<field name='name' >Azerbaijani</field>
+			<field name='code' >az</field>
+		</record>
+		<record id='ba_language'
+      			model='language'>
+			<field name='name' >Bashkir</field>
+			<field name='code' >ba</field>
+		</record>
+		<record id='bal_language'
+      			model='language'>
+			<field name='name' >Baluchi</field>
+			<field name='code' >bal</field>
+		</record>
+		<record id='ban_language'
+      			model='language'>
+			<field name='name' >Balinese</field>
+			<field name='code' >ban</field>
+		</record>
+		<record id='bar_language'
+      			model='language'>
+			<field name='name' >Bavarian</field>
+			<field name='code' >bar</field>
+		</record>
+		<record id='bas_language'
+      			model='language'>
+			<field name='name' >Basaa</field>
+			<field name='code' >bas</field>
+		</record>
+		<record id='bax_language'
+      			model='language'>
+			<field name='name' >Bamun</field>
+			<field name='code' >bax</field>
+		</record>
+		<record id='bbc_language'
+      			model='language'>
+			<field name='name' >Batak Toba</field>
+			<field name='code' >bbc</field>
+		</record>
+		<record id='bbj_language'
+      			model='language'>
+			<field name='name' >Ghomala</field>
+			<field name='code' >bbj</field>
+		</record>
+		<record id='be_language'
+      			model='language'>
+			<field name='name' >Belarusian</field>
+			<field name='code' >be</field>
+		</record>
+		<record id='bej_language'
+      			model='language'>
+			<field name='name' >Beja</field>
+			<field name='code' >bej</field>
+		</record>
+		<record id='bem_language'
+      			model='language'>
+			<field name='name' >Bemba</field>
+			<field name='code' >bem</field>
+		</record>
+		<record id='bew_language'
+      			model='language'>
+			<field name='name' >Betawi</field>
+			<field name='code' >bew</field>
+		</record>
+		<record id='bez_language'
+      			model='language'>
+			<field name='name' >Bena</field>
+			<field name='code' >bez</field>
+		</record>
+		<record id='bfd_language'
+      			model='language'>
+			<field name='name' >Bafut</field>
+			<field name='code' >bfd</field>
+		</record>
+		<record id='bfq_language'
+      			model='language'>
+			<field name='name' >Badaga</field>
+			<field name='code' >bfq</field>
+		</record>
+		<record id='bg_language'
+      			model='language'>
+			<field name='name' >Bulgarian</field>
+			<field name='code' >bg</field>
+		</record>
+		<record id='bgn_language'
+      			model='language'>
+			<field name='name' >Western Balochi</field>
+			<field name='code' >bgn</field>
+		</record>
+		<record id='bho_language'
+      			model='language'>
+			<field name='name' >Bhojpuri</field>
+			<field name='code' >bho</field>
+		</record>
+		<record id='bi_language'
+      			model='language'>
+			<field name='name' >Bislama</field>
+			<field name='code' >bi</field>
+		</record>
+		<record id='bik_language'
+      			model='language'>
+			<field name='name' >Bikol</field>
+			<field name='code' >bik</field>
+		</record>
+		<record id='bin_language'
+      			model='language'>
+			<field name='name' >Bini</field>
+			<field name='code' >bin</field>
+		</record>
+		<record id='bjn_language'
+      			model='language'>
+			<field name='name' >Banjar</field>
+			<field name='code' >bjn</field>
+		</record>
+		<record id='bkm_language'
+      			model='language'>
+			<field name='name' >Kom</field>
+			<field name='code' >bkm</field>
+		</record>
+		<record id='bla_language'
+      			model='language'>
+			<field name='name' >Siksika</field>
+			<field name='code' >bla</field>
+		</record>
+		<record id='blt_language'
+      			model='language'>
+			<field name='name' >Tai Dam</field>
+			<field name='code' >blt</field>
+		</record>
+		<record id='bm_language'
+      			model='language'>
+			<field name='name' >Bambara</field>
+			<field name='code' >bm</field>
+		</record>
+		<record id='bn_language'
+      			model='language'>
+			<field name='name' >Bangla</field>
+			<field name='code' >bn</field>
+		</record>
+		<record id='bo_language'
+      			model='language'>
+			<field name='name' >Tibetan</field>
+			<field name='code' >bo</field>
+		</record>
+		<record id='bpy_language'
+      			model='language'>
+			<field name='name' >Bishnupriya</field>
+			<field name='code' >bpy</field>
+		</record>
+		<record id='bqi_language'
+      			model='language'>
+			<field name='name' >Bakhtiari</field>
+			<field name='code' >bqi</field>
+		</record>
+		<record id='br_language'
+      			model='language'>
+			<field name='name' >Breton</field>
+			<field name='code' >br</field>
+		</record>
+		<record id='bra_language'
+      			model='language'>
+			<field name='name' >Braj</field>
+			<field name='code' >bra</field>
+		</record>
+		<record id='brh_language'
+      			model='language'>
+			<field name='name' >Brahui</field>
+			<field name='code' >brh</field>
+		</record>
+		<record id='brx_language'
+      			model='language'>
+			<field name='name' >Bodo</field>
+			<field name='code' >brx</field>
+		</record>
+		<record id='bs_language'
+      			model='language'>
+			<field name='name' >Bosnian</field>
+			<field name='code' >bs</field>
+		</record>
+		<record id='bss_language'
+      			model='language'>
+			<field name='name' >Akoose</field>
+			<field name='code' >bss</field>
+		</record>
+		<record id='bua_language'
+      			model='language'>
+			<field name='name' >Buriat</field>
+			<field name='code' >bua</field>
+		</record>
+		<record id='bug_language'
+      			model='language'>
+			<field name='name' >Buginese</field>
+			<field name='code' >bug</field>
+		</record>
+		<record id='bum_language'
+      			model='language'>
+			<field name='name' >Bulu</field>
+			<field name='code' >bum</field>
+		</record>
+		<record id='byn_language'
+      			model='language'>
+			<field name='name' >Blin</field>
+			<field name='code' >byn</field>
+		</record>
+		<record id='byv_language'
+      			model='language'>
+			<field name='name' >Medumba</field>
+			<field name='code' >byv</field>
+		</record>
+		<record id='ca_language'
+      			model='language'>
+			<field name='name' >Catalan</field>
+			<field name='code' >cat</field>
+		</record>
+		<record id='cad_language'
+      			model='language'>
+			<field name='name' >Caddo</field>
+			<field name='code' >cad</field>
+		</record>
+		<record id='car_language'
+      			model='language'>
+			<field name='name' >Carib</field>
+			<field name='code' >car</field>
+		</record>
+		<record id='cay_language'
+      			model='language'>
+			<field name='name' >Cayuga</field>
+			<field name='code' >cay</field>
+		</record>
+		<record id='cch_language'
+      			model='language'>
+			<field name='name' >Atsam</field>
+			<field name='code' >cch</field>
+		</record>
+		<record id='ccp_language'
+      			model='language'>
+			<field name='name' >Chakma</field>
+			<field name='code' >ccp</field>
+		</record>
+		<record id='ce_language'
+      			model='language'>
+			<field name='name' >Chechen</field>
+			<field name='code' >ce</field>
+		</record>
+		<record id='ceb_language'
+      			model='language'>
+			<field name='name' >Cebuano</field>
+			<field name='code' >ceb</field>
+		</record>
+		<record id='cgg_language'
+      			model='language'>
+			<field name='name' >Chiga</field>
+			<field name='code' >cgg</field>
+		</record>
+		<record id='ch_language'
+      			model='language'>
+			<field name='name' >Chamorro</field>
+			<field name='code' >ch</field>
+		</record>
+		<record id='chb_language'
+      			model='language'>
+			<field name='name' >Chibcha</field>
+			<field name='code' >chb</field>
+		</record>
+		<record id='chg_language'
+      			model='language'>
+			<field name='name' >Chagatai</field>
+			<field name='code' >chg</field>
+		</record>
+		<record id='chk_language'
+      			model='language'>
+			<field name='name' >Chuukese</field>
+			<field name='code' >chk</field>
+		</record>
+		<record id='chm_language'
+      			model='language'>
+			<field name='name' >Mari</field>
+			<field name='code' >chm</field>
+		</record>
+		<record id='chn_language'
+      			model='language'>
+			<field name='name' >Chinook Jargon</field>
+			<field name='code' >chn</field>
+		</record>
+		<record id='cho_language'
+      			model='language'>
+			<field name='name' >Choctaw</field>
+			<field name='code' >cho</field>
+		</record>
+		<record id='chp_language'
+      			model='language'>
+			<field name='name' >Chipewyan</field>
+			<field name='code' >chp</field>
+		</record>
+		<record id='chr_language'
+      			model='language'>
+			<field name='name' >Cherokee</field>
+			<field name='code' >chr</field>
+		</record>
+		<record id='chy_language'
+      			model='language'>
+			<field name='name' >Cheyenne</field>
+			<field name='code' >chy</field>
+		</record>
+		<record id='cic_language'
+      			model='language'>
+			<field name='name' >Chickasaw</field>
+			<field name='code' >cic</field>
+		</record>
+		<record id='ckb_language'
+      			model='language'>
+			<field name='name' >Central Kurdish</field>
+			<field name='code' >ckb</field>
+		</record>
+		<record id='clc_language'
+      			model='language'>
+			<field name='name' >Chilcotin</field>
+			<field name='code' >clc</field>
+		</record>
+		<record id='co_language'
+      			model='language'>
+			<field name='name' >Corsican</field>
+			<field name='code' >co</field>
+		</record>
+		<record id='cop_language'
+      			model='language'>
+			<field name='name' >Coptic</field>
+			<field name='code' >cop</field>
+		</record>
+		<record id='cps_language'
+      			model='language'>
+			<field name='name' >Capiznon</field>
+			<field name='code' >cps</field>
+		</record>
+		<record id='cr_language'
+      			model='language'>
+			<field name='name' >Cree</field>
+			<field name='code' >cr</field>
+		</record>
+		<record id='crg_language'
+      			model='language'>
+			<field name='name' >Michif</field>
+			<field name='code' >crg</field>
+		</record>
+		<record id='crh_language'
+      			model='language'>
+			<field name='name' >Crimean Tatar</field>
+			<field name='code' >crh</field>
+		</record>
+		<record id='crj_language'
+      			model='language'>
+			<field name='name' >Southern East Cree</field>
+			<field name='code' >crj</field>
+		</record>
+		<record id='crk_language'
+      			model='language'>
+			<field name='name' >Plains Cree</field>
+			<field name='code' >crk</field>
+		</record>
+		<record id='crl_language'
+      			model='language'>
+			<field name='name' >Northern East Cree</field>
+			<field name='code' >crl</field>
+		</record>
+		<record id='crm_language'
+      			model='language'>
+			<field name='name' >Moose Cree</field>
+			<field name='code' >crm</field>
+		</record>
+		<record id='crr_language'
+      			model='language'>
+			<field name='name' >Carolina Algonquian</field>
+			<field name='code' >crr</field>
+		</record>
+		<record id='crs_language'
+      			model='language'>
+			<field name='name' >Seselwa Creole French</field>
+			<field name='code' >crs</field>
+		</record>
+		<record id='cs_language'
+      			model='language'>
+			<field name='name' >Czech</field>
+			<field name='code' >cs</field>
+		</record>
+		<record id='csb_language'
+      			model='language'>
+			<field name='name' >Kashubian</field>
+			<field name='code' >csb</field>
+		</record>
+		<record id='csw_language'
+      			model='language'>
+			<field name='name' >Swampy Cree</field>
+			<field name='code' >csw</field>
+		</record>
+		<record id='cu_language'
+      			model='language'>
+			<field name='name' >Church Slavic</field>
+			<field name='code' >cu</field>
+		</record>
+		<record id='cv_language'
+      			model='language'>
+			<field name='name' >Chuvash</field>
+			<field name='code' >cv</field>
+		</record>
+		<record id='cwd_language'
+      			model='language'>
+			<field name='name' >Woods Cree</field>
+			<field name='code' >cwd</field>
+		</record>
+		<record id='cy_language'
+      			model='language'>
+			<field name='name' >Welsh</field>
+			<field name='code' >cy</field>
+		</record>
+		<record id='da_language'
+      			model='language'>
+			<field name='name' >Danish</field>
+			<field name='code' >da</field>
+		</record>
+		<record id='dak_language'
+      			model='language'>
+			<field name='name' >Dakota</field>
+			<field name='code' >dak</field>
+		</record>
+		<record id='dar_language'
+      			model='language'>
+			<field name='name' >Dargwa</field>
+			<field name='code' >dar</field>
+		</record>
+		<record id='dav_language'
+      			model='language'>
+			<field name='name' >Taita</field>
+			<field name='code' >dav</field>
+		</record>
+		<record id='de_language'
+      			model='language'>
+			<field name='name' >German</field>
+			<field name='code' >de</field>
+		</record>
+		<record id='de_AT_language'
+      			model='language'>
+			<field name='name' >Austrian German</field>
+			<field name='code' >de_AT</field>
+		</record>
+		<record id='de_CH_language'
+      			model='language'>
+			<field name='name' >Swiss High German</field>
+			<field name='code' >de_CH</field>
+		</record>
+		<record id='del_language'
+      			model='language'>
+			<field name='name' >Delaware</field>
+			<field name='code' >del</field>
+		</record>
+		<record id='den_language'
+      			model='language'>
+			<field name='name' >Slave</field>
+			<field name='code' >den</field>
+		</record>
+		<record id='dgr_language'
+      			model='language'>
+			<field name='name' >Dogrib</field>
+			<field name='code' >dgr</field>
+		</record>
+		<record id='din_language'
+      			model='language'>
+			<field name='name' >Dinka</field>
+			<field name='code' >din</field>
+		</record>
+		<record id='dje_language'
+      			model='language'>
+			<field name='name' >Zarma</field>
+			<field name='code' >dje</field>
+		</record>
+		<record id='doi_language'
+      			model='language'>
+			<field name='name' >Dogri</field>
+			<field name='code' >doi</field>
+		</record>
+		<record id='dsb_language'
+      			model='language'>
+			<field name='name' >Lower Sorbian</field>
+			<field name='code' >dsb</field>
+		</record>
+		<record id='dtp_language'
+      			model='language'>
+			<field name='name' >Central Dusun</field>
+			<field name='code' >dtp</field>
+		</record>
+		<record id='dua_language'
+      			model='language'>
+			<field name='name' >Duala</field>
+			<field name='code' >dua</field>
+		</record>
+		<record id='dum_language'
+      			model='language'>
+			<field name='name' >Middle Dutch</field>
+			<field name='code' >dum</field>
+		</record>
+		<record id='dv_language'
+      			model='language'>
+			<field name='name' >Divehi</field>
+			<field name='code' >dv</field>
+		</record>
+		<record id='dyo_language'
+      			model='language'>
+			<field name='name' >Jola-Fonyi</field>
+			<field name='code' >dyo</field>
+		</record>
+		<record id='dyu_language'
+      			model='language'>
+			<field name='name' >Dyula</field>
+			<field name='code' >dyu</field>
+		</record>
+		<record id='dz_language'
+      			model='language'>
+			<field name='name' >Dzongkha</field>
+			<field name='code' >dz</field>
+		</record>
+		<record id='dzg_language'
+      			model='language'>
+			<field name='name' >Dazaga</field>
+			<field name='code' >dzg</field>
+		</record>
+		<record id='ebu_language'
+      			model='language'>
+			<field name='name' >Embu</field>
+			<field name='code' >ebu</field>
+		</record>
+		<record id='ee_language'
+      			model='language'>
+			<field name='name' >Ewe</field>
+			<field name='code' >ee</field>
+		</record>
+		<record id='efi_language'
+      			model='language'>
+			<field name='name' >Efik</field>
+			<field name='code' >efi</field>
+		</record>
+		<record id='egl_language'
+      			model='language'>
+			<field name='name' >Emilian</field>
+			<field name='code' >egl</field>
+		</record>
+		<record id='egy_language'
+      			model='language'>
+			<field name='name' >Ancient Egyptian</field>
+			<field name='code' >egy</field>
+		</record>
+		<record id='eka_language'
+      			model='language'>
+			<field name='name' >Ekajuk</field>
+			<field name='code' >eka</field>
+		</record>
+		<record id='el_language'
+      			model='language'>
+			<field name='name' >Greek</field>
+			<field name='code' >el</field>
+		</record>
+		<record id='elx_language'
+      			model='language'>
+			<field name='name' >Elamite</field>
+			<field name='code' >elx</field>
+		</record>
+		<record id='en_AU_language'
+      			model='language'>
+			<field name='name' >Australian English</field>
+			<field name='code' >en_AU</field>
+		</record>
+		<record id='en_CA_language'
+      			model='language'>
+			<field name='name' >Canadian English</field>
+			<field name='code' >en_CA</field>
+		</record>
+		<record id='en_GB_language'
+      			model='language'>
+			<field name='name' >British English</field>
+			<field name='code' >en_GB</field>
+		</record>
+		<record id='en_US_language'
+      			model='language'>
+			<field name='name' >American English</field>
+			<field name='code' >en_US</field>
+		</record>
+		<record id='enm_language'
+      			model='language'>
+			<field name='name' >Middle English</field>
+			<field name='code' >enm</field>
+		</record>
+		<record id='eo_language'
+      			model='language'>
+			<field name='name' >Esperanto</field>
+			<field name='code' >eo</field>
+		</record>
+		<record id='es_language'
+      			model='language'>
+			<field name='name' >Spanish</field>
+			<field name='code' >spa</field>
+		</record>
+		<record id='es_419_language'
+      			model='language'>
+			<field name='name' >Latin American Spanish</field>
+			<field name='code' >es_419</field>
+		</record>
+		<record id='es_ES_language'
+      			model='language'>
+			<field name='name' >European Spanish</field>
+			<field name='code' >es_ES</field>
+		</record>
+		<record id='es_MX_language'
+      			model='language'>
+			<field name='name' >Mexican Spanish</field>
+			<field name='code' >es_MX</field>
+		</record>
+		<record id='esu_language'
+      			model='language'>
+			<field name='name' >Central Yupik</field>
+			<field name='code' >esu</field>
+		</record>
+		<record id='et_language'
+      			model='language'>
+			<field name='name' >Estonian</field>
+			<field name='code' >et</field>
+		</record>
+		<record id='eu_language'
+      			model='language'>
+			<field name='name' >Basque</field>
+			<field name='code' >eus</field>
+		</record>
+		<record id='ewo_language'
+      			model='language'>
+			<field name='name' >Ewondo</field>
+			<field name='code' >ewo</field>
+		</record>
+		<record id='ext_language'
+      			model='language'>
+			<field name='name' >Extremaduran</field>
+			<field name='code' >ext</field>
+		</record>
+		<record id='fa_language'
+      			model='language'>
+			<field name='name' >Persian</field>
+			<field name='code' >fa</field>
+		</record>
+		<record id='fa_AF_language'
+      			model='language'>
+			<field name='name' >Dari</field>
+			<field name='code' >fa_AF</field>
+		</record>
+		<record id='fan_language'
+      			model='language'>
+			<field name='name' >Fang</field>
+			<field name='code' >fan</field>
+		</record>
+		<record id='fat_language'
+      			model='language'>
+			<field name='name' >Fanti</field>
+			<field name='code' >fat</field>
+		</record>
+		<record id='ff_language'
+      			model='language'>
+			<field name='name' >Fulah</field>
+			<field name='code' >ff</field>
+		</record>
+		<record id='fi_language'
+      			model='language'>
+			<field name='name' >Finnish</field>
+			<field name='code' >fi</field>
+		</record>
+		<record id='fil_language'
+      			model='language'>
+			<field name='name' >Filipino</field>
+			<field name='code' >fil</field>
+		</record>
+		<record id='fit_language'
+      			model='language'>
+			<field name='name' >Tornedalen Finnish</field>
+			<field name='code' >fit</field>
+		</record>
+		<record id='fj_language'
+      			model='language'>
+			<field name='name' >Fijian</field>
+			<field name='code' >fj</field>
+		</record>
+		<record id='fo_language'
+      			model='language'>
+			<field name='name' >Faroese</field>
+			<field name='code' >fo</field>
+		</record>
+		<record id='fon_language'
+      			model='language'>
+			<field name='name' >Fon</field>
+			<field name='code' >fon</field>
+		</record>
+		<record id='fr_CA_language'
+      			model='language'>
+			<field name='name' >Canadian French</field>
+			<field name='code' >fr_CA</field>
+		</record>
+		<record id='fr_CH_language'
+      			model='language'>
+			<field name='name' >Swiss French</field>
+			<field name='code' >fr_CH</field>
+		</record>
+		<record id='frc_language'
+      			model='language'>
+			<field name='name' >Cajun French</field>
+			<field name='code' >frc</field>
+		</record>
+		<record id='frm_language'
+      			model='language'>
+			<field name='name' >Middle French</field>
+			<field name='code' >frm</field>
+		</record>
+		<record id='fro_language'
+      			model='language'>
+			<field name='name' >Old French</field>
+			<field name='code' >fro</field>
+		</record>
+		<record id='frp_language'
+      			model='language'>
+			<field name='name' >Arpitan</field>
+			<field name='code' >frp</field>
+		</record>
+		<record id='frr_language'
+      			model='language'>
+			<field name='name' >Northern Frisian</field>
+			<field name='code' >frr</field>
+		</record>
+		<record id='frs_language'
+      			model='language'>
+			<field name='name' >Eastern Frisian</field>
+			<field name='code' >frs</field>
+		</record>
+		<record id='fur_language'
+      			model='language'>
+			<field name='name' >Friulian</field>
+			<field name='code' >fur</field>
+		</record>
+		<record id='fy_language'
+      			model='language'>
+			<field name='name' >Western Frisian</field>
+			<field name='code' >fy</field>
+		</record>
+		<record id='ga_language'
+      			model='language'>
+			<field name='name' >Irish</field>
+			<field name='code' >ga</field>
+		</record>
+		<record id='gaa_language'
+      			model='language'>
+			<field name='name' >Ga</field>
+			<field name='code' >gaa</field>
+		</record>
+		<record id='gag_language'
+      			model='language'>
+			<field name='name' >Gagauz</field>
+			<field name='code' >gag</field>
+		</record>
+		<record id='gan_language'
+      			model='language'>
+			<field name='name' >Gan Chinese</field>
+			<field name='code' >gan</field>
+		</record>
+		<record id='gay_language'
+      			model='language'>
+			<field name='name' >Gayo</field>
+			<field name='code' >gay</field>
+		</record>
+		<record id='gba_language'
+      			model='language'>
+			<field name='name' >Gbaya</field>
+			<field name='code' >gba</field>
+		</record>
+		<record id='gbz_language'
+      			model='language'>
+			<field name='name' >Zoroastrian Dari</field>
+			<field name='code' >gbz</field>
+		</record>
+		<record id='gd_language'
+      			model='language'>
+			<field name='name' >Scottish Gaelic</field>
+			<field name='code' >gd</field>
+		</record>
+		<record id='gez_language'
+      			model='language'>
+			<field name='name' >Geez</field>
+			<field name='code' >gez</field>
+		</record>
+		<record id='gil_language'
+      			model='language'>
+			<field name='name' >Gilbertese</field>
+			<field name='code' >gil</field>
+		</record>
+		<record id='gl_language'
+      			model='language'>
+			<field name='name' >Galician</field>
+			<field name='code' >gl</field>
+		</record>
+		<record id='glk_language'
+      			model='language'>
+			<field name='name' >Gilaki</field>
+			<field name='code' >glk</field>
+		</record>
+		<record id='gmh_language'
+      			model='language'>
+			<field name='name' >Middle High German</field>
+			<field name='code' >gmh</field>
+		</record>
+		<record id='gn_language'
+      			model='language'>
+			<field name='name' >Guarani</field>
+			<field name='code' >gn</field>
+		</record>
+		<record id='goh_language'
+      			model='language'>
+			<field name='name' >Old High German</field>
+			<field name='code' >goh</field>
+		</record>
+		<record id='gom_language'
+      			model='language'>
+			<field name='name' >Goan Konkani</field>
+			<field name='code' >gom</field>
+		</record>
+		<record id='gon_language'
+      			model='language'>
+			<field name='name' >Gondi</field>
+			<field name='code' >gon</field>
+		</record>
+		<record id='gor_language'
+      			model='language'>
+			<field name='name' >Gorontalo</field>
+			<field name='code' >gor</field>
+		</record>
+		<record id='got_language'
+      			model='language'>
+			<field name='name' >Gothic</field>
+			<field name='code' >got</field>
+		</record>
+		<record id='grb_language'
+      			model='language'>
+			<field name='name' >Grebo</field>
+			<field name='code' >grb</field>
+		</record>
+		<record id='grc_language'
+      			model='language'>
+			<field name='name' >Ancient Greek</field>
+			<field name='code' >grc</field>
+		</record>
+		<record id='gsw_language'
+      			model='language'>
+			<field name='name' >Swiss German</field>
+			<field name='code' >gsw</field>
+		</record>
+		<record id='gu_language'
+      			model='language'>
+			<field name='name' >Gujarati</field>
+			<field name='code' >gu</field>
+		</record>
+		<record id='guc_language'
+      			model='language'>
+			<field name='name' >Wayuu</field>
+			<field name='code' >guc</field>
+		</record>
+		<record id='gur_language'
+      			model='language'>
+			<field name='name' >Frafra</field>
+			<field name='code' >gur</field>
+		</record>
+		<record id='guz_language'
+      			model='language'>
+			<field name='name' >Gusii</field>
+			<field name='code' >guz</field>
+		</record>
+		<record id='gv_language'
+      			model='language'>
+			<field name='name' >Manx</field>
+			<field name='code' >gv</field>
+		</record>
+		<record id='gwi_language'
+      			model='language'>
+			<field name='name' >Gwichʼin</field>
+			<field name='code' >gwi</field>
+		</record>
+		<record id='ha_language'
+      			model='language'>
+			<field name='name' >Hausa</field>
+			<field name='code' >ha</field>
+		</record>
+		<record id='hai_language'
+      			model='language'>
+			<field name='name' >Haida</field>
+			<field name='code' >hai</field>
+		</record>
+		<record id='hak_language'
+      			model='language'>
+			<field name='name' >Hakka Chinese</field>
+			<field name='code' >hak</field>
+		</record>
+		<record id='haw_language'
+      			model='language'>
+			<field name='name' >Hawaiian</field>
+			<field name='code' >haw</field>
+		</record>
+		<record id='hax_language'
+      			model='language'>
+			<field name='name' >Southern Haida</field>
+			<field name='code' >hax</field>
+		</record>
+		<record id='hdn_language'
+      			model='language'>
+			<field name='name' >Northern Haida</field>
+			<field name='code' >hdn</field>
+		</record>
+		<record id='he_language'
+      			model='language'>
+			<field name='name' >Hebrew</field>
+			<field name='code' >he</field>
+		</record>
+		<record id='hi_language'
+      			model='language'>
+			<field name='name' >Hindi</field>
+			<field name='code' >hi</field>
+		</record>
+		<record id='hif_language'
+      			model='language'>
+			<field name='name' >Fiji Hindi</field>
+			<field name='code' >hif</field>
+		</record>
+		<record id='hil_language'
+      			model='language'>
+			<field name='name' >Hiligaynon</field>
+			<field name='code' >hil</field>
+		</record>
+		<record id='hit_language'
+      			model='language'>
+			<field name='name' >Hittite</field>
+			<field name='code' >hit</field>
+		</record>
+		<record id='hmn_language'
+      			model='language'>
+			<field name='name' >Hmong</field>
+			<field name='code' >hmn</field>
+		</record>
+		<record id='hnj_language'
+      			model='language'>
+			<field name='name' >Hmong Njua</field>
+			<field name='code' >hnj</field>
+		</record>
+		<record id='ho_language'
+      			model='language'>
+			<field name='name' >Hiri Motu</field>
+			<field name='code' >ho</field>
+		</record>
+		<record id='hr_language'
+      			model='language'>
+			<field name='name' >Croatian</field>
+			<field name='code' >hr</field>
+		</record>
+		<record id='hsb_language'
+      			model='language'>
+			<field name='name' >Upper Sorbian</field>
+			<field name='code' >hsb</field>
+		</record>
+		<record id='hsn_language'
+      			model='language'>
+			<field name='name' >Xiang Chinese</field>
+			<field name='code' >hsn</field>
+		</record>
+		<record id='ht_language'
+      			model='language'>
+			<field name='name' >Haitian Creole</field>
+			<field name='code' >ht</field>
+		</record>
+		<record id='hu_language'
+      			model='language'>
+			<field name='name' >Hungarian</field>
+			<field name='code' >hu</field>
+		</record>
+		<record id='hup_language'
+      			model='language'>
+			<field name='name' >Hupa</field>
+			<field name='code' >hup</field>
+		</record>
+		<record id='hur_language'
+      			model='language'>
+			<field name='name' >Halkomelem</field>
+			<field name='code' >hur</field>
+		</record>
+		<record id='hy_language'
+      			model='language'>
+			<field name='name' >Armenian</field>
+			<field name='code' >hy</field>
+		</record>
+		<record id='hz_language'
+      			model='language'>
+			<field name='name' >Herero</field>
+			<field name='code' >hz</field>
+		</record>
+		<record id='ia_language'
+      			model='language'>
+			<field name='name' >Interlingua</field>
+			<field name='code' >ia</field>
+		</record>
+		<record id='iba_language'
+      			model='language'>
+			<field name='name' >Iban</field>
+			<field name='code' >iba</field>
+		</record>
+		<record id='ibb_language'
+      			model='language'>
+			<field name='name' >Ibibio</field>
+			<field name='code' >ibb</field>
+		</record>
+		<record id='id_language'
+      			model='language'>
+			<field name='name' >Indonesian</field>
+			<field name='code' >id</field>
+		</record>
+		<record id='ie_language'
+      			model='language'>
+			<field name='name' >Interlingue</field>
+			<field name='code' >ie</field>
+		</record>
+		<record id='ig_language'
+      			model='language'>
+			<field name='name' >Igbo</field>
+			<field name='code' >ig</field>
+		</record>
+		<record id='ii_language'
+      			model='language'>
+			<field name='name' >Sichuan Yi</field>
+			<field name='code' >ii</field>
+		</record>
+		<record id='ik_language'
+      			model='language'>
+			<field name='name' >Inupiaq</field>
+			<field name='code' >ik</field>
+		</record>
+		<record id='ike_language'
+      			model='language'>
+			<field name='name' >Eastern Canadian Inuktitut</field>
+			<field name='code' >ike</field>
+		</record>
+		<record id='ikt_language'
+      			model='language'>
+			<field name='name' >Western Canadian Inuktitut</field>
+			<field name='code' >ikt</field>
+		</record>
+		<record id='ilo_language'
+      			model='language'>
+			<field name='name' >Iloko</field>
+			<field name='code' >ilo</field>
+		</record>
+		<record id='inh_language'
+      			model='language'>
+			<field name='name' >Ingush</field>
+			<field name='code' >inh</field>
+		</record>
+		<record id='io_language'
+      			model='language'>
+			<field name='name' >Ido</field>
+			<field name='code' >io</field>
+		</record>
+		<record id='is_language'
+      			model='language'>
+			<field name='name' >Icelandic</field>
+			<field name='code' >is</field>
+		</record>
+		<record id='it_language'
+      			model='language'>
+			<field name='name' >Italian</field>
+			<field name='code' >it</field>
+		</record>
+		<record id='iu_language'
+      			model='language'>
+			<field name='name' >Inuktitut</field>
+			<field name='code' >iu</field>
+		</record>
+		<record id='izh_language'
+      			model='language'>
+			<field name='name' >Ingrian</field>
+			<field name='code' >izh</field>
+		</record>
+		<record id='ja_language'
+      			model='language'>
+			<field name='name' >Japanese</field>
+			<field name='code' >ja</field>
+		</record>
+		<record id='jam_language'
+      			model='language'>
+			<field name='name' >Jamaican Creole English</field>
+			<field name='code' >jam</field>
+		</record>
+		<record id='jbo_language'
+      			model='language'>
+			<field name='name' >Lojban</field>
+			<field name='code' >jbo</field>
+		</record>
+		<record id='jgo_language'
+      			model='language'>
+			<field name='name' >Ngomba</field>
+			<field name='code' >jgo</field>
+		</record>
+		<record id='jmc_language'
+      			model='language'>
+			<field name='name' >Machame</field>
+			<field name='code' >jmc</field>
+		</record>
+		<record id='jpr_language'
+      			model='language'>
+			<field name='name' >Judeo-Persian</field>
+			<field name='code' >jpr</field>
+		</record>
+		<record id='jrb_language'
+      			model='language'>
+			<field name='name' >Judeo-Arabic</field>
+			<field name='code' >jrb</field>
+		</record>
+		<record id='jut_language'
+      			model='language'>
+			<field name='name' >Jutish</field>
+			<field name='code' >jut</field>
+		</record>
+		<record id='jv_language'
+      			model='language'>
+			<field name='name' >Javanese</field>
+			<field name='code' >jv</field>
+		</record>
+		<record id='ka_language'
+      			model='language'>
+			<field name='name' >Georgian</field>
+			<field name='code' >ka</field>
+		</record>
+		<record id='kaa_language'
+      			model='language'>
+			<field name='name' >Kara-Kalpak</field>
+			<field name='code' >kaa</field>
+		</record>
+		<record id='kac_language'
+      			model='language'>
+			<field name='name' >Kachin</field>
+			<field name='code' >kac</field>
+		</record>
+		<record id='kaj_language'
+      			model='language'>
+			<field name='name' >Jju</field>
+			<field name='code' >kaj</field>
+		</record>
+		<record id='kam_language'
+      			model='language'>
+			<field name='name' >Kamba</field>
+			<field name='code' >kam</field>
+		</record>
+		<record id='kaw_language'
+      			model='language'>
+			<field name='name' >Kawi</field>
+			<field name='code' >kaw</field>
+		</record>
+		<record id='kbd_language'
+      			model='language'>
+			<field name='name' >Kabardian</field>
+			<field name='code' >kbd</field>
+		</record>
+		<record id='kbl_language'
+      			model='language'>
+			<field name='name' >Kanembu</field>
+			<field name='code' >kbl</field>
+		</record>
+		<record id='kcg_language'
+      			model='language'>
+			<field name='name' >Tyap</field>
+			<field name='code' >kcg</field>
+		</record>
+		<record id='kde_language'
+      			model='language'>
+			<field name='name' >Makonde</field>
+			<field name='code' >kde</field>
+		</record>
+		<record id='kea_language'
+      			model='language'>
+			<field name='name' >Kabuverdianu</field>
+			<field name='code' >kea</field>
+		</record>
+		<record id='ken_language'
+      			model='language'>
+			<field name='name' >Kenyang</field>
+			<field name='code' >ken</field>
+		</record>
+		<record id='kfo_language'
+      			model='language'>
+			<field name='name' >Koro</field>
+			<field name='code' >kfo</field>
+		</record>
+		<record id='kg_language'
+      			model='language'>
+			<field name='name' >Kongo</field>
+			<field name='code' >kg</field>
+		</record>
+		<record id='kgp_language'
+      			model='language'>
+			<field name='name' >Kaingang</field>
+			<field name='code' >kgp</field>
+		</record>
+		<record id='kha_language'
+      			model='language'>
+			<field name='name' >Khasi</field>
+			<field name='code' >kha</field>
+		</record>
+		<record id='kho_language'
+      			model='language'>
+			<field name='name' >Khotanese</field>
+			<field name='code' >kho</field>
+		</record>
+		<record id='khq_language'
+      			model='language'>
+			<field name='name' >Koyra Chiini</field>
+			<field name='code' >khq</field>
+		</record>
+		<record id='khw_language'
+      			model='language'>
+			<field name='name' >Khowar</field>
+			<field name='code' >khw</field>
+		</record>
+		<record id='ki_language'
+      			model='language'>
+			<field name='name' >Kikuyu</field>
+			<field name='code' >ki</field>
+		</record>
+		<record id='kiu_language'
+      			model='language'>
+			<field name='name' >Kirmanjki</field>
+			<field name='code' >kiu</field>
+		</record>
+		<record id='kj_language'
+      			model='language'>
+			<field name='name' >Kuanyama</field>
+			<field name='code' >kj</field>
+		</record>
+		<record id='kk_language'
+      			model='language'>
+			<field name='name' >Kazakh</field>
+			<field name='code' >kk</field>
+		</record>
+		<record id='kkj_language'
+      			model='language'>
+			<field name='name' >Kako</field>
+			<field name='code' >kkj</field>
+		</record>
+		<record id='kl_language'
+      			model='language'>
+			<field name='name' >Kalaallisut</field>
+			<field name='code' >kl</field>
+		</record>
+		<record id='kln_language'
+      			model='language'>
+			<field name='name' >Kalenjin</field>
+			<field name='code' >kln</field>
+		</record>
+		<record id='km_language'
+      			model='language'>
+			<field name='name' >Khmer</field>
+			<field name='code' >km</field>
+		</record>
+		<record id='kmb_language'
+      			model='language'>
+			<field name='name' >Kimbundu</field>
+			<field name='code' >kmb</field>
+		</record>
+		<record id='kn_language'
+      			model='language'>
+			<field name='name' >Kannada</field>
+			<field name='code' >kn</field>
+		</record>
+		<record id='ko_language'
+      			model='language'>
+			<field name='name' >Korean</field>
+			<field name='code' >ko</field>
+		</record>
+		<record id='koi_language'
+      			model='language'>
+			<field name='name' >Komi-Permyak</field>
+			<field name='code' >koi</field>
+		</record>
+		<record id='kok_language'
+      			model='language'>
+			<field name='name' >Konkani</field>
+			<field name='code' >kok</field>
+		</record>
+		<record id='kos_language'
+      			model='language'>
+			<field name='name' >Kosraean</field>
+			<field name='code' >kos</field>
+		</record>
+		<record id='kpe_language'
+      			model='language'>
+			<field name='name' >Kpelle</field>
+			<field name='code' >kpe</field>
+		</record>
+		<record id='kr_language'
+      			model='language'>
+			<field name='name' >Kanuri</field>
+			<field name='code' >kr</field>
+		</record>
+		<record id='krc_language'
+      			model='language'>
+			<field name='name' >Karachay-Balkar</field>
+			<field name='code' >krc</field>
+		</record>
+		<record id='kri_language'
+      			model='language'>
+			<field name='name' >Krio</field>
+			<field name='code' >kri</field>
+		</record>
+		<record id='krj_language'
+      			model='language'>
+			<field name='name' >Kinaray-a</field>
+			<field name='code' >krj</field>
+		</record>
+		<record id='krl_language'
+      			model='language'>
+			<field name='name' >Karelian</field>
+			<field name='code' >krl</field>
+		</record>
+		<record id='kru_language'
+      			model='language'>
+			<field name='name' >Kurukh</field>
+			<field name='code' >kru</field>
+		</record>
+		<record id='ks_language'
+      			model='language'>
+			<field name='name' >Kashmiri</field>
+			<field name='code' >ks</field>
+		</record>
+		<record id='ksb_language'
+      			model='language'>
+			<field name='name' >Shambala</field>
+			<field name='code' >ksb</field>
+		</record>
+		<record id='ksf_language'
+      			model='language'>
+			<field name='name' >Bafia</field>
+			<field name='code' >ksf</field>
+		</record>
+		<record id='ksh_language'
+      			model='language'>
+			<field name='name' >Colognian</field>
+			<field name='code' >ksh</field>
+		</record>
+		<record id='ku_language'
+      			model='language'>
+			<field name='name' >Kurdish</field>
+			<field name='code' >ku</field>
+		</record>
+		<record id='kum_language'
+      			model='language'>
+			<field name='name' >Kumyk</field>
+			<field name='code' >kum</field>
+		</record>
+		<record id='kut_language'
+      			model='language'>
+			<field name='name' >Kutenai</field>
+			<field name='code' >kut</field>
+		</record>
+		<record id='kv_language'
+      			model='language'>
+			<field name='name' >Komi</field>
+			<field name='code' >kv</field>
+		</record>
+		<record id='kw_language'
+      			model='language'>
+			<field name='name' >Cornish</field>
+			<field name='code' >kw</field>
+		</record>
+		<record id='kwk_language'
+      			model='language'>
+			<field name='name' >Kwakʼwala</field>
+			<field name='code' >kwk</field>
+		</record>
+		<record id='ky_language'
+      			model='language'>
+			<field name='name' >Kyrgyz</field>
+			<field name='code' >ky</field>
+		</record>
+		<record id='la_language'
+      			model='language'>
+			<field name='name' >Latin</field>
+			<field name='code' >la</field>
+		</record>
+		<record id='lad_language'
+      			model='language'>
+			<field name='name' >Ladino</field>
+			<field name='code' >lad</field>
+		</record>
+		<record id='lag_language'
+      			model='language'>
+			<field name='name' >Langi</field>
+			<field name='code' >lag</field>
+		</record>
+		<record id='lah_language'
+      			model='language'>
+			<field name='name' >Lahnda</field>
+			<field name='code' >lah</field>
+		</record>
+		<record id='lam_language'
+      			model='language'>
+			<field name='name' >Lamba</field>
+			<field name='code' >lam</field>
+		</record>
+		<record id='lb_language'
+      			model='language'>
+			<field name='name' >Luxembourgish</field>
+			<field name='code' >lb</field>
+		</record>
+		<record id='lez_language'
+      			model='language'>
+			<field name='name' >Lezghian</field>
+			<field name='code' >lez</field>
+		</record>
+		<record id='lfn_language'
+      			model='language'>
+			<field name='name' >Lingua Franca Nova</field>
+			<field name='code' >lfn</field>
+		</record>
+		<record id='lg_language'
+      			model='language'>
+			<field name='name' >Ganda</field>
+			<field name='code' >lg</field>
+		</record>
+		<record id='li_language'
+      			model='language'>
+			<field name='name' >Limburgish</field>
+			<field name='code' >li</field>
+		</record>
+		<record id='lij_language'
+      			model='language'>
+			<field name='name' >Ligurian</field>
+			<field name='code' >lij</field>
+		</record>
+		<record id='lil_language'
+      			model='language'>
+			<field name='name' >Lillooet</field>
+			<field name='code' >lil</field>
+		</record>
+		<record id='liv_language'
+      			model='language'>
+			<field name='name' >Livonian</field>
+			<field name='code' >liv</field>
+		</record>
+		<record id='lkt_language'
+      			model='language'>
+			<field name='name' >Lakota</field>
+			<field name='code' >lkt</field>
+		</record>
+		<record id='lmo_language'
+      			model='language'>
+			<field name='name' >Lombard</field>
+			<field name='code' >lmo</field>
+		</record>
+		<record id='ln_language'
+      			model='language'>
+			<field name='name' >Lingala</field>
+			<field name='code' >ln</field>
+		</record>
+		<record id='lo_language'
+      			model='language'>
+			<field name='name' >Lao</field>
+			<field name='code' >lo</field>
+		</record>
+		<record id='lol_language'
+      			model='language'>
+			<field name='name' >Mongo</field>
+			<field name='code' >lol</field>
+		</record>
+		<record id='lou_language'
+      			model='language'>
+			<field name='name' >Louisiana Creole</field>
+			<field name='code' >lou</field>
+		</record>
+		<record id='loz_language'
+      			model='language'>
+			<field name='name' >Lozi</field>
+			<field name='code' >loz</field>
+		</record>
+		<record id='lrc_language'
+      			model='language'>
+			<field name='name' >Northern Luri</field>
+			<field name='code' >lrc</field>
+		</record>
+		<record id='lt_language'
+      			model='language'>
+			<field name='name' >Lithuanian</field>
+			<field name='code' >lt</field>
+		</record>
+		<record id='ltg_language'
+      			model='language'>
+			<field name='name' >Latgalian</field>
+			<field name='code' >ltg</field>
+		</record>
+		<record id='lu_language'
+      			model='language'>
+			<field name='name' >Luba-Katanga</field>
+			<field name='code' >lu</field>
+		</record>
+		<record id='lua_language'
+      			model='language'>
+			<field name='name' >Luba-Lulua</field>
+			<field name='code' >lua</field>
+		</record>
+		<record id='lui_language'
+      			model='language'>
+			<field name='name' >Luiseno</field>
+			<field name='code' >lui</field>
+		</record>
+		<record id='lun_language'
+      			model='language'>
+			<field name='name' >Lunda</field>
+			<field name='code' >lun</field>
+		</record>
+		<record id='luo_language'
+      			model='language'>
+			<field name='name' >Luo</field>
+			<field name='code' >luo</field>
+		</record>
+		<record id='lus_language'
+      			model='language'>
+			<field name='name' >Mizo</field>
+			<field name='code' >lus</field>
+		</record>
+		<record id='luy_language'
+      			model='language'>
+			<field name='name' >Luyia</field>
+			<field name='code' >luy</field>
+		</record>
+		<record id='lv_language'
+      			model='language'>
+			<field name='name' >Latvian</field>
+			<field name='code' >lv</field>
+		</record>
+		<record id='lzh_language'
+      			model='language'>
+			<field name='name' >Literary Chinese</field>
+			<field name='code' >lzh</field>
+		</record>
+		<record id='lzz_language'
+      			model='language'>
+			<field name='name' >Laz</field>
+			<field name='code' >lzz</field>
+		</record>
+		<record id='mad_language'
+      			model='language'>
+			<field name='name' >Madurese</field>
+			<field name='code' >mad</field>
+		</record>
+		<record id='maf_language'
+      			model='language'>
+			<field name='name' >Mafa</field>
+			<field name='code' >maf</field>
+		</record>
+		<record id='mag_language'
+      			model='language'>
+			<field name='name' >Magahi</field>
+			<field name='code' >mag</field>
+		</record>
+		<record id='mai_language'
+      			model='language'>
+			<field name='name' >Maithili</field>
+			<field name='code' >mai</field>
+		</record>
+		<record id='mak_language'
+      			model='language'>
+			<field name='name' >Makasar</field>
+			<field name='code' >mak</field>
+		</record>
+		<record id='man_language'
+      			model='language'>
+			<field name='name' >Mandingo</field>
+			<field name='code' >man</field>
+		</record>
+		<record id='mas_language'
+      			model='language'>
+			<field name='name' >Masai</field>
+			<field name='code' >mas</field>
+		</record>
+		<record id='mde_language'
+      			model='language'>
+			<field name='name' >Maba</field>
+			<field name='code' >mde</field>
+		</record>
+		<record id='mdf_language'
+      			model='language'>
+			<field name='name' >Moksha</field>
+			<field name='code' >mdf</field>
+		</record>
+		<record id='mdr_language'
+      			model='language'>
+			<field name='name' >Mandar</field>
+			<field name='code' >mdr</field>
+		</record>
+		<record id='men_language'
+      			model='language'>
+			<field name='name' >Mende</field>
+			<field name='code' >men</field>
+		</record>
+		<record id='mer_language'
+      			model='language'>
+			<field name='name' >Meru</field>
+			<field name='code' >mer</field>
+		</record>
+		<record id='mfe_language'
+      			model='language'>
+			<field name='name' >Morisyen</field>
+			<field name='code' >mfe</field>
+		</record>
+		<record id='mg_language'
+      			model='language'>
+			<field name='name' >Malagasy</field>
+			<field name='code' >mg</field>
+		</record>
+		<record id='mga_language'
+      			model='language'>
+			<field name='name' >Middle Irish</field>
+			<field name='code' >mga</field>
+		</record>
+		<record id='mgh_language'
+      			model='language'>
+			<field name='name' >Makhuwa-Meetto</field>
+			<field name='code' >mgh</field>
+		</record>
+		<record id='mgo_language'
+      			model='language'>
+			<field name='name' >Metaʼ</field>
+			<field name='code' >mgo</field>
+		</record>
+		<record id='mh_language'
+      			model='language'>
+			<field name='name' >Marshallese</field>
+			<field name='code' >mh</field>
+		</record>
+		<record id='mi_language'
+      			model='language'>
+			<field name='name' >Māori</field>
+			<field name='code' >mi</field>
+		</record>
+		<record id='mic_language'
+      			model='language'>
+			<field name='name' >Mi'kmaq</field>
+			<field name='code' >mic</field>
+		</record>
+		<record id='min_language'
+      			model='language'>
+			<field name='name' >Minangkabau</field>
+			<field name='code' >min</field>
+		</record>
+		<record id='mk_language'
+      			model='language'>
+			<field name='name' >Macedonian</field>
+			<field name='code' >mk</field>
+		</record>
+		<record id='ml_language'
+      			model='language'>
+			<field name='name' >Malayalam</field>
+			<field name='code' >ml</field>
+		</record>
+		<record id='mn_language'
+      			model='language'>
+			<field name='name' >Mongolian</field>
+			<field name='code' >mn</field>
+		</record>
+		<record id='mnc_language'
+      			model='language'>
+			<field name='name' >Manchu</field>
+			<field name='code' >mnc</field>
+		</record>
+		<record id='mni_language'
+      			model='language'>
+			<field name='name' >Manipuri</field>
+			<field name='code' >mni</field>
+		</record>
+		<record id='moe_language'
+      			model='language'>
+			<field name='name' >Innu-aimun</field>
+			<field name='code' >moe</field>
+		</record>
+		<record id='moh_language'
+      			model='language'>
+			<field name='name' >Mohawk</field>
+			<field name='code' >moh</field>
+		</record>
+		<record id='mos_language'
+      			model='language'>
+			<field name='name' >Mossi</field>
+			<field name='code' >mos</field>
+		</record>
+		<record id='mr_language'
+      			model='language'>
+			<field name='name' >Marathi</field>
+			<field name='code' >mr</field>
+		</record>
+		<record id='mrj_language'
+      			model='language'>
+			<field name='name' >Western Mari</field>
+			<field name='code' >mrj</field>
+		</record>
+		<record id='ms_language'
+      			model='language'>
+			<field name='name' >Malay</field>
+			<field name='code' >ms</field>
+		</record>
+		<record id='mt_language'
+      			model='language'>
+			<field name='name' >Maltese</field>
+			<field name='code' >mt</field>
+		</record>
+		<record id='mua_language'
+      			model='language'>
+			<field name='name' >Mundang</field>
+			<field name='code' >mua</field>
+		</record>
+		<record id='mul_language'
+      			model='language'>
+			<field name='name' >Multiple languages</field>
+			<field name='code' >mul</field>
+		</record>
+		<record id='mus_language'
+      			model='language'>
+			<field name='name' >Muscogee</field>
+			<field name='code' >mus</field>
+		</record>
+		<record id='mwl_language'
+      			model='language'>
+			<field name='name' >Mirandese</field>
+			<field name='code' >mwl</field>
+		</record>
+		<record id='mwr_language'
+      			model='language'>
+			<field name='name' >Marwari</field>
+			<field name='code' >mwr</field>
+		</record>
+		<record id='mwv_language'
+      			model='language'>
+			<field name='name' >Mentawai</field>
+			<field name='code' >mwv</field>
+		</record>
+		<record id='my_language'
+      			model='language'>
+			<field name='name' >Burmese</field>
+			<field name='code' >my</field>
+		</record>
+		<record id='mye_language'
+      			model='language'>
+			<field name='name' >Myene</field>
+			<field name='code' >mye</field>
+		</record>
+		<record id='myv_language'
+      			model='language'>
+			<field name='name' >Erzya</field>
+			<field name='code' >myv</field>
+		</record>
+		<record id='mzn_language'
+      			model='language'>
+			<field name='name' >Mazanderani</field>
+			<field name='code' >mzn</field>
+		</record>
+		<record id='na_language'
+      			model='language'>
+			<field name='name' >Nauru</field>
+			<field name='code' >na</field>
+		</record>
+		<record id='nan_language'
+      			model='language'>
+			<field name='name' >Min Nan Chinese</field>
+			<field name='code' >nan</field>
+		</record>
+		<record id='nap_language'
+      			model='language'>
+			<field name='name' >Neapolitan</field>
+			<field name='code' >nap</field>
+		</record>
+		<record id='naq_language'
+      			model='language'>
+			<field name='name' >Nama</field>
+			<field name='code' >naq</field>
+		</record>
+		<record id='nb_language'
+      			model='language'>
+			<field name='name' >Norwegian Bokmål</field>
+			<field name='code' >nb</field>
+		</record>
+		<record id='nd_language'
+      			model='language'>
+			<field name='name' >North Ndebele</field>
+			<field name='code' >nd</field>
+		</record>
+		<record id='nds_language'
+      			model='language'>
+			<field name='name' >Low German</field>
+			<field name='code' >nds</field>
+		</record>
+		<record id='nds_NL_language'
+      			model='language'>
+			<field name='name' >Low Saxon</field>
+			<field name='code' >nds_NL</field>
+		</record>
+		<record id='ne_language'
+      			model='language'>
+			<field name='name' >Nepali</field>
+			<field name='code' >ne</field>
+		</record>
+		<record id='new_language'
+      			model='language'>
+			<field name='name' >Newari</field>
+			<field name='code' >new</field>
+		</record>
+		<record id='ng_language'
+      			model='language'>
+			<field name='name' >Ndonga</field>
+			<field name='code' >ng</field>
+		</record>
+		<record id='nia_language'
+      			model='language'>
+			<field name='name' >Nias</field>
+			<field name='code' >nia</field>
+		</record>
+		<record id='niu_language'
+      			model='language'>
+			<field name='name' >Niuean</field>
+			<field name='code' >niu</field>
+		</record>
+		<record id='njo_language'
+      			model='language'>
+			<field name='name' >Ao Naga</field>
+			<field name='code' >njo</field>
+		</record>
+		<record id='nl_language'
+      			model='language'>
+			<field name='name' >Dutch</field>
+			<field name='code' >nl</field>
+		</record>
+		<record id='nl_BE_language'
+      			model='language'>
+			<field name='name' >Flemish</field>
+			<field name='code' >nl_BE</field>
+		</record>
+		<record id='nmg_language'
+      			model='language'>
+			<field name='name' >Kwasio</field>
+			<field name='code' >nmg</field>
+		</record>
+		<record id='nn_language'
+      			model='language'>
+			<field name='name' >Norwegian Nynorsk</field>
+			<field name='code' >nn</field>
+		</record>
+		<record id='nnh_language'
+      			model='language'>
+			<field name='name' >Ngiemboon</field>
+			<field name='code' >nnh</field>
+		</record>
+		<record id='no_language'
+      			model='language'>
+			<field name='name' >Norwegian</field>
+			<field name='code' >no</field>
+		</record>
+		<record id='nog_language'
+      			model='language'>
+			<field name='name' >Nogai</field>
+			<field name='code' >nog</field>
+		</record>
+		<record id='non_language'
+      			model='language'>
+			<field name='name' >Old Norse</field>
+			<field name='code' >non</field>
+		</record>
+		<record id='nov_language'
+      			model='language'>
+			<field name='name' >Novial</field>
+			<field name='code' >nov</field>
+		</record>
+		<record id='nqo_language'
+      			model='language'>
+			<field name='name' >N’Ko</field>
+			<field name='code' >nqo</field>
+		</record>
+		<record id='nr_language'
+      			model='language'>
+			<field name='name' >South Ndebele</field>
+			<field name='code' >nr</field>
+		</record>
+		<record id='nso_language'
+      			model='language'>
+			<field name='name' >Northern Sotho</field>
+			<field name='code' >nso</field>
+		</record>
+		<record id='nus_language'
+      			model='language'>
+			<field name='name' >Nuer</field>
+			<field name='code' >nus</field>
+		</record>
+		<record id='nv_language'
+      			model='language'>
+			<field name='name' >Navajo</field>
+			<field name='code' >nv</field>
+		</record>
+		<record id='nwc_language'
+      			model='language'>
+			<field name='name' >Classical Newari</field>
+			<field name='code' >nwc</field>
+		</record>
+		<record id='ny_language'
+      			model='language'>
+			<field name='name' >Nyanja</field>
+			<field name='code' >ny</field>
+		</record>
+		<record id='nym_language'
+      			model='language'>
+			<field name='name' >Nyamwezi</field>
+			<field name='code' >nym</field>
+		</record>
+		<record id='nyn_language'
+      			model='language'>
+			<field name='name' >Nyankole</field>
+			<field name='code' >nyn</field>
+		</record>
+		<record id='nyo_language'
+      			model='language'>
+			<field name='name' >Nyoro</field>
+			<field name='code' >nyo</field>
+		</record>
+		<record id='nzi_language'
+      			model='language'>
+			<field name='name' >Nzima</field>
+			<field name='code' >nzi</field>
+		</record>
+		<record id='oc_language'
+      			model='language'>
+			<field name='name' >Occitan</field>
+			<field name='code' >oc</field>
+		</record>
+		<record id='oj_language'
+      			model='language'>
+			<field name='name' >Ojibwa</field>
+			<field name='code' >oj</field>
+		</record>
+		<record id='ojb_language'
+      			model='language'>
+			<field name='name' >Northwestern Ojibwa</field>
+			<field name='code' >ojb</field>
+		</record>
+		<record id='ojc_language'
+      			model='language'>
+			<field name='name' >Central Ojibwa</field>
+			<field name='code' >ojc</field>
+		</record>
+		<record id='ojg_language'
+      			model='language'>
+			<field name='name' >Eastern Ojibwa</field>
+			<field name='code' >ojg</field>
+		</record>
+		<record id='ojs_language'
+      			model='language'>
+			<field name='name' >Oji-Cree</field>
+			<field name='code' >ojs</field>
+		</record>
+		<record id='ojw_language'
+      			model='language'>
+			<field name='name' >Western Ojibwa</field>
+			<field name='code' >ojw</field>
+		</record>
+		<record id='oka_language'
+      			model='language'>
+			<field name='name' >Okanagan</field>
+			<field name='code' >oka</field>
+		</record>
+		<record id='om_language'
+      			model='language'>
+			<field name='name' >Oromo</field>
+			<field name='code' >om</field>
+		</record>
+		<record id='or_language'
+      			model='language'>
+			<field name='name' >Odia</field>
+			<field name='code' >or</field>
+		</record>
+		<record id='os_language'
+      			model='language'>
+			<field name='name' >Ossetic</field>
+			<field name='code' >os</field>
+		</record>
+		<record id='osa_language'
+      			model='language'>
+			<field name='name' >Osage</field>
+			<field name='code' >osa</field>
+		</record>
+		<record id='ota_language'
+      			model='language'>
+			<field name='name' >Ottoman Turkish</field>
+			<field name='code' >ota</field>
+		</record>
+		<record id='pa_language'
+      			model='language'>
+			<field name='name' >Punjabi</field>
+			<field name='code' >pa</field>
+		</record>
+		<record id='pag_language'
+      			model='language'>
+			<field name='name' >Pangasinan</field>
+			<field name='code' >pag</field>
+		</record>
+		<record id='pal_language'
+      			model='language'>
+			<field name='name' >Pahlavi</field>
+			<field name='code' >pal</field>
+		</record>
+		<record id='pam_language'
+      			model='language'>
+			<field name='name' >Pampanga</field>
+			<field name='code' >pam</field>
+		</record>
+		<record id='pap_language'
+      			model='language'>
+			<field name='name' >Papiamento</field>
+			<field name='code' >pap</field>
+		</record>
+		<record id='pau_language'
+      			model='language'>
+			<field name='name' >Palauan</field>
+			<field name='code' >pau</field>
+		</record>
+		<record id='pcd_language'
+      			model='language'>
+			<field name='name' >Picard</field>
+			<field name='code' >pcd</field>
+		</record>
+		<record id='pcm_language'
+      			model='language'>
+			<field name='name' >Nigerian Pidgin</field>
+			<field name='code' >pcm</field>
+		</record>
+		<record id='pdc_language'
+      			model='language'>
+			<field name='name' >Pennsylvania German</field>
+			<field name='code' >pdc</field>
+		</record>
+		<record id='pdt_language'
+      			model='language'>
+			<field name='name' >Plautdietsch</field>
+			<field name='code' >pdt</field>
+		</record>
+		<record id='peo_language'
+      			model='language'>
+			<field name='name' >Old Persian</field>
+			<field name='code' >peo</field>
+		</record>
+		<record id='pfl_language'
+      			model='language'>
+			<field name='name' >Palatine German</field>
+			<field name='code' >pfl</field>
+		</record>
+		<record id='phn_language'
+      			model='language'>
+			<field name='name' >Phoenician</field>
+			<field name='code' >phn</field>
+		</record>
+		<record id='pi_language'
+      			model='language'>
+			<field name='name' >Pali</field>
+			<field name='code' >pi</field>
+		</record>
+		<record id='pl_language'
+      			model='language'>
+			<field name='name' >Polish</field>
+			<field name='code' >pl</field>
+		</record>
+		<record id='pms_language'
+      			model='language'>
+			<field name='name' >Piedmontese</field>
+			<field name='code' >pms</field>
+		</record>
+		<record id='pnt_language'
+      			model='language'>
+			<field name='name' >Pontic</field>
+			<field name='code' >pnt</field>
+		</record>
+		<record id='pon_language'
+      			model='language'>
+			<field name='name' >Pohnpeian</field>
+			<field name='code' >pon</field>
+		</record>
+		<record id='pqm_language'
+      			model='language'>
+			<field name='name' >Malecite</field>
+			<field name='code' >pqm</field>
+		</record>
+		<record id='prg_language'
+      			model='language'>
+			<field name='name' >Prussian</field>
+			<field name='code' >prg</field>
+		</record>
+		<record id='pro_language'
+      			model='language'>
+			<field name='name' >Old Provençal</field>
+			<field name='code' >pro</field>
+		</record>
+		<record id='ps_language'
+      			model='language'>
+			<field name='name' >Pashto</field>
+			<field name='code' >ps</field>
+		</record>
+		<record id='pt_language'
+      			model='language'>
+			<field name='name' >Portuguese</field>
+			<field name='code' >por</field>
+		</record>
+		<record id='pt_BR_language'
+      			model='language'>
+			<field name='name' >Brazilian Portuguese</field>
+			<field name='code' >pt_BR</field>
+		</record>
+		<record id='pt_PT_language'
+      			model='language'>
+			<field name='name' >European Portuguese</field>
+			<field name='code' >pt_PT</field>
+		</record>
+		<record id='qu_language'
+      			model='language'>
+			<field name='name' >Quechua</field>
+			<field name='code' >qu</field>
+		</record>
+		<record id='quc_language'
+      			model='language'>
+			<field name='name' >Kʼicheʼ</field>
+			<field name='code' >quc</field>
+		</record>
+		<record id='qug_language'
+      			model='language'>
+			<field name='name' >Chimborazo Highland Quichua</field>
+			<field name='code' >qug</field>
+		</record>
+		<record id='raj_language'
+      			model='language'>
+			<field name='name' >Rajasthani</field>
+			<field name='code' >raj</field>
+		</record>
+		<record id='rap_language'
+      			model='language'>
+			<field name='name' >Rapanui</field>
+			<field name='code' >rap</field>
+		</record>
+		<record id='rar_language'
+      			model='language'>
+			<field name='name' >Rarotongan</field>
+			<field name='code' >rar</field>
+		</record>
+		<record id='rgn_language'
+      			model='language'>
+			<field name='name' >Romagnol</field>
+			<field name='code' >rgn</field>
+		</record>
+		<record id='rhg_language'
+      			model='language'>
+			<field name='name' >Rohingya</field>
+			<field name='code' >rhg</field>
+		</record>
+		<record id='rif_language'
+      			model='language'>
+			<field name='name' >Riffian</field>
+			<field name='code' >rif</field>
+		</record>
+		<record id='rm_language'
+      			model='language'>
+			<field name='name' >Romansh</field>
+			<field name='code' >rm</field>
+		</record>
+		<record id='rn_language'
+      			model='language'>
+			<field name='name' >Rundi</field>
+			<field name='code' >rn</field>
+		</record>
+		<record id='ro_language'
+      			model='language'>
+			<field name='name' >Romanian</field>
+			<field name='code' >ro</field>
+		</record>
+		<record id='ro_MD_language'
+      			model='language'>
+			<field name='name' >Moldavian</field>
+			<field name='code' >ro_MD</field>
+		</record>
+		<record id='rof_language'
+      			model='language'>
+			<field name='name' >Rombo</field>
+			<field name='code' >rof</field>
+		</record>
+		<record id='rom_language'
+      			model='language'>
+			<field name='name' >Romany</field>
+			<field name='code' >rom</field>
+		</record>
+		<record id='rtm_language'
+      			model='language'>
+			<field name='name' >Rotuman</field>
+			<field name='code' >rtm</field>
+		</record>
+		<record id='ru_language'
+      			model='language'>
+			<field name='name' >Russian</field>
+			<field name='code' >ru</field>
+		</record>
+		<record id='rue_language'
+      			model='language'>
+			<field name='name' >Rusyn</field>
+			<field name='code' >rue</field>
+		</record>
+		<record id='rug_language'
+      			model='language'>
+			<field name='name' >Roviana</field>
+			<field name='code' >rug</field>
+		</record>
+		<record id='rup_language'
+      			model='language'>
+			<field name='name' >Aromanian</field>
+			<field name='code' >rup</field>
+		</record>
+		<record id='rw_language'
+      			model='language'>
+			<field name='name' >Kinyarwanda</field>
+			<field name='code' >rw</field>
+		</record>
+		<record id='rwk_language'
+      			model='language'>
+			<field name='name' >Rwa</field>
+			<field name='code' >rwk</field>
+		</record>
+		<record id='sa_language'
+      			model='language'>
+			<field name='name' >Sanskrit</field>
+			<field name='code' >sa</field>
+		</record>
+		<record id='sad_language'
+      			model='language'>
+			<field name='name' >Sandawe</field>
+			<field name='code' >sad</field>
+		</record>
+		<record id='sah_language'
+      			model='language'>
+			<field name='name' >Sakha</field>
+			<field name='code' >sah</field>
+		</record>
+		<record id='sam_language'
+      			model='language'>
+			<field name='name' >Samaritan Aramaic</field>
+			<field name='code' >sam</field>
+		</record>
+		<record id='saq_language'
+      			model='language'>
+			<field name='name' >Samburu</field>
+			<field name='code' >saq</field>
+		</record>
+		<record id='sas_language'
+      			model='language'>
+			<field name='name' >Sasak</field>
+			<field name='code' >sas</field>
+		</record>
+		<record id='sat_language'
+      			model='language'>
+			<field name='name' >Santali</field>
+			<field name='code' >sat</field>
+		</record>
+		<record id='saz_language'
+      			model='language'>
+			<field name='name' >Saurashtra</field>
+			<field name='code' >saz</field>
+		</record>
+		<record id='sba_language'
+      			model='language'>
+			<field name='name' >Ngambay</field>
+			<field name='code' >sba</field>
+		</record>
+		<record id='sbp_language'
+      			model='language'>
+			<field name='name' >Sangu</field>
+			<field name='code' >sbp</field>
+		</record>
+		<record id='sc_language'
+      			model='language'>
+			<field name='name' >Sardinian</field>
+			<field name='code' >sc</field>
+		</record>
+		<record id='scn_language'
+      			model='language'>
+			<field name='name' >Sicilian</field>
+			<field name='code' >scn</field>
+		</record>
+		<record id='sco_language'
+      			model='language'>
+			<field name='name' >Scots</field>
+			<field name='code' >sco</field>
+		</record>
+		<record id='sd_language'
+      			model='language'>
+			<field name='name' >Sindhi</field>
+			<field name='code' >sd</field>
+		</record>
+		<record id='sdc_language'
+      			model='language'>
+			<field name='name' >Sassarese Sardinian</field>
+			<field name='code' >sdc</field>
+		</record>
+		<record id='sdh_language'
+      			model='language'>
+			<field name='name' >Southern Kurdish</field>
+			<field name='code' >sdh</field>
+		</record>
+		<record id='se_language'
+      			model='language'>
+			<field name='name' >Northern Sami</field>
+			<field name='code' >se</field>
+		</record>
+		<record id='see_language'
+      			model='language'>
+			<field name='name' >Seneca</field>
+			<field name='code' >see</field>
+		</record>
+		<record id='seh_language'
+      			model='language'>
+			<field name='name' >Sena</field>
+			<field name='code' >seh</field>
+		</record>
+		<record id='sei_language'
+      			model='language'>
+			<field name='name' >Seri</field>
+			<field name='code' >sei</field>
+		</record>
+		<record id='sel_language'
+      			model='language'>
+			<field name='name' >Selkup</field>
+			<field name='code' >sel</field>
+		</record>
+		<record id='ses_language'
+      			model='language'>
+			<field name='name' >Koyraboro Senni</field>
+			<field name='code' >ses</field>
+		</record>
+		<record id='sg_language'
+      			model='language'>
+			<field name='name' >Sango</field>
+			<field name='code' >sg</field>
+		</record>
+		<record id='sga_language'
+      			model='language'>
+			<field name='name' >Old Irish</field>
+			<field name='code' >sga</field>
+		</record>
+		<record id='sgs_language'
+      			model='language'>
+			<field name='name' >Samogitian</field>
+			<field name='code' >sgs</field>
+		</record>
+		<record id='sh_language'
+      			model='language'>
+			<field name='name' >Serbo-Croatian</field>
+			<field name='code' >sh</field>
+		</record>
+		<record id='shi_language'
+      			model='language'>
+			<field name='name' >Tachelhit</field>
+			<field name='code' >shi</field>
+		</record>
+		<record id='shn_language'
+      			model='language'>
+			<field name='name' >Shan</field>
+			<field name='code' >shn</field>
+		</record>
+		<record id='shu_language'
+      			model='language'>
+			<field name='name' >Chadian Arabic</field>
+			<field name='code' >shu</field>
+		</record>
+		<record id='si_language'
+      			model='language'>
+			<field name='name' >Sinhala</field>
+			<field name='code' >si</field>
+		</record>
+		<record id='sid_language'
+      			model='language'>
+			<field name='name' >Sidamo</field>
+			<field name='code' >sid</field>
+		</record>
+		<record id='sk_language'
+      			model='language'>
+			<field name='name' >Slovak</field>
+			<field name='code' >sk</field>
+		</record>
+		<record id='sl_language'
+      			model='language'>
+			<field name='name' >Slovenian</field>
+			<field name='code' >sl</field>
+		</record>
+		<record id='slh_language'
+      			model='language'>
+			<field name='name' >Southern Lushootseed</field>
+			<field name='code' >slh</field>
+		</record>
+		<record id='sli_language'
+      			model='language'>
+			<field name='name' >Lower Silesian</field>
+			<field name='code' >sli</field>
+		</record>
+		<record id='sly_language'
+      			model='language'>
+			<field name='name' >Selayar</field>
+			<field name='code' >sly</field>
+		</record>
+		<record id='sm_language'
+      			model='language'>
+			<field name='name' >Samoan</field>
+			<field name='code' >sm</field>
+		</record>
+		<record id='sma_language'
+      			model='language'>
+			<field name='name' >Southern Sami</field>
+			<field name='code' >sma</field>
+		</record>
+		<record id='smj_language'
+      			model='language'>
+			<field name='name' >Lule Sami</field>
+			<field name='code' >smj</field>
+		</record>
+		<record id='smn_language'
+      			model='language'>
+			<field name='name' >Inari Sami</field>
+			<field name='code' >smn</field>
+		</record>
+		<record id='sms_language'
+      			model='language'>
+			<field name='name' >Skolt Sami</field>
+			<field name='code' >sms</field>
+		</record>
+		<record id='sn_language'
+      			model='language'>
+			<field name='name' >Shona</field>
+			<field name='code' >sn</field>
+		</record>
+		<record id='snk_language'
+      			model='language'>
+			<field name='name' >Soninke</field>
+			<field name='code' >snk</field>
+		</record>
+		<record id='so_language'
+      			model='language'>
+			<field name='name' >Somali</field>
+			<field name='code' >so</field>
+		</record>
+		<record id='sog_language'
+      			model='language'>
+			<field name='name' >Sogdien</field>
+			<field name='code' >sog</field>
+		</record>
+		<record id='sq_language'
+      			model='language'>
+			<field name='name' >Albanian</field>
+			<field name='code' >sq</field>
+		</record>
+		<record id='sr_language'
+      			model='language'>
+			<field name='name' >Serbian</field>
+			<field name='code' >sr</field>
+		</record>
+		<record id='sr_ME_language'
+      			model='language'>
+			<field name='name' >Montenegrin</field>
+			<field name='code' >sr_ME</field>
+		</record>
+		<record id='srn_language'
+      			model='language'>
+			<field name='name' >Sranan Tongo</field>
+			<field name='code' >srn</field>
+		</record>
+		<record id='srr_language'
+      			model='language'>
+			<field name='name' >Serer</field>
+			<field name='code' >srr</field>
+		</record>
+		<record id='ss_language'
+      			model='language'>
+			<field name='name' >Swati</field>
+			<field name='code' >ss</field>
+		</record>
+		<record id='ssy_language'
+      			model='language'>
+			<field name='name' >Saho</field>
+			<field name='code' >ssy</field>
+		</record>
+		<record id='st_language'
+      			model='language'>
+			<field name='name' >Southern Sotho</field>
+			<field name='code' >st</field>
+		</record>
+		<record id='stq_language'
+      			model='language'>
+			<field name='name' >Saterland Frisian</field>
+			<field name='code' >stq</field>
+		</record>
+		<record id='str_language'
+      			model='language'>
+			<field name='name' >Straits Salish</field>
+			<field name='code' >str</field>
+		</record>
+		<record id='su_language'
+      			model='language'>
+			<field name='name' >Sundanese</field>
+			<field name='code' >su</field>
+		</record>
+		<record id='suk_language'
+      			model='language'>
+			<field name='name' >Sukuma</field>
+			<field name='code' >suk</field>
+		</record>
+		<record id='sus_language'
+      			model='language'>
+			<field name='name' >Susu</field>
+			<field name='code' >sus</field>
+		</record>
+		<record id='sux_language'
+      			model='language'>
+			<field name='name' >Sumerian</field>
+			<field name='code' >sux</field>
+		</record>
+		<record id='sv_language'
+      			model='language'>
+			<field name='name' >Swedish</field>
+			<field name='code' >sv</field>
+		</record>
+		<record id='sw_language'
+      			model='language'>
+			<field name='name' >Swahili</field>
+			<field name='code' >sw</field>
+		</record>
+		<record id='sw_CD_language'
+      			model='language'>
+			<field name='name' >Congo Swahili</field>
+			<field name='code' >sw_CD</field>
+		</record>
+		<record id='swb_language'
+      			model='language'>
+			<field name='name' >Comorian</field>
+			<field name='code' >swb</field>
+		</record>
+		<record id='syc_language'
+      			model='language'>
+			<field name='name' >Classical Syriac</field>
+			<field name='code' >syc</field>
+		</record>
+		<record id='syr_language'
+      			model='language'>
+			<field name='name' >Syriac</field>
+			<field name='code' >syr</field>
+		</record>
+		<record id='szl_language'
+      			model='language'>
+			<field name='name' >Silesian</field>
+			<field name='code' >szl</field>
+		</record>
+		<record id='ta_language'
+      			model='language'>
+			<field name='name' >Tamil</field>
+			<field name='code' >ta</field>
+		</record>
+		<record id='tce_language'
+      			model='language'>
+			<field name='name' >Southern Tutchone</field>
+			<field name='code' >tce</field>
+		</record>
+		<record id='tcy_language'
+      			model='language'>
+			<field name='name' >Tulu</field>
+			<field name='code' >tcy</field>
+		</record>
+		<record id='te_language'
+      			model='language'>
+			<field name='name' >Telugu</field>
+			<field name='code' >te</field>
+		</record>
+		<record id='tem_language'
+      			model='language'>
+			<field name='name' >Timne</field>
+			<field name='code' >tem</field>
+		</record>
+		<record id='teo_language'
+      			model='language'>
+			<field name='name' >Teso</field>
+			<field name='code' >teo</field>
+		</record>
+		<record id='ter_language'
+      			model='language'>
+			<field name='name' >Tereno</field>
+			<field name='code' >ter</field>
+		</record>
+		<record id='tet_language'
+      			model='language'>
+			<field name='name' >Tetum</field>
+			<field name='code' >tet</field>
+		</record>
+		<record id='tg_language'
+      			model='language'>
+			<field name='name' >Tajik</field>
+			<field name='code' >tg</field>
+		</record>
+		<record id='tgx_language'
+      			model='language'>
+			<field name='name' >Tagish</field>
+			<field name='code' >tgx</field>
+		</record>
+		<record id='th_language'
+      			model='language'>
+			<field name='name' >Thai</field>
+			<field name='code' >th</field>
+		</record>
+		<record id='tht_language'
+      			model='language'>
+			<field name='name' >Tahltan</field>
+			<field name='code' >tht</field>
+		</record>
+		<record id='ti_language'
+      			model='language'>
+			<field name='name' >Tigrinya</field>
+			<field name='code' >ti</field>
+		</record>
+		<record id='tig_language'
+      			model='language'>
+			<field name='name' >Tigre</field>
+			<field name='code' >tig</field>
+		</record>
+		<record id='tiv_language'
+      			model='language'>
+			<field name='name' >Tiv</field>
+			<field name='code' >tiv</field>
+		</record>
+		<record id='tk_language'
+      			model='language'>
+			<field name='name' >Turkmen</field>
+			<field name='code' >tk</field>
+		</record>
+		<record id='tkl_language'
+      			model='language'>
+			<field name='name' >Tokelau</field>
+			<field name='code' >tkl</field>
+		</record>
+		<record id='tkr_language'
+      			model='language'>
+			<field name='name' >Tsakhur</field>
+			<field name='code' >tkr</field>
+		</record>
+		<record id='tl_language'
+      			model='language'>
+			<field name='name' >Tagalog</field>
+			<field name='code' >tl</field>
+		</record>
+		<record id='tlh_language'
+      			model='language'>
+			<field name='name' >Klingon</field>
+			<field name='code' >tlh</field>
+		</record>
+		<record id='tli_language'
+      			model='language'>
+			<field name='name' >Tlingit</field>
+			<field name='code' >tli</field>
+		</record>
+		<record id='tly_language'
+      			model='language'>
+			<field name='name' >Talysh</field>
+			<field name='code' >tly</field>
+		</record>
+		<record id='tmh_language'
+      			model='language'>
+			<field name='name' >Tamashek</field>
+			<field name='code' >tmh</field>
+		</record>
+		<record id='tn_language'
+      			model='language'>
+			<field name='name' >Tswana</field>
+			<field name='code' >tn</field>
+		</record>
+		<record id='to_language'
+      			model='language'>
+			<field name='name' >Tongan</field>
+			<field name='code' >to</field>
+		</record>
+		<record id='tog_language'
+      			model='language'>
+			<field name='name' >Nyasa Tonga</field>
+			<field name='code' >tog</field>
+		</record>
+		<record id='tpi_language'
+      			model='language'>
+			<field name='name' >Tok Pisin</field>
+			<field name='code' >tpi</field>
+		</record>
+		<record id='tr_language'
+      			model='language'>
+			<field name='name' >Turkish</field>
+			<field name='code' >tr</field>
+		</record>
+		<record id='tru_language'
+      			model='language'>
+			<field name='name' >Turoyo</field>
+			<field name='code' >tru</field>
+		</record>
+		<record id='trv_language'
+      			model='language'>
+			<field name='name' >Taroko</field>
+			<field name='code' >trv</field>
+		</record>
+		<record id='trw_language'
+      			model='language'>
+			<field name='name' >Torwali</field>
+			<field name='code' >trw</field>
+		</record>
+		<record id='ts_language'
+      			model='language'>
+			<field name='name' >Tsonga</field>
+			<field name='code' >ts</field>
+		</record>
+		<record id='tsd_language'
+      			model='language'>
+			<field name='name' >Tsakonian</field>
+			<field name='code' >tsd</field>
+		</record>
+		<record id='tsi_language'
+      			model='language'>
+			<field name='name' >Tsimshian</field>
+			<field name='code' >tsi</field>
+		</record>
+		<record id='tt_language'
+      			model='language'>
+			<field name='name' >Tatar</field>
+			<field name='code' >tt</field>
+		</record>
+		<record id='ttm_language'
+      			model='language'>
+			<field name='name' >Northern Tutchone</field>
+			<field name='code' >ttm</field>
+		</record>
+		<record id='ttt_language'
+      			model='language'>
+			<field name='name' >Muslim Tat</field>
+			<field name='code' >ttt</field>
+		</record>
+		<record id='tum_language'
+      			model='language'>
+			<field name='name' >Tumbuka</field>
+			<field name='code' >tum</field>
+		</record>
+		<record id='tvl_language'
+      			model='language'>
+			<field name='name' >Tuvalu</field>
+			<field name='code' >tvl</field>
+		</record>
+		<record id='tw_language'
+      			model='language'>
+			<field name='name' >Twi</field>
+			<field name='code' >tw</field>
+		</record>
+		<record id='twq_language'
+      			model='language'>
+			<field name='name' >Tasawaq</field>
+			<field name='code' >twq</field>
+		</record>
+		<record id='ty_language'
+      			model='language'>
+			<field name='name' >Tahitian</field>
+			<field name='code' >ty</field>
+		</record>
+		<record id='tyv_language'
+      			model='language'>
+			<field name='name' >Tuvinian</field>
+			<field name='code' >tyv</field>
+		</record>
+		<record id='tzm_language'
+      			model='language'>
+			<field name='name' >Central Atlas Tamazight</field>
+			<field name='code' >tzm</field>
+		</record>
+		<record id='udm_language'
+      			model='language'>
+			<field name='name' >Udmurt</field>
+			<field name='code' >udm</field>
+		</record>
+		<record id='ug_language'
+      			model='language'>
+			<field name='name' >Uyghur</field>
+			<field name='code' >ug</field>
+		</record>
+		<record id='uga_language'
+      			model='language'>
+			<field name='name' >Ugaritic</field>
+			<field name='code' >uga</field>
+		</record>
+		<record id='uk_language'
+      			model='language'>
+			<field name='name' >Ukrainian</field>
+			<field name='code' >uk</field>
+		</record>
+		<record id='umb_language'
+      			model='language'>
+			<field name='name' >Umbundu</field>
+			<field name='code' >umb</field>
+		</record>
+		<record id='und_language'
+      			model='language'>
+			<field name='name' >Unknown language</field>
+			<field name='code' >und</field>
+		</record>
+		<record id='ur_language'
+      			model='language'>
+			<field name='name' >Urdu</field>
+			<field name='code' >ur</field>
+		</record>
+		<record id='uz_language'
+      			model='language'>
+			<field name='name' >Uzbek</field>
+			<field name='code' >uz</field>
+		</record>
+		<record id='vai_language'
+      			model='language'>
+			<field name='name' >Vai</field>
+			<field name='code' >vai</field>
+		</record>
+		<record id='ve_language'
+      			model='language'>
+			<field name='name' >Venda</field>
+			<field name='code' >ve</field>
+		</record>
+		<record id='vec_language'
+      			model='language'>
+			<field name='name' >Venetian</field>
+			<field name='code' >vec</field>
+		</record>
+		<record id='vep_language'
+      			model='language'>
+			<field name='name' >Veps</field>
+			<field name='code' >vep</field>
+		</record>
+		<record id='vi_language'
+      			model='language'>
+			<field name='name' >Vietnamese</field>
+			<field name='code' >vi</field>
+		</record>
+		<record id='vls_language'
+      			model='language'>
+			<field name='name' >West Flemish</field>
+			<field name='code' >vls</field>
+		</record>
+		<record id='vmf_language'
+      			model='language'>
+			<field name='name' >Main-Franconian</field>
+			<field name='code' >vmf</field>
+		</record>
+		<record id='vo_language'
+      			model='language'>
+			<field name='name' >Volapük</field>
+			<field name='code' >vo</field>
+		</record>
+		<record id='vot_language'
+      			model='language'>
+			<field name='name' >Votic</field>
+			<field name='code' >vot</field>
+		</record>
+		<record id='vro_language'
+      			model='language'>
+			<field name='name' >Võro</field>
+			<field name='code' >vro</field>
+		</record>
+		<record id='vun_language'
+      			model='language'>
+			<field name='name' >Vunjo</field>
+			<field name='code' >vun</field>
+		</record>
+		<record id='wa_language'
+      			model='language'>
+			<field name='name' >Walloon</field>
+			<field name='code' >wa</field>
+		</record>
+		<record id='wae_language'
+      			model='language'>
+			<field name='name' >Walser</field>
+			<field name='code' >wae</field>
+		</record>
+		<record id='wal_language'
+      			model='language'>
+			<field name='name' >Wolaytta</field>
+			<field name='code' >wal</field>
+		</record>
+		<record id='war_language'
+      			model='language'>
+			<field name='name' >Waray</field>
+			<field name='code' >war</field>
+		</record>
+		<record id='was_language'
+      			model='language'>
+			<field name='name' >Washo</field>
+			<field name='code' >was</field>
+		</record>
+		<record id='wbp_language'
+      			model='language'>
+			<field name='name' >Warlpiri</field>
+			<field name='code' >wbp</field>
+		</record>
+		<record id='wo_language'
+      			model='language'>
+			<field name='name' >Wolof</field>
+			<field name='code' >wo</field>
+		</record>
+		<record id='wuu_language'
+      			model='language'>
+			<field name='name' >Wu Chinese</field>
+			<field name='code' >wuu</field>
+		</record>
+		<record id='xal_language'
+      			model='language'>
+			<field name='name' >Kalmyk</field>
+			<field name='code' >xal</field>
+		</record>
+		<record id='xh_language'
+      			model='language'>
+			<field name='name' >Xhosa</field>
+			<field name='code' >xh</field>
+		</record>
+		<record id='xmf_language'
+      			model='language'>
+			<field name='name' >Mingrelian</field>
+			<field name='code' >xmf</field>
+		</record>
+		<record id='xog_language'
+      			model='language'>
+			<field name='name' >Soga</field>
+			<field name='code' >xog</field>
+		</record>
+		<record id='yao_language'
+      			model='language'>
+			<field name='name' >Yao</field>
+			<field name='code' >yao</field>
+		</record>
+		<record id='yap_language'
+      			model='language'>
+			<field name='name' >Yapese</field>
+			<field name='code' >yap</field>
+		</record>
+		<record id='yav_language'
+      			model='language'>
+			<field name='name' >Yangben</field>
+			<field name='code' >yav</field>
+		</record>
+		<record id='ybb_language'
+      			model='language'>
+			<field name='name' >Yemba</field>
+			<field name='code' >ybb</field>
+		</record>
+		<record id='yi_language'
+      			model='language'>
+			<field name='name' >Yiddish</field>
+			<field name='code' >yi</field>
+		</record>
+		<record id='yo_language'
+      			model='language'>
+			<field name='name' >Yoruba</field>
+			<field name='code' >yo</field>
+		</record>
+		<record id='yrl_language'
+      			model='language'>
+			<field name='name' >Nheengatu</field>
+			<field name='code' >yrl</field>
+		</record>
+		<record id='yue_language'
+      			model='language'>
+			<field name='name' >Cantonese</field>
+			<field name='code' >yue</field>
+		</record>
+		<record id='za_language'
+      			model='language'>
+			<field name='name' >Zhuang</field>
+			<field name='code' >za</field>
+		</record>
+		<record id='zap_language'
+      			model='language'>
+			<field name='name' >Zapotec</field>
+			<field name='code' >zap</field>
+		</record>
+		<record id='zbl_language'
+      			model='language'>
+			<field name='name' >Blissymbols</field>
+			<field name='code' >zbl</field>
+		</record>
+		<record id='zea_language'
+      			model='language'>
+			<field name='name' >Zeelandic</field>
+			<field name='code' >zea</field>
+		</record>
+		<record id='zen_language'
+      			model='language'>
+			<field name='name' >Zenaga</field>
+			<field name='code' >zen</field>
+		</record>
+		<record id='zgh_language'
+      			model='language'>
+			<field name='name' >Standard Moroccan Tamazight</field>
+			<field name='code' >zgh</field>
+		</record>
+		<record id='zh_language'
+      			model='language'>
+			<field name='name' >Chinese</field>
+			<field name='code' >zh</field>
+		</record>
+		<record id='zh_Hans_language'
+      			model='language'>
+			<field name='name' >Simplified Chinese</field>
+			<field name='code' >zh_Hans</field>
+		</record>
+		<record id='zh_Hant_language'
+      			model='language'>
+			<field name='name' >Traditional Chinese</field>
+			<field name='code' >zh_Hant</field>
+		</record>
+		<record id='zu_language'
+      			model='language'>
+			<field name='name' >Zulu</field>
+			<field name='code' >zu</field>
+		</record>
+		<record id='zun_language'
+      			model='language'>
+			<field name='name' >Zuni</field>
+			<field name='code' >zun</field>
+		</record>
+		<record id='zxx_language'
+      			model='language'>
+			<field name='name' >No linguistic content</field>
+			<field name='code' >zxx</field>
+		</record>
+		<record id='zza_language'
+      			model='language'>
+			<field name='name' >Zaza</field>
+			<field name='code' >zza</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,4906 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* linguistica_nlp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-30 18:46+0000\n"
+"PO-Revision-Date: 2022-04-30 20:38+0100\n"
+"Last-Translator: Belkacem Mohammed <belkacem77@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: kab_DZ\n"
+"X-Generator: Poedit 2.4.3\n"
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_24
+msgid " (bool, optional (default=False)) – Enable trainer verbose mode."
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_03
+msgid " (bool, optional (default=False)) – Specify whether CRFsuite generates transition features that do not even occur in the training data (i.e., negative transition features). When True, CRFsuite generates transition features that associate all of possible label pairs. Suppose that the number of labels in the training data is L, this function will generate (L * L) transition features. This function is disabled by default."
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_20
+msgid ""
+" (bool, optional (default=True)) –\n"
+"\n"
+"If this parameter is True, the optimization routine includes into the objective function the square root of the number of incorrect labels predicted by the model.\n"
+"\n"
+"Supported training algorithms: pa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_04
+msgid ""
+" (float, optional (default=0)) –\n"
+"\n"
+"The coefficient for L1 regularization. If a non-zero value is specified, CRFsuite switches to the Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) method. The default value is zero (no L1 regularization).\n"
+"\n"
+"Supported training algorithms: lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_13
+msgid ""
+" (float, optional (default=0.1)) –\n"
+"\n"
+"The initial value of learning rate (eta) used for calibration.\n"
+"\n"
+"Supported training algorithms: l2sgd"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_10
+msgid ""
+" (float, optional (default=1e-5)) –\n"
+"\n"
+"The threshold for the stopping criterion; an iteration stops when the improvement of the log likelihood over the last period iterations is no greater than this threshold.\n"
+"\n"
+"Supported training algorithms: l2sgd, lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_14
+msgid ""
+" (float, optional (default=2.0)) –\n"
+"\n"
+"The rate of increase/decrease of learning rate for calibration.\n"
+"\n"
+"Supported training algorithms: l2sgd"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_18
+msgid ""
+" (int, optional (default=1)) –\n"
+"\n"
+"The strategy for updating feature weights. Allowed values:\n"
+"\n"
+"    0 - PA without slack variables;\n"
+"    1 - PA type I;\n"
+"    2 - PA type II.\n"
+"\n"
+"Supported training algorithms: pa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_16
+msgid ""
+" (int, optional (default=10)) –\n"
+"\n"
+"The number of candidates of learning rate. The calibration routine terminates after finding calibration_samples candidates of learning rates that can increase log-likelihood.\n"
+"\n"
+"Supported training algorithms: l2sgd"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_15
+msgid ""
+" (int, optional (default=1000)) –\n"
+"\n"
+"The number of instances used for calibration. The calibration routine randomly chooses instances no larger than calibration_samples.\n"
+"\n"
+"Supported training algorithms: l2sgd"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_12
+msgid ""
+" (int, optional (default=20)) –\n"
+"\n"
+"The maximum number of trials for the line search algorithm.\n"
+"\n"
+"Supported training algorithms: lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_17
+msgid ""
+" (int, optional (default=20)) –\n"
+"\n"
+"The maximum number of trials of learning rates for calibration. The calibration routine terminates after trying calibration_max_trials candidate values of learning rates.\n"
+"\n"
+"Supported training algorithms: l2sgd"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_06
+msgid ""
+" (int, optional (default=None)) –\n"
+"\n"
+"The maximum number of iterations for optimization algorithms. Default value depends on training algorithm:\n"
+"\n"
+"    lbfgs - unlimited;\n"
+"    l2sgd - 1000;\n"
+"    ap - 100;\n"
+"    pa - 100;\n"
+"    arow - 100.\n"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_11
+msgid ""
+" (str, optional (default='MoreThuente')) –\n"
+"\n"
+"The line search algorithm used in L-BFGS updates. Allowed values:\n"
+"\n"
+"    'MoreThuente' - More and Thuente’s method;\n"
+"    'Backtracking' - backtracking method with regular Wolfe condition;\n"
+"    'StrongBacktracking' - backtracking method with strong Wolfe condition.\n"
+"\n"
+"Supported training algorithms: lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_02
+msgid ""
+"(bool, optional (default=False)) –\n"
+"\n"
+"Specify whether CRFsuite generates state features that do not even occur in the training data (i.e., negative state features). When True, CRFsuite generates state features that associate all of possible combinations between attributes and labels.\\NSuppose that the numbers of attributes and labels are A and L respectively, this function will generate (A * L) features. Enabling this function may improve the labeling accuracy because the CRF model can learn the condition where an item is not predicted to its reference label. However, this function may also increase the number of features and slow down the training process drastically. This function is disabled by default."
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_21
+msgid ""
+"(bool, optional (default=True)) –\n"
+"\n"
+"If this parameter is True, the optimization routine computes the average of feature weights at all updates in the training process (similarly to Averaged Perceptron).\n"
+"\n"
+"Supported training algorithms: pa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_19
+msgid ""
+"(float, optional (default=1)) –\n"
+"\n"
+"Aggressiveness parameter (used only for PA-I and PA-II). This parameter controls the influence of the slack term on the objective function.\n"
+"Supported training algorithms: pa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_23
+msgid ""
+"(float, optional (default=1)) –\n"
+"\n"
+"The tradeoff between loss function and changes of feature weights.\n"
+"\n"
+"Supported training algorithms: arow"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_05
+msgid ""
+"(float, optional (default=1.0)) –\n"
+"\n"
+"The coefficient for L2 regularization.\n"
+"\n"
+"Supported training algorithms: l2sgd, lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_08
+msgid ""
+"(float, optional (default=1e-5)) –\n"
+"\n"
+"The epsilon parameter that determines the condition of convergence.\n"
+"\n"
+"Supported training algorithms: ap, arow, lbfgs, pa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_09
+msgid ""
+"(int, optional (default=10)) –\n"
+"\n"
+"The duration of iterations to test the stopping criterion.\n"
+"\n"
+"Supported training algorithms: l2sgd, lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_07
+msgid ""
+"(int, optional (default=6)) –\n"
+"\n"
+"The number of limited memories for approximating the inverse hessian matrix.\n"
+"\n"
+"Supported training algorithms: lbfgs"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__suffix_1
+msgid "1 last letter"
+msgstr "1 usekkil aneggaru"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prefix_1
+msgid "1 st letter"
+msgstr "1 usekkil aneggaru"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prefix_2
+msgid "2 fisrt letters"
+msgstr "2 n yisekkilen imezwura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__suffix_2
+msgid "2 last letters"
+msgstr "2 n yisekklien ineggura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prefix_3
+msgid "3 fisrt letters"
+msgstr "3 n yisekkilen imezwura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__suffix_3
+msgid "3 last letters"
+msgstr "3 n yisekkilen ineggura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prefix_4
+msgid "4 fisrt letters"
+msgstr "4 n yisekkilen imezwura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__suffix_4
+msgid "4 last letters"
+msgstr "4 n yisekkilen ineggura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prefix_5
+msgid "5 fisrt letters"
+msgstr "5 n yisekkilen imezwura"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__suffix_5
+msgid "5 last letters"
+msgstr "5 n yisekkilen ineggura"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_54
+msgid "Abbreviation"
+msgstr "Asewzel"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ab_language
+msgid "Abkhazian"
+msgstr "Tabxazit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ace_language
+msgid "Achinese"
+msgstr "Tačinizt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ach_language
+msgid "Acoli"
+msgstr "Takulit"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.act_verb
+msgid "Action Verb"
+msgstr "Amyag n tigawt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ada_language
+msgid "Adangme"
+msgstr "Tadangmit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__arow
+#: model_terms:algorithm,description:linguistica_nlp.algorithme_4
+#, fuzzy
+msgid "Adaptive Regularization Of Weight Vector (AROW)"
+msgstr "Adaptive Regularization Of Weight Vector (AROW)"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.algorithm_act
+msgid "Add your first Algrithm"
+msgstr "Rnu algurithm amezwaru"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.root_act
+msgid "Add your first Root"
+msgstr "Rnu aẓar amezwaru"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.affix_act
+msgid "Add your first affix"
+msgstr "Rnu awṣil amezwaru"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.annotation_act
+msgid "Add your first annotation"
+msgstr "Rnu tazmilt tamezwarut"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.corpus_act
+msgid "Add your first corpus"
+msgstr "Rnu tagruma n yisefka tamezwarut"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.feature_act
+msgid "Add your first feature"
+msgstr "Rnu talɣa-ik tamezwarut"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.tag_act
+msgid "Add your first grammatical class tag"
+msgstr "Rnu tacreḍ n usmil anejrum amezwaru"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.lang_act
+msgid "Add your first language"
+msgstr "Rnu tutlayt tamezwarut"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.model_act
+msgid "Add your first model"
+msgstr "Ranu taneɣruft tamezwarut"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.param_act
+msgid "Add your first parameter"
+msgstr "Rnu asebdad amezwaru"
+
+#. module: linguistica_nlp
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.sentence_act1
+#: model_terms:ir.actions.act_window,help:linguistica_nlp.sentence_act2
+msgid "Add your first sentence"
+msgstr "Rnu tayirt tamezwarut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ady_language
+msgid "Adyghe"
+msgstr "Tadigit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.aa_language
+msgid "Afar"
+msgstr "Tafarit"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.affix_act
+#: model:ir.model,name:linguistica_nlp.model_affix
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.affix_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.affix_tree
+msgid "Affix"
+msgstr "Awṣil"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__name
+msgid "Affix Name"
+msgstr "Isem n uwṣil"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_99
+msgid "Affix Pronoun of Adverb"
+msgstr "Amqim awṣil n umernu"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__type_aff
+msgid "Affix Type"
+msgstr "Anaw n uwṣil"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.affix_menu
+msgid "Affixes"
+msgstr "Iwṣilen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.afh_language
+msgid "Afrihili"
+msgstr "Tafrihilit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.af_language
+msgid "Afrikaans"
+msgstr "Tafrikanst"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.agq_language
+msgid "Aghem"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ain_language
+msgid "Ainu"
+msgstr "Taynut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ak_language
+msgid "Akan"
+msgstr "Takanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.akk_language
+msgid "Akkadian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bss_language
+msgid "Akoose"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.akz_language
+msgid "Alabama"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sq_language
+msgid "Albanian"
+msgstr "Albani"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ale_language
+msgid "Aleut"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arq_language
+msgid "Algerian Arabic"
+msgstr "Taɛrabt tazzayrit"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.algorithm_act
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__algorithm_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__model_algorithm
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__model_algorithm
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.algorithm_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.algorithm_tree
+msgid "Algorithm"
+msgstr "Alguritm"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__name
+msgid "Algorithm Name"
+msgstr "Isem n ulguritm"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_algorithm_parameter
+msgid "Algorithm Parameter"
+msgstr "Aɣewwar n ulguritm"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.algorithm_form
+msgid "Algorithm Parameters"
+msgstr "Iγewwaṛen n ulguritm"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_algorithm
+msgid "Algorithm Type"
+msgstr "Anaw n ulguritm"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.algorithm_menu
+msgid "Algorithms"
+msgstr "Ilguritmen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.en_US_language
+msgid "American English"
+msgstr "Taglizit n Marikan"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ase_language
+msgid "American Sign Language"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.am_language
+msgid "Amharic"
+msgstr "Tamharikt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.egy_language
+msgid "Ancient Egyptian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.grc_language
+#, fuzzy
+msgid "Ancient Greek"
+msgstr "Tagrigit taqburt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.anp_language
+msgid "Angika"
+msgstr "Tangikat"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.annexed
+msgid "Annexed"
+msgstr "Amaruz"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_annotation
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.annotation_tree
+msgid "Annotation"
+msgstr "Tazmilt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__code
+msgid "Annotation code"
+msgstr "Tangalt n tezmilt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__description
+msgid "Annotation description"
+msgstr "Agmal n tezmilt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__name
+msgid "Annotation name"
+msgstr "Isem n tezmilt"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.annotation_act
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__annotation_ids
+#: model:ir.ui.menu,name:linguistica_nlp.annotation_menu
+msgid "Annotations"
+msgstr "Tizmilin"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_59
+msgid "Aorist future."
+msgstr "Urmir aḥerfi"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_58
+msgid "Aorist imperative"
+msgstr "Urmir anaḍ"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.njo_language
+msgid "Ao Naga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ar_language
+msgid "Arabic"
+msgstr "Taɛrabt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.an_language
+msgid "Aragonese"
+msgstr "Taṛagunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arc_language
+#, fuzzy
+msgid "Aramaic"
+msgstr "Taṛamit taqburt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.aro_language
+msgid "Araona"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arp_language
+msgid "Arapaho"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arw_language
+msgid "Arawak"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hy_language
+msgid "Armenian"
+msgstr "Taṛminit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rup_language
+msgid "Aromanian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.frp_language
+msgid "Arpitan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.as_language
+#, fuzzy
+msgid "Assamese"
+msgstr "Tasamizt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ast_language
+msgid "Asturian"
+msgstr "Tasturyant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.asa_language
+msgid "Asu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.atj_language
+msgid "Atikamekw"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cch_language
+msgid "Atsam"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.en_AU_language
+#, fuzzy
+msgid "Australian English"
+msgstr "Taglizit n Ustralya"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.de_AT_language
+#, fuzzy
+msgid "Austrian German"
+msgstr "Tasturyant talmanit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__author
+#, fuzzy
+msgid "Author"
+msgstr "Ameskar"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_93
+#, fuzzy
+msgid "Autonomous Personal pronoun "
+msgstr "Amqim udmawan ilelli"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.av_language
+msgid "Avaric"
+msgstr "Tavarikt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__ap
+#: model_terms:algorithm,description:linguistica_nlp.algorithme_2
+#, fuzzy
+msgid "Averaged Perceptron"
+msgstr "Averaged Perceptron"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ae_language
+msgid "Avestan"
+msgstr "Tavistant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.awa_language
+msgid "Awadhi"
+msgstr "Tawadhit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ay_language
+#, fuzzy
+msgid "Aymara"
+msgstr "Taymarit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.az_language
+msgid "Azerbaijani"
+msgstr "Tazeṛbayǧant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bfq_language
+msgid "Badaga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ksf_language
+msgid "Bafia"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bfd_language
+msgid "Bafut"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bqi_language
+msgid "Bakhtiari"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ban_language
+msgid "Balinese"
+msgstr "Tabalinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bal_language
+msgid "Baluchi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bm_language
+msgid "Bambara"
+msgstr "Tabambarat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bax_language
+msgid "Bamun"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bn_language
+msgid "Bangla"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bjn_language
+msgid "Banjar"
+msgstr "Tabanjart"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bas_language
+msgid "Basaa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ba_language
+#, fuzzy
+msgid "Bashkir"
+msgstr "Tabackirit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.eu_language
+msgid "Basque"
+msgstr "Tabaskit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bbc_language
+msgid "Batak Toba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bar_language
+msgid "Bavarian"
+msgstr "Tabavaṛyant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bej_language
+msgid "Beja"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.be_language
+msgid "Belarusian"
+msgstr "Tabilurusit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bem_language
+msgid "Bemba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bez_language
+msgid "Bena"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bew_language
+msgid "Betawi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bho_language
+msgid "Bhojpuri"
+msgstr "Tabhujpurit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bik_language
+msgid "Bikol"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bin_language
+msgid "Bini"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bpy_language
+msgid "Bishnupriya"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bi_language
+#, fuzzy
+msgid "Bislama"
+msgstr "Tabiclamit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.byn_language
+msgid "Blin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zbl_language
+msgid "Blissymbols"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.brx_language
+msgid "Bodo"
+msgstr "Tabudut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bs_language
+msgid "Bosnian"
+msgstr "Tabusnit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.brh_language
+msgid "Brahui"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bra_language
+msgid "Braj"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pt_BR_language
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.br_language
+msgid "Breton"
+msgstr "Tabrutunt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.en_GB_language
+msgid "British English"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bug_language
+msgid "Buginese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bg_language
+msgid "Bulgarian"
+msgstr "Tabulgarit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bum_language
+msgid "Bulu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bua_language
+msgid "Buriat"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.my_language
+msgid "Burmese"
+msgstr "Tabirmanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cad_language
+msgid "Caddo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.frc_language
+msgid "Cajun French"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_83
+msgid "Call particle"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.en_CA_language
+msgid "Canadian English"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fr_CA_language
+msgid "Canadian French"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yue_language
+msgid "Cantonese"
+msgstr "Takantunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cps_language
+msgid "Capiznon"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_52
+msgid "Cardinal Letter"
+msgstr "Amḍan n usekkil"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_53
+msgid "Cardinal Numbers"
+msgstr "Amḍan s uzmil"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.car_language
+msgid "Carib"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crr_language
+msgid "Carolina Algonquian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ca_language
+msgid "Catalan"
+msgstr "Takaṭalant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cay_language
+msgid "Cayuga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ceb_language
+msgid "Cebuano"
+msgstr "Tacibwanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tzm_language
+msgid "Central Atlas Tamazight"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dtp_language
+#, fuzzy
+msgid "Central Dusun"
+msgstr "Tadusunt talemmast"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ckb_language
+msgid "Central Kurdish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ojc_language
+msgid "Central Ojibwa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.esu_language
+msgid "Central Yupik"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.shu_language
+msgid "Chadian Arabic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chg_language
+msgid "Chagatai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ccp_language
+msgid "Chakma"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ch_language
+#, fuzzy
+msgid "Chamorro"
+msgstr "Tacamurit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ce_language
+#, fuzzy
+msgid "Chechen"
+msgstr "Tačičinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chr_language
+msgid "Cherokee"
+msgstr "Tacirukit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chy_language
+msgid "Cheyenne"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chb_language
+msgid "Chibcha"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cic_language
+msgid "Chickasaw"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cgg_language
+msgid "Chiga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.clc_language
+msgid "Chilcotin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.qug_language
+msgid "Chimborazo Highland Quichua"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zh_language
+msgid "Chinese"
+msgstr "Tacinwat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chn_language
+msgid "Chinook Jargon"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chp_language
+msgid "Chipewyan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cho_language
+msgid "Choctaw"
+msgstr "Tacuktawt"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_trained_model
+msgid "Choose a Postag trained Model"
+msgstr "Fren taneɣruft tasnalɣant taseddasan"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cu_language
+#, fuzzy
+msgid "Church Slavic"
+msgstr "Taslavit taqbuṛt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chk_language
+msgid "Chuukese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cv_language
+#, fuzzy
+msgid "Chuvash"
+msgstr "Tačuvacit"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.tag_menu
+msgid "Class Grammatical Tags"
+msgstr "Ticraḍ n yismilen inejrumen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nwc_language
+msgid "Classical Newari"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.syc_language
+msgid "Classical Syriac"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__code
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__code
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__code
+msgid "Code"
+msgstr "Tangalt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ksh_language
+msgid "Colognian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_50
+msgid "Common Noun"
+msgstr "Isem amagnu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.swb_language
+msgid "Comorian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.param_menu
+#, fuzzy
+msgid "Configurations"
+msgstr "Tawilla"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sw_CD_language
+msgid "Congo Swahili"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__content
+msgid "Content"
+msgstr "Agbur:"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cop_language
+msgid "Coptic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kw_language
+#, fuzzy
+msgid "Cornish"
+msgstr "Takuṛnikt"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.corpus_act
+#: model:ir.model,name:linguistica_nlp.model_corpus
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__corpus_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__corpus_id
+#: model:ir.ui.menu,name:linguistica_nlp.corpus_menu
+#: model:ir.ui.menu,name:linguistica_nlp.corpus_train_menu
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.corpus_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.corpus_tree
+msgid "Corpus"
+msgstr "Tagrumma n yisefka"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__language_id
+msgid "Corpus Language"
+msgstr "Tagrumma n tefyar"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__name
+msgid "Corpus Name"
+msgstr "Isem n tegrumma"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__sentence__state__corrected
+#, fuzzy
+msgid "Corrected"
+msgstr "Teɣti"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.co_language
+#, fuzzy
+msgid "Corsican"
+msgstr "Takuṛsit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__create_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__create_uid
+msgid "Created by"
+msgstr "Yettwarna sɣur"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__create_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__create_date
+msgid "Created on"
+msgstr "Yettwarna deg"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cr_language
+#, fuzzy
+msgid "Cree"
+msgstr "Takrit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crh_language
+#, fuzzy
+msgid "Crimean Tatar"
+msgstr "Taṭaṭarit n Krimi"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hr_language
+msgid "Croatian"
+msgstr "Takarwasit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cs_language
+msgid "Czech"
+msgstr "Tačikit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dak_language
+msgid "Dakota"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.da_language
+msgid "Danish"
+msgstr "Tadanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dar_language
+msgid "Dargwa"
+msgstr "Tadargwat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fa_AF_language
+msgid "Dari"
+msgstr "Tadarit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dzg_language
+msgid "Dazaga"
+msgstr "Tadazagat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.del_language
+msgid "Delaware"
+msgstr "Tadelwarit"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_98
+msgid "Demonstrative Pronoun"
+msgstr "Amqim ameskan"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__description
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__description
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__description
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__description
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.algorithm_form
+msgid "Description"
+msgstr "Aglam"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.din_language
+msgid "Dinka"
+msgstr "Tadingat"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_validate_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.trained_model_selection_form
+msgid "Discard"
+msgstr "Sefsex"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__display_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__display_name
+msgid "Display Name"
+msgstr "Isem"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dv_language
+#, fuzzy
+msgid "Divehi"
+msgstr "Tamaldivit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.doi_language
+msgid "Dogri"
+msgstr "Tadugrit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dgr_language
+msgid "Dogrib"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_56
+msgid "Domain Name"
+msgstr "Isem n taɣult"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__sentence__state__draft
+msgid "Draft"
+msgstr "Arewway"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dua_language
+msgid "Duala"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nl_language
+msgid "Dutch"
+msgstr "Tahulandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dyu_language
+msgid "Dyula"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dz_language
+#, fuzzy
+msgid "Dzongkha"
+msgstr "tadzungxit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ike_language
+msgid "Eastern Canadian Inuktitut"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.frs_language
+msgid "Eastern Frisian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ojg_language
+msgid "Eastern Ojibwa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.efi_language
+msgid "Efik"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arz_language
+#, fuzzy
+msgid "Egyptian Arabic"
+msgstr "Taɛrabt n Maseṛ"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.eka_language
+msgid "Ekajuk"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.elx_language
+msgid "Elamite"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_55
+#, fuzzy
+msgid "Email"
+msgstr "Email"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ebu_language
+msgid "Embu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.egl_language
+msgid "Emilian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.eng_language
+msgid "English"
+msgstr "Taglizit"
+
+#. module: linguistica_nlp
+#: code:addons/linguistica_nlp/models/sentence.py:0
+#, fuzzy, python-format
+msgid "Error: %s"
+msgstr "Tuccḍa: %s"
+
+#. module: linguistica_nlp
+#: code:addons/linguistica_nlp/models/sentence.py:0
+#, python-format
+msgid "Error: %s)"
+msgstr "Tuccḍa: %s)"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.myv_language
+msgid "Erzya"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.eo_language
+#, fuzzy
+msgid "Esperanto"
+msgstr "Taspirantit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.et_language
+#, fuzzy
+msgid "Estonian"
+msgstr "Tastunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pt_PT_language
+msgid "European Portuguese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.es_ES_language
+msgid "European Spanish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ee_language
+#, fuzzy
+msgid "Ewe"
+msgstr "Tiwit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ewo_language
+msgid "Ewondo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ext_language
+msgid "Extremaduran"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fan_language
+msgid "Fang"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fat_language
+msgid "Fanti"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fo_language
+#, fuzzy
+msgid "Faroese"
+msgstr "Tafirwanit"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.feature_act
+#: model:ir.model,name:linguistica_nlp.model_feature
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__feature_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.feature_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.feature_tree
+msgid "Feature"
+msgstr "Talɣa"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__description
+msgid "Feature description"
+msgstr "Aglam n talɣa"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__name
+msgid "Feature name"
+msgstr "Isem n talɣa"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.feature_menu
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+msgid "Features"
+msgstr "Talɣiwin"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.feminine
+msgid "Feminine"
+msgstr "Unti"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fj_language
+#, fuzzy
+msgid "Fijian"
+msgstr "Tafiǧit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hif_language
+#, fuzzy
+msgid "Fiji Hindi"
+msgstr "Tahendit d Fiǧi"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__file_path
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__file_path
+#, fuzzy
+msgid "File Path"
+msgstr "Abrid n ufaylu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fil_language
+msgid "Filipino"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fi_language
+#, fuzzy
+msgid "Finnish"
+msgstr "Tafinit"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.1st
+msgid "First"
+msgstr "Amezwaru"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nl_BE_language
+#, fuzzy
+msgid "Flemish"
+msgstr "Taflamant n umalu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fon_language
+msgid "Fon"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gur_language
+msgid "Frafra"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.free
+msgid "Free"
+msgstr "Ilelli"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fra_language
+msgid "French"
+msgstr "Tafransist"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fur_language
+#, fuzzy
+msgid "Friulian"
+msgstr "Tafriyulant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ff_language
+#, fuzzy
+msgid "Fulah"
+msgstr "Tafulaht"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gaa_language
+msgid "Ga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gag_language
+msgid "Gagauz"
+msgstr "Tagaguzt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gl_language
+#, fuzzy
+msgid "Galician"
+msgstr "Tagalisit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lg_language
+#, fuzzy
+msgid "Ganda"
+msgstr "Tagrandat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gan_language
+#, fuzzy
+msgid "Gan Chinese"
+msgstr "Tacinwat n Gan"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gay_language
+msgid "Gayo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gba_language
+msgid "Gbaya"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gez_language
+msgid "Geez"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ka_language
+#, fuzzy
+msgid "Georgian"
+msgstr "Tajyuṛjit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.de_language
+#, fuzzy
+msgid "German"
+msgstr "Talmanit - Taǧarmanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.aln_language
+#, fuzzy
+msgid "Gheg Albanian"
+msgstr "Albani"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bbj_language
+msgid "Ghomala"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.glk_language
+msgid "Gilaki"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gil_language
+msgid "Gilbertese"
+msgstr "Tagilbertinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gom_language
+#, fuzzy
+msgid "Goan Konkani"
+msgstr "Takunkanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gon_language
+msgid "Gondi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gor_language
+msgid "Gorontalo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.got_language
+msgid "Gothic"
+msgstr "Tagutit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__lbfgs
+#: model_terms:algorithm,description:linguistica_nlp.algorithme_0
+#, fuzzy
+msgid "Gradient descent using the L-BFGS method"
+msgstr "Gradient descent using the L-BFGS method"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.grammar
+msgid "Grammar analysis"
+msgstr "Tasleḍt n tjerrumt"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.tag_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.tag_tree
+msgid "Grammatical class tag"
+msgstr "Tacreḍt n usmil anejrum"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.tag_act
+msgid "Grammatical class tags"
+msgstr "Ticraḍ n yismilen inejrumen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.grb_language
+msgid "Grebo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.el_language
+msgid "Greek"
+msgstr "Tagrigit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gn_language
+#, fuzzy
+msgid "Guarani"
+msgstr "Tagaranit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gu_language
+#, fuzzy
+msgid "Gujarati"
+msgstr "Taguǧaṛatit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.guz_language
+msgid "Gusii"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gwi_language
+msgid "Gwichʼin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hai_language
+msgid "Haida"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ht_language
+msgid "Haitian Creole"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hak_language
+#, fuzzy
+msgid "Hakka Chinese"
+msgstr "Tacinwat n Hakka"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hur_language
+msgid "Halkomelem"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ha_language
+#, fuzzy
+msgid "Hausa"
+msgstr "Tahawsit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.haw_language
+#, fuzzy
+msgid "Hawaiian"
+msgstr "Tahawayt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.he_language
+#, fuzzy
+msgid "Hebrew"
+msgstr "Taɛebranit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hz_language
+#, fuzzy
+msgid "Herero"
+msgstr "Tahiriṛut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hil_language
+#, fuzzy
+msgid "Hiligaynon"
+msgstr "Tahiligaynunt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hi_language
+#, fuzzy
+msgid "Hindi"
+msgstr "Tahendit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ho_language
+#, fuzzy
+msgid "Hiri Motu"
+msgstr "Hiri Muṭu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hit_language
+msgid "Hittite"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hmn_language
+msgid "Hmong"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hnj_language
+msgid "Hmong Njua"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hu_language
+#, fuzzy
+msgid "Hungarian"
+msgstr "Tahungaṛit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hup_language
+msgid "Hupa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__id
+msgid "ID"
+msgstr "Asulay"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.iba_language
+msgid "Iban"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ibb_language
+msgid "Ibibio"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.is_language
+#, fuzzy
+msgid "Icelandic"
+msgstr "Taṣlandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.io_language
+#, fuzzy
+msgid "Ido"
+msgstr "Tidut"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__capitals_inside
+msgid "If has capital lettre inside"
+msgstr "Ɣur-s asekkil meqqren deg tlemmast"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_first
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_last
+msgid "If the word begins the sentence."
+msgstr "Ma yella awal ibeddu tafyirt."
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_capitalized
+msgid "If the word begins with capital letter"
+msgstr "Ma yella awa ibeddu s usekkil meqqren"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_all_caps
+msgid "If the word is all capitalized"
+msgstr "A yella awal yura meṛṛa s yisekkilen meqqren"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_all_lower
+msgid "If the word is lowerized"
+msgstr "Ma yela awal yura meṛṛa s yisekkilen meẓẓiyen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ig_language
+#, fuzzy
+msgid "Igbo"
+msgstr "Tigbut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ilo_language
+msgid "Iloko"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.smn_language
+msgid "Inari Sami"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.id_language
+#, fuzzy
+msgid "Indonesian"
+msgstr "Tandunizit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.izh_language
+msgid "Ingrian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.inh_language
+msgid "Ingush"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.moe_language
+msgid "Innu-aimun"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ia_language
+#, fuzzy
+msgid "Interlingua"
+msgstr "Tutlayt tagraγlant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ie_language
+#, fuzzy
+msgid "Interlingue"
+msgstr "Tutlayt tagraγlant"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_100
+msgid "Interrogative Adverb"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.iu_language
+#, fuzzy
+msgid "Inuktitut"
+msgstr "Tinuktitut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ik_language
+#, fuzzy
+msgid "Inupiaq"
+msgstr "Tinupyaqt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ga_language
+#, fuzzy
+msgid "Irish"
+msgstr "Tirlandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.it_language
+#, fuzzy
+msgid "Italian"
+msgstr "Taṭeyanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jam_language
+msgid "Jamaican Creole English"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ja_language
+#, fuzzy
+msgid "Japanese"
+msgstr "Tajapunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jv_language
+#, fuzzy
+msgid "Javanese"
+msgstr "Tajabanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kaj_language
+msgid "Jju"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dyo_language
+msgid "Jola-Fonyi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jrb_language
+msgid "Judeo-Arabic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jpr_language
+msgid "Judeo-Persian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jut_language
+msgid "Jutish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kbd_language
+msgid "Kabardian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kea_language
+msgid "Kabuverdianu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kac_language
+msgid "Kachin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kgp_language
+msgid "Kaingang"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kkj_language
+msgid "Kako"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kl_language
+msgid "Kalaallisut"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kln_language
+msgid "Kalenjin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.xal_language
+msgid "Kalmyk"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kam_language
+msgid "Kamba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kbl_language
+msgid "Kanembu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kn_language
+msgid "Kannada"
+msgstr "Takannadat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kr_language
+#, fuzzy
+msgid "Kanuri"
+msgstr "Takanurit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kaa_language
+msgid "Kara-Kalpak"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.krc_language
+msgid "Karachay-Balkar"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.krl_language
+msgid "Karelian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ks_language
+#, fuzzy
+msgid "Kashmiri"
+msgstr "Takacmirit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.csb_language
+#, fuzzy
+msgid "Kashubian"
+msgstr "Takacurbit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kaw_language
+msgid "Kawi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kk_language
+msgid "Kazakh"
+msgstr "Takazaxt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ken_language
+msgid "Kenyang"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__tensorflow
+#, fuzzy
+msgid "Keras/TensorFlow"
+msgstr "Keras/TensorFlow"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kha_language
+msgid "Khasi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.km_language
+#, fuzzy
+msgid "Khmer"
+msgstr "Taxemṛit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kho_language
+msgid "Khotanese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.khw_language
+msgid "Khowar"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ki_language
+#, fuzzy
+msgid "Kikuyu"
+msgstr "Takikuyut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kmb_language
+msgid "Kimbundu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.krj_language
+msgid "Kinaray-a"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rw_language
+#, fuzzy
+msgid "Kinyarwanda"
+msgstr "Takinṛwandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kiu_language
+msgid "Kirmanjki"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tlh_language
+#, fuzzy
+msgid "Klingon"
+msgstr "Taklingunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bkm_language
+msgid "Kom"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kv_language
+#, fuzzy
+msgid "Komi"
+msgstr "Takumt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.koi_language
+msgid "Komi-Permyak"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kg_language
+msgid "Kongo"
+msgstr "Taknungut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kok_language
+#, fuzzy
+msgid "Konkani"
+msgstr "Takunkanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ko_language
+msgid "Korean"
+msgstr "Akuri"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kfo_language
+msgid "Koro"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kos_language
+msgid "Kosraean"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.avk_language
+msgid "Kotava"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ses_language
+msgid "Koyraboro Senni"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.khq_language
+msgid "Koyra Chiini"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kpe_language
+msgid "Kpelle"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kri_language
+msgid "Krio"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kj_language
+#, fuzzy
+msgid "Kuanyama"
+msgstr "Takunyamit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kum_language
+msgid "Kumyk"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ku_language
+msgid "Kurdish"
+msgstr "Takurdit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kru_language
+msgid "Kurukh"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kut_language
+msgid "Kutenai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kwk_language
+msgid "Kwakʼwala"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nmg_language
+msgid "Kwasio"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ky_language
+msgid "Kyrgyz"
+msgstr "Takirgizt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.quc_language
+msgid "Kʼicheʼ"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lad_language
+msgid "Ladino"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lah_language
+msgid "Lahnda"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lkt_language
+msgid "Lakota"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lam_language
+msgid "Lamba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lag_language
+msgid "Langi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.lang_act
+#: model:ir.model,name:linguistica_nlp.model_language
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__language_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__language_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.lang_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.lang_tree
+msgid "Language"
+msgstr "Tutlayt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__code
+msgid "Language Code"
+msgstr "Tangalt n tutlay"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_language_model
+msgid "Language Model"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__name
+msgid "Language Name"
+msgstr "Isem n tutlayt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__language_ids
+#: model:ir.ui.menu,name:linguistica_nlp.lang_menu
+msgid "Languages"
+msgstr "Tutlayin"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lo_language
+msgid "Lao"
+msgstr "Talawsit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type____last_update
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model____last_update
+msgid "Last Modified on"
+msgstr "Abeddel aneggaru deg "
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__write_uid
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__write_uid
+msgid "Last Updated by"
+msgstr "Abeddel aneggaru sɣur"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_affix__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_annotation__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_feature__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_validate__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__write_date
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__write_date
+msgid "Last Updated on"
+msgstr "Abeddel aneggaru deg "
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ltg_language
+#, fuzzy
+msgid "Latgalian"
+msgstr "Latgalian"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.la_language
+msgid "Latin"
+msgstr "Talatinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.es_419_language
+msgid "Latin American Spanish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lv_language
+msgid "Latvian"
+msgstr "Talitunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lzz_language
+msgid "Laz"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lez_language
+msgid "Lezghian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lij_language
+#, fuzzy
+msgid "Ligurian"
+msgstr "Ligurian"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lil_language
+msgid "Lillooet"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.li_language
+msgid "Limburgish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ln_language
+#, fuzzy
+msgid "Lingala"
+msgstr "Talingalat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lfn_language
+msgid "Lingua Franca Nova"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lzh_language
+msgid "Literary Chinese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lt_language
+msgid "Lithuanian"
+msgstr "Talitwanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.liv_language
+msgid "Livonian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+msgid "Load default feature"
+msgstr "Sali-d isebdaden imezwura"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+msgid "Load default params"
+msgstr "Sali-d iɣewwaren imezwura"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+msgid "Load tagged units"
+msgstr "Sali-d tayunin s tecraḍ"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jbo_language
+msgid "Lojban"
+msgstr "Talujbant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lmo_language
+msgid "Lombard"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lou_language
+msgid "Louisiana Creole"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sli_language
+msgid "Lower Silesian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dsb_language
+#, fuzzy
+msgid "Lower Sorbian"
+msgstr "Tasiṛbit n wadda"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nds_language
+#, fuzzy
+msgid "Low German"
+msgstr "Talmanit n wadda"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nds_NL_language
+msgid "Low Saxon"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.loz_language
+msgid "Lozi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lu_language
+#, fuzzy
+msgid "Luba-Katanga"
+msgstr "Talubit-Takatangit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lua_language
+msgid "Luba-Lulua"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lui_language
+msgid "Luiseno"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.smj_language
+#, fuzzy
+msgid "Lule Sami"
+msgstr "Tasamit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lun_language
+msgid "Lunda"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.luo_language
+msgid "Luo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lb_language
+#, fuzzy
+msgid "Luxembourgish"
+msgstr "Taluksumburgit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.luy_language
+msgid "Luyia"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mde_language
+msgid "Maba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mk_language
+msgid "Macedonian"
+msgstr "Tamasidunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jmc_language
+msgid "Machame"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mad_language
+msgid "Madurese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.maf_language
+msgid "Mafa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mag_language
+msgid "Magahi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vmf_language
+msgid "Main-Franconian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mai_language
+msgid "Maithili"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mak_language
+msgid "Makasar"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mgh_language
+msgid "Makhuwa-Meetto"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kde_language
+msgid "Makonde"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mg_language
+#, fuzzy
+msgid "Malagasy"
+msgstr "Tamalgact"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ms_language
+msgid "Malay"
+msgstr "Tamalizit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ml_language
+#, fuzzy
+msgid "Malayalam"
+msgstr "Tamayalamt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pqm_language
+msgid "Malecite"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mt_language
+msgid "Maltese"
+msgstr "Tamaltit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mnc_language
+msgid "Manchu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mdr_language
+msgid "Mandar"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.man_language
+msgid "Mandingo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mni_language
+msgid "Manipuri"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gv_language
+#, fuzzy
+msgid "Manx"
+msgstr "Tamanksit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.arn_language
+msgid "Mapuche"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mr_language
+#, fuzzy
+msgid "Marathi"
+msgstr "Tamaṛatit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.chm_language
+#, fuzzy
+msgid "Mari"
+msgstr "Tamarit n yidurar"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mh_language
+#, fuzzy
+msgid "Marshallese"
+msgstr "Tamaṛcalit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mwr_language
+msgid "Marwari"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mas_language
+msgid "Masai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.masculine
+msgid "Masculine"
+msgstr "Amalay"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mzn_language
+msgid "Mazanderani"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.byv_language
+msgid "Medumba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.men_language
+msgid "Mende"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mwv_language
+msgid "Mentawai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mer_language
+msgid "Meru"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mgo_language
+msgid "Metaʼ"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.es_MX_language
+#, fuzzy
+msgid "Mexican Spanish"
+msgstr "Taspanit n Miksik"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mic_language
+msgid "Mi'kmaq"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crg_language
+msgid "Michif"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dum_language
+msgid "Middle Dutch"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.enm_language
+msgid "Middle English"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.frm_language
+msgid "Middle French"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gmh_language
+msgid "Middle High German"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mga_language
+msgid "Middle Irish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.min_language
+msgid "Minangkabau"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.xmf_language
+msgid "Mingrelian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nan_language
+msgid "Min Nan Chinese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mwl_language
+msgid "Mirandese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lus_language
+msgid "Mizo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.model_act
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_feature__model_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__model_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_trained_model__model_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_tree
+msgid "Model"
+msgstr "Taneɣruft"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_model_feature
+msgid "Model Features"
+msgstr "Talɣiwin n tneɣruft"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__file_model
+msgid "Model File"
+msgstr "Afaylu n tneɣruft"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language_model__model_name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__model_name
+#, fuzzy
+msgid "Model Name"
+msgstr "Taneɣruft"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_model_parameter
+msgid "Model parameters"
+msgstr "Iɣewwaren n tneɣruft"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__model_ids
+#: model:ir.ui.menu,name:linguistica_nlp.model_train_menu
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.corpus_form
+msgid "Models"
+msgstr "Tineɣrufin"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.moh_language
+msgid "Mohawk"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mdf_language
+msgid "Moksha"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ro_MD_language
+msgid "Moldavian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_57
+msgid "Monetary symbol"
+msgstr "Azamul n tedrimt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lol_language
+msgid "Mongo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mn_language
+#, fuzzy
+msgid "Mongolian"
+msgstr "Tamungult"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sr_ME_language
+msgid "Montenegrin"
+msgstr "Tamuntingrint"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crm_language
+msgid "Moose Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_language__feature_ids
+msgid "Mophological Features"
+msgstr "Talɣiwin tisnalɣanin"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mfe_language
+msgid "Morisyen"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ary_language
+#, fuzzy
+msgid "Moroccan Arabic"
+msgstr "Taɛrabt n Merruk"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.annotation_form
+msgid "Morphological feature"
+msgstr "Talɣa tasnalɣant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mos_language
+msgid "Mossi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mul_language
+msgid "Multiple languages"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mua_language
+msgid "Mundang"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mus_language
+msgid "Muscogee"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ttt_language
+msgid "Muslim Tat"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mye_language
+msgid "Myene"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mi_language
+msgid "Māori"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ars_language
+msgid "Najdi Arabic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.naq_language
+msgid "Nama"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_parameter__name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_style__name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text_type__name
+msgid "Name"
+msgstr "Isem"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.na_language
+#, fuzzy
+msgid "Nauru"
+msgstr "Nuṛu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nv_language
+#, fuzzy
+msgid "Navajo"
+msgstr "Tanavahut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ng_language
+#, fuzzy
+msgid "Ndonga"
+msgstr "Tandungat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nap_language
+msgid "Neapolitan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_61
+msgid "Negative preterite"
+msgstr "Izri ibaw"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ne_language
+msgid "Nepali"
+msgstr "Tanipalit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.new_language
+msgid "Newari"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__next_word
+msgid "Next word"
+msgstr "Awal i d-iteddun"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sba_language
+msgid "Ngambay"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nnh_language
+msgid "Ngiemboon"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.jgo_language
+msgid "Ngomba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yrl_language
+msgid "Nheengatu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nia_language
+msgid "Nias"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pcm_language
+msgid "Nigerian Pidgin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.niu_language
+msgid "Niuean"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nog_language
+msgid "Nogai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.tafyirt_menu_non_validated
+msgid "Non validated Sentences"
+msgstr "Tiyar ur nettwaqbel ara"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crl_language
+msgid "Northern East Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.frr_language
+msgid "Northern Frisian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hdn_language
+msgid "Northern Haida"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.lrc_language
+msgid "Northern Luri"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.se_language
+#, fuzzy
+msgid "Northern Sami"
+msgstr "Tasamt n ugafa"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nso_language
+msgid "Northern Sotho"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ttm_language
+msgid "Northern Tutchone"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ojb_language
+msgid "Northwestern Ojibwa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nd_language
+msgid "North Ndebele"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.no_language
+#, fuzzy
+msgid "Norwegian"
+msgstr "Tanuṛvijt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nb_language
+#, fuzzy
+msgid "Norwegian Bokmål"
+msgstr "Tanurvijt (Bokmål)"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nn_language
+#, fuzzy
+msgid "Norwegian Nynorsk"
+msgstr "Tanuṛvijt ninuṛsk"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nov_language
+msgid "Novial"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zxx_language
+msgid "No linguistic content"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nus_language
+msgid "Nuer"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__number
+msgid "Number"
+msgstr "Amḍan"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nym_language
+msgid "Nyamwezi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ny_language
+msgid "Nyanja"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nyn_language
+msgid "Nyankole"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tog_language
+msgid "Nyasa Tonga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nyo_language
+msgid "Nyoro"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nzi_language
+msgid "Nzima"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nqo_language
+#, fuzzy
+msgid "N’Ko"
+msgstr "G"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.oc_language
+#, fuzzy
+msgid "Occitan"
+msgstr "Tuksitant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.or_language
+#, fuzzy
+msgid "Odia"
+msgstr "Odia"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ojs_language
+#, fuzzy
+msgid "Oji-Cree"
+msgstr "Takrit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.oj_language
+#, fuzzy
+msgid "Ojibwa"
+msgstr "Ojibwa"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.oka_language
+msgid "Okanagan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ang_language
+#, fuzzy
+msgid "Old English"
+msgstr "Taglizit taqburt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fro_language
+#, fuzzy
+msgid "Old French"
+msgstr "tarumit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.goh_language
+msgid "Old High German"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sga_language
+#, fuzzy
+msgid "Old Irish"
+msgstr "Tirlandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.non_language
+msgid "Old Norse"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.peo_language
+#, fuzzy
+msgid "Old Persian"
+msgstr "Tafarsit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pro_language
+msgid "Old Provençal"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__order
+msgid "Ordre"
+msgstr "Asmizzwer"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.om_language
+#, fuzzy
+msgid "Oromo"
+msgstr "Oromo"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.osa_language
+msgid "Osage"
+msgstr "Tuzanjit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.os_language
+msgid "Ossetic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ota_language
+msgid "Ottoman Turkish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_88
+msgid "Owning particle"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pal_language
+msgid "Pahlavi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pfl_language
+msgid "Palatine German"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pau_language
+msgid "Palauan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pi_language
+#, fuzzy
+msgid "Pali"
+msgstr "Tapalit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pam_language
+msgid "Pampanga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pag_language
+msgid "Pangasinan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pap_language
+msgid "Papiamento"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.param_act
+#: model:ir.model,name:linguistica_nlp.model_parameter
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__parameter_id
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__param_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.parameter_form
+msgid "Parameter"
+msgstr "Aɣewwar"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm__parameter_ids
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__feature_ids
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model__param_ids
+#: model:ir.ui.menu,name:linguistica_nlp.parameter_menu
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.algorithm_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.parameter_tree
+msgid "Parameters"
+msgstr "Iɣewwaren"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+msgid "Params"
+msgstr "Iγewwaṛen"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.postag
+msgid "Part of Speech"
+msgstr "Tasnalɣa/taseddast"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ps_language
+#, fuzzy
+msgid "Pashto"
+msgstr "Tapactut"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__pa
+#: model_terms:algorithm,description:linguistica_nlp.algorithme_3
+#, fuzzy
+msgid "Passive Aggressive (PA)"
+msgstr "Passive Aggressive (PA)"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pdc_language
+msgid "Pennsylvania German"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fa_language
+msgid "Persian"
+msgstr "Tafarsit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.phn_language
+msgid "Phoenician"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pcd_language
+msgid "Picard"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pms_language
+msgid "Piedmontese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crk_language
+msgid "Plains Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pdt_language
+msgid "Plautdietsch"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.plural
+msgid "Plural"
+msgstr "Asget"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pon_language
+msgid "Pohnpeian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pl_language
+msgid "Polish"
+msgstr "Tapulandit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pnt_language
+msgid "Pontic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pt_language
+msgid "Portuguese"
+msgstr "Tapurtugit"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_model
+msgid "Pos Tag Model"
+msgstr "Taneɣruft tasnalɣant taseddasant"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.param_postag_menu
+msgid "Postag"
+msgstr "Acraḍ asnaɣan aseddasan"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__affix__type_aff__prefix
+msgid "Prefix"
+msgstr "Azwir"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_60
+msgid "Preterite"
+msgstr "Izri"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prev_word
+msgid "Previous word"
+msgstr "Awal uzwir"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_86
+msgid "Pronoun affix of preposition"
+msgstr "Amqim awṣil n tenzeɣt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_87
+msgid "Pronoun affix of verb"
+msgstr "Amqim awṣil n umyag"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_85
+msgid "Pronoun prefix of verb"
+msgstr "Amqim azwir n umyag"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_51
+msgid "Proper Noun"
+msgstr "Isem uzzig"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_84
+msgid "Prounoun affix (suffix) of name"
+msgstr "Amqim awṣil (aḍfir) n yisem"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.prg_language
+#, fuzzy
+msgid "Prussian"
+msgstr "Taprusit taqburt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.pa_language
+msgid "Punjabi"
+msgstr "Tabenjabit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__pytorch
+#, fuzzy
+msgid "Pytorch"
+msgstr "Pytorch"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.qual_verb
+msgid "Quality Verb"
+msgstr "Amyag n tɣara"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.qu_language
+#, fuzzy
+msgid "Quechua"
+msgstr "Takicwit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.raj_language
+msgid "Rajasthani"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rap_language
+msgid "Rapanui"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rar_language
+msgid "Rarotongan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__release_date
+#, fuzzy
+msgid "Release date"
+msgstr "Tasuffeɣt n lqem"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rif_language
+msgid "Riffian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rhg_language
+msgid "Rohingya"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rgn_language
+msgid "Romagnol"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ro_language
+msgid "Romanian"
+msgstr "Tarumanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rm_language
+msgid "Romansh"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rom_language
+msgid "Romany"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rof_language
+msgid "Rombo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.root_act
+#: model:ir.model,name:linguistica_nlp.model_root
+#: model:ir.model.fields,field_description:linguistica_nlp.field_root__name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__root_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.root_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.root_tree
+msgid "Root"
+msgstr "Aẓaṛ"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.root_menu
+msgid "Roots"
+msgstr "Izuwran"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rtm_language
+msgid "Rotuman"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rug_language
+msgid "Roviana"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rn_language
+msgid "Rundi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ru_language
+msgid "Russian"
+msgstr "Tarusit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rue_language
+msgid "Rusyn"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.rwk_language
+msgid "Rwa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ssy_language
+msgid "Saho"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sah_language
+msgid "Sakha"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sam_language
+msgid "Samaritan Aramaic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.saq_language
+msgid "Samburu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sm_language
+#, fuzzy
+msgid "Samoan"
+msgstr "Taṣamwant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sgs_language
+msgid "Samogitian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sad_language
+msgid "Sandawe"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sg_language
+#, fuzzy
+msgid "Sango"
+msgstr "Tasangit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sbp_language
+msgid "Sangu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sa_language
+msgid "Sanskrit"
+msgstr "Tasansekrit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sat_language
+msgid "Santali"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sc_language
+#, fuzzy
+msgid "Sardinian"
+msgstr "Tasardinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sas_language
+msgid "Sasak"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sdc_language
+msgid "Sassarese Sardinian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.stq_language
+msgid "Saterland Frisian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.saz_language
+msgid "Saurashtra"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sco_language
+msgid "Scots"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gd_language
+#, fuzzy
+msgid "Scottish Gaelic"
+msgstr "Tagaylikt n Skuṭland"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.2nd
+msgid "Second"
+msgstr "Tasint"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__is_numeric
+msgid "Second next word"
+msgstr "Awal uzwir wis sin"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sly_language
+msgid "Selayar"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.model_selection_act
+msgid "Select Model to tag"
+msgstr "Fren taneɣruft"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sel_language
+msgid "Selkup"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.seh_language
+msgid "Sena"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.see_language
+msgid "Seneca"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.sentence_act1
+#: model:ir.actions.act_window,name:linguistica_nlp.sentence_act2
+#: model:ir.model,name:linguistica_nlp.model_sentence
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__name
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__sentence_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_tree
+msgid "Sentence"
+msgstr "Tafyirt"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_sentence_unit
+msgid "Sentence Unit"
+msgstr "Aferdi n tefyirt"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.sentence_menu
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.corpus_form
+msgid "Sentences"
+msgstr "Tifyar"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sr_language
+msgid "Serbian"
+msgstr "Tasiṛbit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sh_language
+msgid "Serbo-Croatian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.srr_language
+msgid "Serer"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sei_language
+msgid "Seri"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crs_language
+msgid "Seselwa Creole French"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ksb_language
+msgid "Shambala"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.shn_language
+msgid "Shan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sn_language
+#, fuzzy
+msgid "Shona"
+msgstr "Tacunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ii_language
+#, fuzzy
+msgid "Sichuan Yi"
+msgstr "Yi-n-Sicwan"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.scn_language
+msgid "Sicilian"
+msgstr "Tasisilyant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sid_language
+msgid "Sidamo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bla_language
+msgid "Siksika"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.szl_language
+msgid "Silesian"
+msgstr "Tasilizyant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zh_Hans_language
+#, fuzzy
+msgid "Simplified Chinese"
+msgstr "Tacinit tafessast"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sd_language
+#, fuzzy
+msgid "Sindhi"
+msgstr "Tasinḍit"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.singular
+msgid "Singular"
+msgstr "Asuf"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.si_language
+#, fuzzy
+msgid "Sinhala"
+msgstr "Tasinhalit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sms_language
+msgid "Skolt Sami"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.den_language
+msgid "Slave"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sk_language
+msgid "Slovak"
+msgstr "Tasluvakt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sl_language
+#, fuzzy
+msgid "Slovenian"
+msgstr "Tasluvinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.xog_language
+msgid "Soga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sog_language
+msgid "Sogdien"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.so_language
+#, fuzzy
+msgid "Somali"
+msgstr "Taṣumalit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.snk_language
+msgid "Soninke"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.alt_language
+msgid "Southern Altai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.crj_language
+msgid "Southern East Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hax_language
+msgid "Southern Haida"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sdh_language
+#, fuzzy
+msgid "Southern Kurdish"
+msgstr "Takurdit n unẓul"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.slh_language
+msgid "Southern Lushootseed"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sma_language
+msgid "Southern Sami"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.st_language
+msgid "Southern Sotho"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tce_language
+msgid "Southern Tutchone"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.nr_language
+msgid "South Ndebele"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.es_language
+msgid "Spanish"
+msgstr "Taspanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.srn_language
+msgid "Sranan Tongo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zgh_language
+msgid "Standard Moroccan Tamazight"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__state
+msgid "Status"
+msgstr "Addad"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__algorithm__name__l2sgd
+#: model_terms:algorithm,description:linguistica_nlp.algorithme_1
+#, fuzzy
+msgid "Stochastic Gradient Descent with L2 regularization term"
+msgstr "Stochastic Gradient Descent with L2 regularization term"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.str_language
+msgid "Straits Salish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__style_id
+msgid "Style"
+msgstr "Aγanib"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_69
+#, fuzzy
+msgid "Subjonctive"
+msgstr "Subjonctive"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__affix__type_aff__suffix
+msgid "Suffix"
+msgstr "Aḍfir"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.suk_language
+msgid "Sukuma"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sux_language
+msgid "Sumerian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.su_language
+#, fuzzy
+msgid "Sundanese"
+msgstr "Tasudanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sus_language
+msgid "Susu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sw_language
+msgid "Swahili"
+msgstr "Taswahilit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.csw_language
+msgid "Swampy Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ss_language
+msgid "Swati"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.sv_language
+msgid "Swedish"
+msgstr "Taswidit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fr_CH_language
+#, fuzzy
+msgid "Swiss French"
+msgstr "Tafransist n Swis"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gsw_language
+#, fuzzy
+msgid "Swiss German"
+msgstr "Talmanit n Swis"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.de_CH_language
+msgid "Swiss High German"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.syr_language
+msgid "Syriac"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.shi_language
+msgid "Tachelhit"
+msgstr "Tacelḥit"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_tag
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__tag_id
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.trained_model_selection_form
+msgid "Tag"
+msgstr "Tacreḍt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__code
+msgid "Tag Code"
+msgstr "Tangalt n tecreḍt"
+
+#. module: linguistica_nlp
+#: code:addons/linguistica_nlp/models/sentence.py:0
+#, python-format
+msgid "Tag Error: please correct the tag %s "
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_tag__name
+msgid "Tag Name"
+msgstr "Isem n tecreḍt"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+msgid "Tag this sentence"
+msgstr "Creḍ tafyirt-a"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tl_language
+#, fuzzy
+msgid "Tagalog"
+msgstr "Tagalugt"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__sentence__state__tagged
+msgid "Tagged"
+msgstr "Tettwacreḍ"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__tagged_sentence
+msgid "Tagged Sentence"
+msgstr "Tafyirt yettwacerḍen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tgx_language
+msgid "Tagish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence__unit_ids
+msgid "Tags"
+msgstr "Ismilen"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ty_language
+#, fuzzy
+msgid "Tahitian"
+msgstr "Tahesiant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tht_language
+msgid "Tahltan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dav_language
+msgid "Taita"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.blt_language
+msgid "Tai Dam"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tg_language
+#, fuzzy
+msgid "Tajik"
+msgstr "Tatajikt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tly_language
+msgid "Talysh"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tmh_language
+msgid "Tamashek"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ta_language
+msgid "Tamil"
+msgstr "Taṭamult"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.trv_language
+msgid "Taroko"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.twq_language
+msgid "Tasawaq"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tt_language
+#, fuzzy
+msgid "Tatar"
+msgstr "Taṭaṭarit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.te_language
+msgid "Telugu"
+msgstr "Telugut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ter_language
+msgid "Tereno"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.teo_language
+msgid "Teso"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tet_language
+msgid "Tetum"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_text
+msgid "Text"
+msgstr "Aḍris"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_text_style
+msgid "Text Style"
+msgstr "Aɣanib n uḍris"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_text_type
+msgid "Text Type"
+msgstr "Anaw n uḍris"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.th_language
+msgid "Thai"
+msgstr "Tataylandit"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__prev1_word
+msgid "The second previous word"
+msgstr "Awal uzwir wis sin"
+
+#. module: linguistica_nlp
+#: model:annotation,name:linguistica_nlp.3rd
+msgid "Third"
+msgstr "Wis tlata"
+
+#. module: linguistica_nlp
+#: model:ir.model.constraint,message:linguistica_nlp.constraint_sentence_sentence_text
+msgid "This sentence exists."
+msgstr "Tafyirt-a tella yakan."
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bo_language
+msgid "Tibetan"
+msgstr "Tatibitant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tig_language
+#, fuzzy
+msgid "Tigre"
+msgstr "Tatigrit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ti_language
+#, fuzzy
+msgid "Tigrinya"
+msgstr "Tigrinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tem_language
+msgid "Timne"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__title
+msgid "Title"
+msgstr "Azwel"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tiv_language
+msgid "Tiv"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tli_language
+msgid "Tlingit"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tkl_language
+#, fuzzy
+msgid "Tokelau"
+msgstr "Ṭuklu"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+msgid "Tokenize"
+msgstr "Bḍu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tpi_language
+msgid "Tok Pisin"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.to_language
+msgid "Tongan"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fit_language
+msgid "Tornedalen Finnish"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.trw_language
+msgid "Torwali"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zh_Hant_language
+#, fuzzy
+msgid "Traditional Chinese"
+msgstr "Tacinit tamensayt"
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.model_form
+msgid "Train and save model"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.param_train_menu
+msgid "Training"
+msgstr "Asleɣmu"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_corpus__sentences_ids
+msgid "Training Params"
+msgstr "Iɣewwaren n usleɣmu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tkr_language
+msgid "Tsakhur"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tsd_language
+msgid "Tsakonian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tsi_language
+msgid "Tsimshian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ts_language
+#, fuzzy
+msgid "Tsonga"
+msgstr "Ţunga"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tn_language
+#, fuzzy
+msgid "Tswana"
+msgstr "Tattwanit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tcy_language
+msgid "Tulu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tum_language
+msgid "Tumbuka"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.aeb_language
+msgid "Tunisian Arabic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tr_language
+msgid "Turkish"
+msgstr "Taṭurkit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tk_language
+#, fuzzy
+msgid "Turkmen"
+msgstr "Taturkmant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tru_language
+msgid "Turoyo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tvl_language
+#, fuzzy
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tyv_language
+msgid "Tuvinian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.tw_language
+#, fuzzy
+msgid "Twi"
+msgstr "Tatwit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kcg_language
+msgid "Tyap"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_text__type_id
+msgid "Type"
+msgstr "Anaw"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.udm_language
+msgid "Udmurt"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.uga_language
+msgid "Ugaritic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.uk_language
+msgid "Ukrainian"
+msgstr "Takrinit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.umb_language
+msgid "Umbundu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_89
+msgid "Undefined Pronoun"
+msgstr "Amqim arbadu"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_sentence_unit__unit
+msgid "Unit"
+msgstr "Tayunt tasnalɣant"
+
+#. module: linguistica_nlp
+#: code:addons/linguistica_nlp/models/sentence.py:0
+#, python-format
+msgid "Unit Error please correct the syntaxe %s "
+msgstr ""
+
+#. module: linguistica_nlp
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+msgid "Units"
+msgstr "Tayunin tisnalɣanin"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.und_language
+msgid "Unknown language"
+msgstr "Ttulayt tarussint"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hsb_language
+msgid "Upper Sorbian"
+msgstr "Taṣirbit n ufella"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ur_language
+msgid "Urdu"
+msgstr "Turdut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ug_language
+msgid "Uyghur"
+msgstr "Tawigurt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.uz_language
+#, fuzzy
+msgid "Uzbek"
+msgstr "Tazbikit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vai_language
+msgid "Vai"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__sentence__state__valid
+msgid "Valid"
+msgstr "Tettwaqbel"
+
+#. module: linguistica_nlp
+#: model:ir.actions.act_window,name:linguistica_nlp.sentence_validate_act
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_form
+#: model_terms:ir.ui.view,arch_db:linguistica_nlp.sentence_validate_form
+msgid "Validate"
+msgstr "Qbel"
+
+#. module: linguistica_nlp
+#: model:ir.model,name:linguistica_nlp.model_sentence_validate
+msgid "Validate Sentence"
+msgstr "Qbel tafyirt"
+
+#. module: linguistica_nlp
+#: model:ir.ui.menu,name:linguistica_nlp.tafyirt_menu_validated
+msgid "Validated Sentences"
+msgstr "Tifyar yettwaqeblen"
+
+#. module: linguistica_nlp
+#: model:ir.model.fields,field_description:linguistica_nlp.field_algorithm_parameter__value
+#: model:ir.model.fields,field_description:linguistica_nlp.field_model_parameter__value
+msgid "Value"
+msgstr "Azal"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ve_language
+#, fuzzy
+msgid "Venda"
+msgstr "Tavundit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vec_language
+msgid "Venetian"
+msgstr "Tavinisyant"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vep_language
+msgid "Veps"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vi_language
+#, fuzzy
+msgid "Vietnamese"
+msgstr "Tavyiṭnamit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vo_language
+msgid "Volapük"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vot_language
+msgid "Votic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vun_language
+msgid "Vunjo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vro_language
+msgid "Võro"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wa_language
+#, fuzzy
+msgid "Walloon"
+msgstr "Tawalunit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wae_language
+msgid "Walser"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.war_language
+msgid "Waray"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wbp_language
+msgid "Warlpiri"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.was_language
+msgid "Washo"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.guc_language
+msgid "Wayuu"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cy_language
+msgid "Welsh"
+msgstr "Takusit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.bgn_language
+msgid "Western Balochi"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ikt_language
+msgid "Western Canadian Inuktitut"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.fy_language
+msgid "Western Frisian"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.mrj_language
+#, fuzzy
+msgid "Western Mari"
+msgstr "Utrim"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ojw_language
+msgid "Western Ojibwa"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.vls_language
+#, fuzzy
+msgid "West Flemish"
+msgstr "Taflamant n umalu"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wal_language
+msgid "Wolaytta"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wo_language
+#, fuzzy
+msgid "Wolof"
+msgstr "Tawuluft"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.cwd_language
+msgid "Woods Cree"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:ir.model.fields.selection,name:linguistica_nlp.selection__feature__name__word
+msgid "Word itself."
+msgstr "Awal s timmad-is."
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.wuu_language
+#, fuzzy
+msgid "Wu Chinese"
+msgstr "Tacinwat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.xh_language
+#, fuzzy
+msgid "Xhosa"
+msgstr "Taksuzit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.hsn_language
+msgid "Xiang Chinese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yav_language
+msgid "Yangben"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yao_language
+msgid "Yao"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yap_language
+msgid "Yapese"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.ybb_language
+msgid "Yemba"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yi_language
+#, fuzzy
+msgid "Yiddish"
+msgstr "Tayidict"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.yo_language
+#, fuzzy
+msgid "Yoruba"
+msgstr "Tayurubit"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zap_language
+msgid "Zapotec"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.dje_language
+msgid "Zarma"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zza_language
+msgid "Zaza"
+msgstr "Tazazat"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zea_language
+msgid "Zeelandic"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zen_language
+msgid "Zenaga"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.za_language
+#, fuzzy
+msgid "Zhuang"
+msgstr "Tazwangt"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.gbz_language
+msgid "Zoroastrian Dari"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zu_language
+msgid "Zulu"
+msgstr "Tazulut"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.zun_language
+msgid "Zuni"
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_70 model:tag,name:linguistica_nlp.tag_71
+msgid "adjective"
+msgstr "Arbib"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_72
+msgid "adverb"
+msgstr "Amernu"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_78
+msgid "conjunction of coordination"
+msgstr "Tasɣunt n tuqqna"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_79
+msgid "conjunction of suboordination"
+msgstr "Tasɣunt tanadawt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_74
+msgid "direction particle - prefix"
+msgstr "Tazelɣa n tnila - tazwirt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_75
+msgid "direction particle - suffix"
+msgstr "Tazelɣa n tnila - taḍfirt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_66
+msgid "intensive aorist"
+msgstr "Urmir ussid"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_65
+msgid "intensive imperative"
+msgstr "Urmir ussid anaḍ"
+
+#. module: linguistica_nlp
+#: model:language,name:linguistica_nlp.kab_language
+msgid "kabyle"
+msgstr "Taqbaylit"
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_01
+msgid "min_freq (float, optional (default=0)) – Cut-off threshold for occurrence frequency of a feature. CRFsuite will ignore features whose frequencies of occurrences in the training data are no greater than min_freq. The default is no cut-off."
+msgstr ""
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_62
+msgid "participle of aorist"
+msgstr "Amaɣun n wurmir"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_68
+msgid "participle of negative intensive aorist."
+msgstr "Amaɣun n wurmir ussid ibaw"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_67
+msgid "participle of positive intensive aorist."
+msgstr "Amaɣun n wurmir ussid ilaw."
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_63
+msgid "participle of positive preterite."
+msgstr "Amaɣun n yizri ilaw."
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_64
+msgid "participle of preterite negative."
+msgstr "Amaɣun n wurmir ussid ibaw."
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_76
+msgid "particle of negation"
+msgstr "Tazelɣa n tibawt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_80
+msgid "particle of the future aorist"
+msgstr "Tazelɣa n wurmir"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_81
+msgid "particle of the intensive aorist"
+msgstr "Tazelɣa n wurmir ussid"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_82
+msgid "preposition"
+msgstr "Tanzeɣt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_77
+msgid "reality particle"
+msgstr "Tazelɣa n tilawt"
+
+#. module: linguistica_nlp
+#: model:tag,name:linguistica_nlp.tag_73
+msgid "relative pronoun"
+msgstr "Amqim amassaɣ"
+
+#. module: linguistica_nlp
+#: model:parameter,description:linguistica_nlp.parameter_22
+msgid ""
+"variance (float, optional (default=1)) –\n"
+"\n"
+"The initial variance of every feature weight. The algorithm initialize a vector of feature weights as a multivariate Gaussian distribution with mean 0 and variance variance.\n"
+"\n"
+"Supported training algorithms: arow\n"
+msgstr ""

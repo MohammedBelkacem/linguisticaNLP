@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+     <!-- report action -->
+        <record id="action_report_corpus" model="ir.actions.report">
+            <field name="name">Corpus</field>
+            <field name="model">corpus</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">linguistica_nlp.report_corpus</field>
+            <field name="report_file">linguistica_nlp.report_corpus</field>
+            <field name="print_report_name">'Corpus - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_corpus"/>
+            <field name="binding_type">report</field>
+        </record>
+
+
+
+<template id="report_corpus">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="linguistica_nlp.report_corpus_document" t-lang="doc.name"/>
+        </t>
+    </t>
+</template>
+
+<template id="report_corpus_document">
+    <t t-call="web.external_layout">
+        <div class="page">
+            <div class="row">
+                <div class="col-6">
+                    <strong>Aman isemmaḍen:</strong>
+                </div>
+                <div class="oe_structure"/>
+            </div>
+        </div>
+    </t>
+</template>
+         </data>
+
+</odoo>

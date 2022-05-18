@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+
+   <record  id="plural" model="annotation">
+            <field name="name" >Plural</field>
+        </record>
+        <record  id="singular" model="annotation">
+            <field name="name" >Singular</field>
+        </record>
+          <record  id="feminine" model="annotation">
+            <field name="name" >Feminine</field>
+        </record>
+        <record  id="masculine" model="annotation">
+            <field name="name" >Masculine</field>
+        </record>
+        <record  id="free" model="annotation">
+            <field name="name" >Free</field>
+        </record>
+        <record  id="annexed" model="annotation">
+            <field name="name" >Annexed</field>
+        </record>
+
+         <record  id="1st" model="annotation">
+            <field name="name" >First</field>
+        </record>
+        <record  id="2nd" model="annotation">
+            <field name="name" >Second</field>
+        </record>
+        <record  id="3rd" model="annotation">
+            <field name="name" >Third</field>
+        </record>
+        <record  id="qual_verb" model="annotation">
+            <field name="name" >Quality Verb</field>
+        </record>
+        <record  id="act_verb" model="annotation">
+            <field name="name" >Action Verb</field>
+        </record>
+</data>
+</odoo>

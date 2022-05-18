@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+
+<!-- features-->
+<record id='parameter_01' model='parameter'>
+	<field name='name'>min_freq</field>
+	<field name='description'>min_freq (float, optional (default=0)) – Cut-off threshold for occurrence frequency of a feature. CRFsuite will ignore features whose frequencies of occurrences in the training data are no greater than min_freq. The default is no cut-off.</field>
+</record>
+
+<record id='parameter_02' model='parameter'>
+	<field name='name'>all_possible_states</field>
+	<field name='description'>(bool, optional (default=False)) –
+
+Specify whether CRFsuite generates state features that do not even occur in the training data (i.e., negative state features). When True, CRFsuite generates state features that associate all of possible combinations between attributes and labels.\NSuppose that the numbers of attributes and labels are A and L respectively, this function will generate (A * L) features. Enabling this function may improve the labeling accuracy because the CRF model can learn the condition where an item is not predicted to its reference label. However, this function may also increase the number of features and slow down the training process drastically. This function is disabled by default.</field>
+</record>
+<record id='parameter_03' model='parameter'>
+	<field name='name'>all_possible_transitions</field>
+	<field name='description'> (bool, optional (default=False)) – Specify whether CRFsuite generates transition features that do not even occur in the training data (i.e., negative transition features). When True, CRFsuite generates transition features that associate all of possible label pairs. Suppose that the number of labels in the training data is L, this function will generate (L * L) transition features. This function is disabled by default.</field>
+</record>
+
+<record id='parameter_04' model='parameter'>
+	<field name='name'>c1</field>
+	<field name='description'> (float, optional (default=0)) –
+
+The coefficient for L1 regularization. If a non-zero value is specified, CRFsuite switches to the Orthant-Wise Limited-memory Quasi-Newton (OWL-QN) method. The default value is zero (no L1 regularization).
+
+Supported training algorithms: lbfgs</field>
+</record>
+
+<record id='parameter_05' model='parameter'>
+	<field name='name'>c2</field>
+	<field name='description'>(float, optional (default=1.0)) –
+
+The coefficient for L2 regularization.
+
+Supported training algorithms: l2sgd, lbfgs</field>
+</record>
+
+<record id='parameter_06' model='parameter'>
+	<field name='name'>max_iterations</field>
+	<field name='description'> (int, optional (default=None)) –
+
+The maximum number of iterations for optimization algorithms. Default value depends on training algorithm:
+
+    lbfgs - unlimited;
+    l2sgd - 1000;
+    ap - 100;
+    pa - 100;
+    arow - 100.
+</field>
+</record>
+
+
+<record id='parameter_07' model='parameter'>
+	<field name='name'>num_memories</field>
+	<field name='description'>(int, optional (default=6)) –
+
+The number of limited memories for approximating the inverse hessian matrix.
+
+Supported training algorithms: lbfgs</field>
+</record>
+
+<record id='parameter_08' model='parameter'>
+	<field name='name'>epsilon</field>
+	<field name='description'>(float, optional (default=1e-5)) –
+
+The epsilon parameter that determines the condition of convergence.
+
+Supported training algorithms: ap, arow, lbfgs, pa</field>
+</record>
+
+<record id='parameter_09' model='parameter'>
+	<field name='name'>period</field>
+	<field name='description'>(int, optional (default=10)) –
+
+The duration of iterations to test the stopping criterion.
+
+Supported training algorithms: l2sgd, lbfgs</field>
+</record>
+
+<record id='parameter_10' model='parameter'>
+	<field name='name'>delta </field>
+	<field name='description'> (float, optional (default=1e-5)) –
+
+The threshold for the stopping criterion; an iteration stops when the improvement of the log likelihood over the last period iterations is no greater than this threshold.
+
+Supported training algorithms: l2sgd, lbfgs</field>
+</record>
+
+<record id='parameter_11' model='parameter'>
+	<field name='name'>linesearch</field>
+	<field name='description'> (str, optional (default='MoreThuente')) –
+
+The line search algorithm used in L-BFGS updates. Allowed values:
+
+    'MoreThuente' - More and Thuente’s method;
+    'Backtracking' - backtracking method with regular Wolfe condition;
+    'StrongBacktracking' - backtracking method with strong Wolfe condition.
+
+Supported training algorithms: lbfgs</field>
+</record>
+<record id='parameter_12' model='parameter'>
+	<field name='name'>max_linesearch</field>
+	<field name='description'> (int, optional (default=20)) –
+
+The maximum number of trials for the line search algorithm.
+
+Supported training algorithms: lbfgs</field>
+</record>
+
+<record id='parameter_13' model='parameter'>
+	<field name='name'>calibration_eta</field>
+	<field name='description'> (float, optional (default=0.1)) –
+
+The initial value of learning rate (eta) used for calibration.
+
+Supported training algorithms: l2sgd</field>
+</record>
+
+
+<record id='parameter_14' model='parameter'>
+	<field name='name'>calibration_rate</field>
+	<field name='description'> (float, optional (default=2.0)) –
+
+The rate of increase/decrease of learning rate for calibration.
+
+Supported training algorithms: l2sgd</field>
+</record>
+
+<record id='parameter_15' model='parameter'>
+	<field name='name'>calibration_samples</field>
+	<field name='description'> (int, optional (default=1000)) –
+
+The number of instances used for calibration. The calibration routine randomly chooses instances no larger than calibration_samples.
+
+Supported training algorithms: l2sgd</field>
+</record>
+
+
+<record id='parameter_16' model='parameter'>
+	<field name='name'>calibration_candidates</field>
+	<field name='description'> (int, optional (default=10)) –
+
+The number of candidates of learning rate. The calibration routine terminates after finding calibration_samples candidates of learning rates that can increase log-likelihood.
+
+Supported training algorithms: l2sgd</field>
+</record>
+<record id='parameter_17' model='parameter'>
+	<field name='name'>calibration_max_trials</field>
+	<field name='description'> (int, optional (default=20)) –
+
+The maximum number of trials of learning rates for calibration. The calibration routine terminates after trying calibration_max_trials candidate values of learning rates.
+
+Supported training algorithms: l2sgd</field>
+</record>
+
+
+<record id='parameter_18' model='parameter'>
+	<field name='name'>pa_type</field>
+	<field name='description'> (int, optional (default=1)) –
+
+The strategy for updating feature weights. Allowed values:
+
+    0 - PA without slack variables;
+    1 - PA type I;
+    2 - PA type II.
+
+Supported training algorithms: pa</field>
+</record>
+
+
+<record id='parameter_19' model='parameter'>
+	<field name='name'>c</field>
+	<field name='description'>(float, optional (default=1)) –
+
+Aggressiveness parameter (used only for PA-I and PA-II). This parameter controls the influence of the slack term on the objective function.
+Supported training algorithms: pa</field>
+</record>
+
+
+<record id='parameter_20' model='parameter'>
+	<field name='name'>error_sensitive</field>
+	<field name='description'> (bool, optional (default=True)) –
+
+If this parameter is True, the optimization routine includes into the objective function the square root of the number of incorrect labels predicted by the model.
+
+Supported training algorithms: pa</field>
+</record>
+
+
+<record id='parameter_21' model='parameter'>
+	<field name='name'>averaging</field>
+	<field name='description'>(bool, optional (default=True)) –
+
+If this parameter is True, the optimization routine computes the average of feature weights at all updates in the training process (similarly to Averaged Perceptron).
+
+Supported training algorithms: pa</field>
+</record>
+
+
+<record id='parameter_22' model='parameter'>
+	<field name='name'>variance</field>
+	<field name='description'>variance (float, optional (default=1)) –
+
+The initial variance of every feature weight. The algorithm initialize a vector of feature weights as a multivariate Gaussian distribution with mean 0 and variance variance.
+
+Supported training algorithms: arow
+</field>
+</record>
+
+
+<record id='parameter_23' model='parameter'>
+	<field name='name'>gamma</field>
+	<field name='description'>(float, optional (default=1)) –
+
+The tradeoff between loss function and changes of feature weights.
+
+Supported training algorithms: arow</field>
+</record>
+
+<record id='parameter_24' model='parameter'>
+	<field name='name'>verbose</field>
+	<field name='description'> (bool, optional (default=False)) – Enable trainer verbose mode.</field>
+</record>
+
+
+
+
+	</data>
+</odoo>

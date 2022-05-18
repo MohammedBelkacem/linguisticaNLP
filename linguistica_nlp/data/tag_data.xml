@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+ 	<record id='tag_50' model='tag'>
+			<field name='description'>aɣrum</field>
+			<field name='code'>NMC</field>
+			<field name='name'>Common Noun</field>
+		</record>
+		<record id='tag_51' model='tag'>
+			<field name='description'>Bgayet</field>
+			<field name='code'>NMP</field>
+			<field name='name'>Proper Noun</field>
+		</record>
+		<record id='tag_52' model='tag'>
+			<field name='description'>yiwen</field>
+			<field name='code'>NC</field>
+			<field name='name'>Cardinal Letter</field>
+		</record>
+		<record id='tag_53' model='tag'>
+			<field name='description'>392</field>
+			<field name='code'>NCM</field>
+			<field name='name'>Cardinal Numbers</field>
+		</record>
+		<record id='tag_54' model='tag'>
+			<field name='description'>atg, AMLS</field>
+			<field name='code'>ABR</field>
+			<field name='name'>Abbreviation</field>
+		</record>
+		<record id='tag_55' model='tag'>
+			<field name='description'>belkacem77@gmail.com</field>
+			<field name='code'>EML</field>
+			<field name='name'>Email</field>
+		</record>
+		<record id='tag_56' model='tag'>
+			<field name='description'>imsidag.com</field>
+			<field name='code'>DOM</field>
+			<field name='name'>Domain Name</field>
+		</record>
+		<record id='tag_57' model='tag'>
+			<field name='description'>USD, DZD, EURO...</field>
+			<field name='code'>$</field>
+			<field name='name'>Monetary symbol</field>
+		</record>
+		<record id='tag_58' model='tag'>
+			<field name='description'>Ddem</field>
+			<field name='code'>VAI</field>
+			<field name='name'>Aorist imperative</field>
+		</record>
+		<record id='tag_59' model='tag'>
+			<field name='description'>ad waliɣ</field>
+			<field name='code'>VAF</field>
+			<field name='name'>Aorist future.</field>
+		</record>
+		<record id='tag_60' model='tag'>
+			<field name='description'>yenna</field>
+			<field name='code'>VP</field>
+			<field name='name'>Preterite</field>
+		</record>
+		<record id='tag_61' model='tag'>
+			<field name='description'>ur ye??i ara</field>
+			<field name='code'>VPN</field>
+			<field name='name'>Negative preterite</field>
+		</record>
+		<record id='tag_62' model='tag'>
+			<field name='description'>ara ye??en</field>
+			<field name='code'>VPA</field>
+			<field name='name'>participle of aorist</field>
+		</record>
+		<record id='tag_63' model='tag'>
+			<field name='description'>win ye??an</field>
+			<field name='code'>VPPP</field>
+			<field name='name'>participle of positive preterite.</field>
+		</record>
+		<record id='tag_64' model='tag'>
+			<field name='description'>Win ur ne??i</field>
+			<field name='code'>VPPN</field>
+			<field name='name'>participle of preterite negative.</field>
+		</record>
+		<record id='tag_65' model='tag'>
+			<field name='description'>tett</field>
+			<field name='code'>VII</field>
+			<field name='name'>intensive imperative</field>
+		</record>
+		<record id='tag_66' model='tag'>
+			<field name='description'>tette?</field>
+			<field name='code'>VAIT</field>
+			<field name='name'>intensive aorist</field>
+		</record>
+		<record id='tag_67' model='tag'>
+			<field name='description'>win itetten</field>
+			<field name='code'>VPAIP</field>
+			<field name='name'>participle of positive intensive aorist.</field>
+		</record>
+		<record id='tag_68' model='tag'>
+			<field name='description'>win ur ntett ara</field>
+			<field name='code'>VPAIN</field>
+			<field name='name'>participle of negative intensive aorist.</field>
+		</record>
+		<record id='tag_69' model='tag'>
+			<field name='description'>yas-d ma yeb?a.</field>
+			<field name='code'>VSBJ</field>
+			<field name='name'>Subjonctive</field>
+		</record>
+		<record id='tag_70' model='tag'>
+			<field name='description'>Sut, mm, bu, tis, wis, at, wat, yir,</field>
+			<field name='code'>MADJ</field>
+			<field name='name'>adjective</field>
+		</record>
+		<record id='tag_71' model='tag'>
+			<field name='description'>axxam azegga?, d amellal, argaz a?ezfan</field>
+			<field name='code'>ADJ</field>
+			<field name='name'>adjective</field>
+		</record>
+		<record id='tag_72' model='tag'>
+			<field name='description'>i?elli, azekka</field>
+			<field name='code'>ADV</field>
+			<field name='name'>adverb</field>
+		</record>
+		<record id='tag_73' model='tag'>
+			<field name='description'>i - d netta i d-yusan</field>
+			<field name='code'>PRL</field>
+			<field name='name'>relative pronoun</field>
+		</record>
+		<record id='tag_74' model='tag'>
+			<field name='description'>d-, id-, n-, in-</field>
+			<field name='code'>PDP</field>
+			<field name='name'>direction particle - prefix</field>
+		</record>
+		<record id='tag_75' model='tag'>
+			<field name='description'>-d,-id,-n, -in</field>
+			<field name='code'>PDS</field>
+			<field name='name'>direction particle - suffix</field>
+		</record>
+		<record id='tag_76' model='tag'>
+			<field name='description'>ur, ara</field>
+			<field name='code'>PRN</field>
+			<field name='name'>particle of negation</field>
+		</record>
+		<record id='tag_77' model='tag'>
+			<field name='description'>d izem</field>
+			<field name='code'>PREAL</field>
+			<field name='name'>reality particle</field>
+		</record>
+		<record id='tag_78' model='tag'>
+			<field name='description'>d, akked, ne?, ihi, maca, me?na</field>
+			<field name='code'>CC</field>
+			<field name='name'>conjunction of coordination</field>
+		</record>
+		<record id='tag_79' model='tag'>
+			<field name='description'>ma, imi, amer</field>
+			<field name='code'>CS</field>
+			<field name='name'>conjunction of suboordination</field>
+		</record>
+		<record id='tag_80' model='tag'>
+			<field name='description'>ad sweɣ</field>
+			<field name='code'>PAF</field>
+			<field name='name'>particle of the future aorist</field>
+		</record>
+		<record id='tag_81' model='tag'>
+			<field name='description'>la yessawal</field>
+			<field name='code'>PAI</field>
+			<field name='name'>particle of the intensive aorist</field>
+		</record>
+        <record id='tag_82' model='tag'>
+			<field name='description'>ɣer</field>
+			<field name='code'>PRP</field>
+			<field name='name'>preposition</field>
+		</record>
+
+
+  <record id='tag_83' model='tag'>
+			<field name='description'>ay a </field>
+			<field name='code'>PLP</field>
+			<field name='name'>Call particle</field>
+		</record>
+
+<record id='tag_84' model='tag'>
+			<field name='description'>-iw </field>
+			<field name='code'>PAN</field>
+			<field name='name'>Prounoun affix (suffix) of name</field>
+		</record>
+<record id='tag_85' model='tag'>
+			<field name='description'>t- as- tent- </field>
+			<field name='code'>PPV</field>
+			<field name='name'>Pronoun prefix of verb</field>
+		</record>
+
+<record id='tag_86' model='tag'>
+			<field name='description'>-as -asen -sent -s -sen -wen</field>
+			<field name='code'>PAP</field>
+			<field name='name'>Pronoun affix of preposition</field>
+		</record>
+
+<record id='tag_87' model='tag'>
+			<field name='description'>-as -asen -sent -s -sen -wen</field>
+  	<field name='code'>PSV</field>
+			<field name='name'>Pronoun affix of verb</field>
+		</record>
+<record id='tag_88' model='tag'>
+			<field name='description'>n </field>
+  	<field name='code'>PP</field>
+			<field name='name'>Owning particle</field>
+		</record>
+<record id='tag_89' model='tag'>
+			<field name='description'>win, tin </field>
+  	<field name='code'>PRI</field>
+			<field name='name'>Undefined Pronoun</field>
+		</record>
+
+<record id='tag_90' model='tag'>
+			<field name='description'>asenqeḍ </field>
+  	<field name='code'>.</field>
+			<field name='name'>.</field>
+		</record>
+
+<record id='tag_91' model='tag'>
+			<field name='description'>asenqeḍ </field>
+  	<field name='code'>?</field>
+			<field name='name'>?</field>
+		</record>
+<record id='tag_92' model='tag'>
+			<field name='description'>asenqeḍ </field>
+  	<field name='code'>!</field>
+			<field name='name'>!</field>
+		</record>
+
+<record id='tag_93' model='tag'>
+			<field name='description'>netta netat nekk</field>
+  	<field name='code'>PPA</field>
+			<field name='name'>Autonomous Personal pronoun </field>
+		</record>
+
+<record id='tag_94' model='tag'>
+			<field name='description'>aseqeḍ</field>
+  	<field name='code'>:</field>
+			<field name='name'>:</field>
+		</record>
+<record id='tag_95' model='tag'>
+			<field name='description'>asenqeḍ</field>
+  	<field name='code'>,</field>
+			<field name='name'>, </field>
+		</record>
+
+<record id='tag_96' model='tag'>
+			<field name='description'>asenqeḍ</field>
+  	<field name='code'>;</field>
+			<field name='name'>; </field>
+		</record>
+
+<record id='tag_97' model='tag'>
+			<field name='description'>asenqeḍ</field>
+  	<field name='code'>'</field>
+			<field name='name'>'</field>
+		</record>
+
+<record id='tag_98' model='tag'>
+			<field name='description'>Wagi tagi</field>
+  	<field name='code'>PRD</field>
+			<field name='name'>Demonstrative Pronoun</field>
+		</record>
+
+<record id='tag_99' model='tag'>
+			<field name='description'>acu -t/-ten...</field>
+  	<field name='code'>PADV</field>
+			<field name='name'>Affix Pronoun of Adverb</field>
+		</record>
+
+<record id='tag_100' model='tag'>
+			<field name='description'>acu?...</field>
+  	<field name='code'>INT</field>
+			<field name='name'>Interrogative Adverb</field>
+		</record>
+
+
+	</data>
+</odoo>

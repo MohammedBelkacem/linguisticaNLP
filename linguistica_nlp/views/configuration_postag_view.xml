@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+         <record model='ir.ui.view' id='affix_form'>
+            <field name="name">affix.form</field>
+            <field name="model">affix</field>
+            <field name="arch" type="xml">
+                <form string="Affix">
+                <group>
+                    <field name="name" />
+                    <field name="type_aff" widget="radio"/>
+                    <field name="language_id" />
+
+
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+
+      <record model='ir.ui.view' id='affix_tree'>
+            <field name="name">affix.tree</field>
+            <field name="model">affix</field>
+            <field name="arch" type="xml">
+                <tree string="Affix">
+                    <field name="name" />
+                   <field name="type_aff" />
+                   <field name="language_id" />
+
+                </tree>
+            </field>
+        </record>
+
+   <record model='ir.actions.act_window' id='affix_act'>
+            <field name="name">Affix</field>
+            <field name="res_model">affix</field>
+             <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first affix
+              </p>
+            </field>
+        </record>
+
+
+
+       <record model='ir.ui.view' id='tag_form'>
+            <field name="name">tag.form</field>
+            <field name="model">tag</field>
+            <field name="arch" type="xml">
+                <form string="Grammatical class tag">
+                <group>
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="description" />
+                </group>
+
+                </form>
+            </field>
+        </record>
+<record model='ir.ui.view' id='tag_tree'>
+            <field name="name">tag.tree</field>
+            <field name="model">tag</field>
+            <field name="arch" type="xml">
+                <tree string="Grammatical class tag">
+                    <field name="name" />
+                   <field name="code" />
+
+                </tree>
+            </field>
+        </record>
+
+            <record model='ir.actions.act_window' id='tag_act'>
+            <field name="name">Grammatical class tags</field>
+            <field name="res_model">tag</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first grammatical class tag
+              </p>
+            </field>
+        </record>
+
+
+       <record model='ir.ui.view' id='annotation_form'>
+            <field name="name">annotation.form</field>
+            <field name="model">annotation</field>
+            <field name="arch" type="xml">
+                <form string="Morphological feature">
+                <group>
+                    <field name="name" />
+
+                    <field name="description" />
+                </group>
+
+                </form>
+            </field>
+        </record>
+<record model='ir.ui.view' id='annotation_tree'>
+            <field name="name">annotation.tree</field>
+            <field name="model">annotation</field>
+            <field name="arch" type="xml">
+                <tree string="Annotation">
+                    <field name="name" />
+                   <field name="description" />
+
+                </tree>
+            </field>
+        </record>
+
+       <record model='ir.actions.act_window' id='annotation_act'>
+            <field name="name">Annotations</field>
+            <field name="res_model">annotation</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first annotation
+              </p>
+            </field>
+        </record>
+    <record model='ir.ui.view' id='lang_family_form'>
+            <field name="name">language.family.form</field>
+            <field name="model">language.family</field>
+            <field name="arch" type="xml">
+                <form string="Language Family">
+                <group>
+                    <field name="name" />
+                    <field name="parent_family_id" />
+                    <field name="code" />
+
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+    <record model='ir.ui.view' id='lang_script_form'>
+            <field name="name">language.script.form</field>
+            <field name="model">language.script</field>
+            <field name="arch" type="xml">
+                <form string="Language script">
+                <group>
+                    <field name="name" />
+
+                    <field name="code" />
+
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='lang_family_tree'>
+            <field name="name">language.family.tree</field>
+            <field name="model">language.family</field>
+            <field name="arch" type="xml">
+                <tree string="Language Family">
+                    <field name="name" />
+                   <field name="code" />
+
+                </tree>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='lang_script_tree'>
+            <field name="name">language.script.tree</field>
+            <field name="model">language.script</field>
+            <field name="arch" type="xml">
+                <tree string="Language Script">
+                    <field name="name" />
+                   <field name="code" />
+
+                </tree>
+            </field>
+        </record>
+
+  <record model='ir.actions.act_window' id='lang_family_act'>
+            <field name="name">Language Family</field>
+            <field name="res_model">language.family</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first language family
+              </p>
+            </field>
+            </record>
+
+
+<record model='ir.actions.act_window' id='lang_script_act'>
+            <field name="name">Language script</field>
+            <field name="res_model">language.script</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first language script
+              </p>
+            </field>
+
+
+           </record>
+
+
+
+    <record model='ir.ui.view' id='lang_form'>
+            <field name="name">language.form</field>
+            <field name="model">language</field>
+            <field name="arch" type="xml">
+                <form string="Language">
+                <group>
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="language_family_id" />
+                    <field name="language_script_id" />
+                    <field name="feature_ids" />
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='lang_tree'>
+            <field name="name">language.tree</field>
+            <field name="model">language</field>
+            <field name="arch" type="xml">
+                <tree string="Language">
+                    <field name="name" />
+                   <field name="code" />
+                   <field name="language_family_id" />
+                   <field name="language_script_id" />
+
+                </tree>
+            </field>
+        </record>
+  <record model='ir.actions.act_window' id='lang_act'>
+            <field name="name">Language</field>
+            <field name="res_model">language</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first language
+              </p>
+            </field>
+
+
+
+           </record>
+
+
+<record id="view_language_filter" model="ir.ui.view">
+            <field name="name">language.list.select</field>
+            <field name="model">language</field>
+
+            <field name="arch" type="xml">
+                <search string="Search Language">
+                    <field name="name" string="Language"/>
+
+
+                    <!-- We only allow to search on the following sale order line fields (product, name) because the other fields, such as price, quantity, ...
+                        will not be searched as often, and if they need to be searched it's usually in the context of products
+                        and then they can be searched from the page listing the sale order lines related to a product (from the product itself).
+                    -->
+                    <group expand="0" string="Group By">
+                        <filter string="Script" name="language" domain="[]" context="{'group_by': 'language_script_id'}"/>
+                        <filter string="Family" name="language" domain="[]" context="{'group_by': 'language_family_id'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+
+
+
+<record model='ir.ui.view' id='root_form'>
+            <field name="name">root.form</field>
+            <field name="model">root</field>
+            <field name="arch" type="xml">
+                <form string="Root">
+                <group>
+                    <field name="name" />
+                    <field name="description" />
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+
+<record model='ir.ui.view' id='root_tree'>
+            <field name="name">root.tree</field>
+            <field name="model">root</field>
+            <field name="arch" type="xml">
+                <tree string="Root">
+                    <field name="name" />
+                   <field name="description" />
+
+                </tree>
+            </field>
+        </record>
+
+ <record model='ir.actions.act_window' id='root_act'>
+            <field name="name">Root</field>
+            <field name="res_model">root</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first Root
+              </p>
+            </field>
+        </record>
+
+
+
+
+        <menuitem name="Configurations" parent="morphology" id="param_menu" sequence="2"/>
+
+        <menuitem name="Postag" parent="param_menu" id="param_postag_menu" />
+
+        <menuitem id="affix_menu" name="Affixes" parent="param_postag_menu"
+                  action="affix_act"/>
+        <menuitem id="tag_menu" name="Class Grammatical Tags" parent="param_postag_menu"
+                  action="tag_act"/>
+                  <menuitem id="lang_family_menu" name="Language Family" parent="param_postag_menu"
+                  action="lang_family_act"/>
+                       <menuitem id="lang_script_menu" name="Language script" parent="param_postag_menu"
+                  action="lang_script_act"/>
+
+        <menuitem id="lang_menu" name="Languages" parent="param_postag_menu"
+                  action="lang_act"/>
+
+
+       <menuitem id="annotation_menu" name="Annotations" parent="param_postag_menu"
+                  action="annotation_act"/>
+       <menuitem id="root_menu" name="Roots" parent="param_postag_menu"
+                  action="root_act"/>
+
+
+         </data>
+</odoo>

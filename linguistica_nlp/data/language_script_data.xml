@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id='script_Adlm' model='language.script'>
+			<field name='code'>Adlm</field>
+			<field name='name'>Adlam</field>
+		</record>
+		<record id='script_Afak' model='language.script'>
+			<field name='code'>Afak</field>
+			<field name='name'>Afaka</field>
+		</record>
+		<record id='script_Aghb' model='language.script'>
+			<field name='code'>Aghb</field>
+			<field name='name'>Caucasian Albanian</field>
+		</record>
+		<record id='script_Ahom' model='language.script'>
+			<field name='code'>Ahom</field>
+			<field name='name'>Ahom, Tai Ahom</field>
+		</record>
+		<record id='script_Arab' model='language.script'>
+			<field name='code'>Arab</field>
+			<field name='name'>Arabic</field>
+		</record>
+		<record id='script_Aran' model='language.script'>
+			<field name='code'>Aran</field>
+			<field name='name'>Arabic (Nastaliq variant)</field>
+		</record>
+		<record id='script_Armi' model='language.script'>
+			<field name='code'>Armi</field>
+			<field name='name'>Imperial Aramaic</field>
+		</record>
+		<record id='script_Armn' model='language.script'>
+			<field name='code'>Armn</field>
+			<field name='name'>Armenian</field>
+		</record>
+		<record id='script_Avst' model='language.script'>
+			<field name='code'>Avst</field>
+			<field name='name'>Avestan</field>
+		</record>
+		<record id='script_Bali' model='language.script'>
+			<field name='code'>Bali</field>
+			<field name='name'>Balinese</field>
+		</record>
+		<record id='script_Bamu' model='language.script'>
+			<field name='code'>Bamu</field>
+			<field name='name'>Bamum</field>
+		</record>
+		<record id='script_Bass' model='language.script'>
+			<field name='code'>Bass</field>
+			<field name='name'>Bassa Vah</field>
+		</record>
+		<record id='script_Batk' model='language.script'>
+			<field name='code'>Batk</field>
+			<field name='name'>Batak</field>
+		</record>
+		<record id='script_Beng' model='language.script'>
+			<field name='code'>Beng</field>
+			<field name='name'>Bengali (Bangla)</field>
+		</record>
+		<record id='script_Bhks' model='language.script'>
+			<field name='code'>Bhks</field>
+			<field name='name'>Bhaiksuki</field>
+		</record>
+		<record id='script_Blis' model='language.script'>
+			<field name='code'>Blis</field>
+			<field name='name'>Blissymbols</field>
+		</record>
+		<record id='script_Bopo' model='language.script'>
+			<field name='code'>Bopo</field>
+			<field name='name'>Bopomofo</field>
+		</record>
+		<record id='script_Brah' model='language.script'>
+			<field name='code'>Brah</field>
+			<field name='name'>Brahmi</field>
+		</record>
+		<record id='script_Brai' model='language.script'>
+			<field name='code'>Brai</field>
+			<field name='name'>Braille</field>
+		</record>
+		<record id='script_Bugi' model='language.script'>
+			<field name='code'>Bugi</field>
+			<field name='name'>Buginese</field>
+		</record>
+		<record id='script_Buhd' model='language.script'>
+			<field name='code'>Buhd</field>
+			<field name='name'>Buhid</field>
+		</record>
+		<record id='script_Cakm' model='language.script'>
+			<field name='code'>Cakm</field>
+			<field name='name'>Chakma</field>
+		</record>
+		<record id='script_Cans' model='language.script'>
+			<field name='code'>Cans</field>
+			<field name='name'>Unified Canadian Aboriginal Syllabics</field>
+		</record>
+		<record id='script_Cari' model='language.script'>
+			<field name='code'>Cari</field>
+			<field name='name'>Carian</field>
+		</record>
+		<record id='script_Cham' model='language.script'>
+			<field name='code'>Cham</field>
+			<field name='name'>Cham</field>
+		</record>
+		<record id='script_Cher' model='language.script'>
+			<field name='code'>Cher</field>
+			<field name='name'>Cherokee</field>
+		</record>
+		<record id='script_Chrs' model='language.script'>
+			<field name='code'>Chrs</field>
+			<field name='name'>Chorasmian</field>
+		</record>
+		<record id='script_Cirt' model='language.script'>
+			<field name='code'>Cirt</field>
+			<field name='name'>Cirth</field>
+		</record>
+		<record id='script_Copt' model='language.script'>
+			<field name='code'>Copt</field>
+			<field name='name'>Coptic</field>
+		</record>
+		<record id='script_Cpmn' model='language.script'>
+			<field name='code'>Cpmn</field>
+			<field name='name'>Cypro-Minoan</field>
+		</record>
+		<record id='script_Cprt' model='language.script'>
+			<field name='code'>Cprt</field>
+			<field name='name'>Cypriot syllabary</field>
+		</record>
+		<record id='script_Cyrl' model='language.script'>
+			<field name='code'>Cyrl</field>
+			<field name='name'>Cyrillic</field>
+		</record>
+		<record id='script_Cyrs' model='language.script'>
+			<field name='code'>Cyrs</field>
+			<field name='name'>Cyrillic (Old Church Slavonic variant)</field>
+		</record>
+		<record id='script_Deva' model='language.script'>
+			<field name='code'>Deva</field>
+			<field name='name'>Devanagari (Nagari)</field>
+		</record>
+		<record id='script_Diak' model='language.script'>
+			<field name='code'>Diak</field>
+			<field name='name'>Dives Akuru</field>
+		</record>
+		<record id='script_Dogr' model='language.script'>
+			<field name='code'>Dogr</field>
+			<field name='name'>Dogra</field>
+		</record>
+		<record id='script_Dsrt' model='language.script'>
+			<field name='code'>Dsrt</field>
+			<field name='name'>Deseret (Mormon)</field>
+		</record>
+		<record id='script_Dupl' model='language.script'>
+			<field name='code'>Dupl</field>
+			<field name='name'>Duployan shorthand, Duployan stenography</field>
+		</record>
+		<record id='script_Egyd' model='language.script'>
+			<field name='code'>Egyd</field>
+			<field name='name'>Egyptian demotic</field>
+		</record>
+		<record id='script_Egyh' model='language.script'>
+			<field name='code'>Egyh</field>
+			<field name='name'>Egyptian hieratic</field>
+		</record>
+		<record id='script_Egyp' model='language.script'>
+			<field name='code'>Egyp</field>
+			<field name='name'>Egyptian hieroglyphs</field>
+		</record>
+		<record id='script_Elba' model='language.script'>
+			<field name='code'>Elba</field>
+			<field name='name'>Elbasan</field>
+		</record>
+		<record id='script_Elym' model='language.script'>
+			<field name='code'>Elym</field>
+			<field name='name'>Elymaic</field>
+		</record>
+		<record id='script_Ethi' model='language.script'>
+			<field name='code'>Ethi</field>
+			<field name='name'>Ethiopic (Geʻez)</field>
+		</record>
+		<record id='script_Geok' model='language.script'>
+			<field name='code'>Geok</field>
+			<field name='name'>Khutsuri (Asomtavruli and Nuskhuri)</field>
+		</record>
+		<record id='script_Geor' model='language.script'>
+			<field name='code'>Geor</field>
+			<field name='name'>Georgian (Mkhedruli and Mtavruli)</field>
+		</record>
+		<record id='script_Glag' model='language.script'>
+			<field name='code'>Glag</field>
+			<field name='name'>Glagolitic</field>
+		</record>
+		<record id='script_Gong' model='language.script'>
+			<field name='code'>Gong</field>
+			<field name='name'>Gunjala Gondi</field>
+		</record>
+		<record id='script_Gonm' model='language.script'>
+			<field name='code'>Gonm</field>
+			<field name='name'>Masaram Gondi</field>
+		</record>
+		<record id='script_Goth' model='language.script'>
+			<field name='code'>Goth</field>
+			<field name='name'>Gothic</field>
+		</record>
+		<record id='script_Gran' model='language.script'>
+			<field name='code'>Gran</field>
+			<field name='name'>Grantha</field>
+		</record>
+		<record id='script_Grek' model='language.script'>
+			<field name='code'>Grek</field>
+			<field name='name'>Greek</field>
+		</record>
+		<record id='script_Gujr' model='language.script'>
+			<field name='code'>Gujr</field>
+			<field name='name'>Gujarati</field>
+		</record>
+		<record id='script_Guru' model='language.script'>
+			<field name='code'>Guru</field>
+			<field name='name'>Gurmukhi</field>
+		</record>
+		<record id='script_Hanb' model='language.script'>
+			<field name='code'>Hanb</field>
+			<field name='name'>Han with Bopomofo (alias for Han + Bopomofo)</field>
+		</record>
+		<record id='script_Hang' model='language.script'>
+			<field name='code'>Hang</field>
+			<field name='name'>Hangul (Hangŭl, Hangeul)</field>
+		</record>
+		<record id='script_Hani' model='language.script'>
+			<field name='code'>Hani</field>
+			<field name='name'>Han (Hanzi, Kanji, Hanja)</field>
+		</record>
+		<record id='script_Hano' model='language.script'>
+			<field name='code'>Hano</field>
+			<field name='name'>Hanunoo (Hanunóo)</field>
+		</record>
+		<record id='script_Hans' model='language.script'>
+			<field name='code'>Hans</field>
+			<field name='name'>Han (Simplified variant)</field>
+		</record>
+		<record id='script_Hant' model='language.script'>
+			<field name='code'>Hant</field>
+			<field name='name'>Han (Traditional variant)</field>
+		</record>
+		<record id='script_Hatr' model='language.script'>
+			<field name='code'>Hatr</field>
+			<field name='name'>Hatran</field>
+		</record>
+		<record id='script_Hebr' model='language.script'>
+			<field name='code'>Hebr</field>
+			<field name='name'>Hebrew</field>
+		</record>
+		<record id='script_Hira' model='language.script'>
+			<field name='code'>Hira</field>
+			<field name='name'>Hiragana</field>
+		</record>
+		<record id='script_Hluw' model='language.script'>
+			<field name='code'>Hluw</field>
+			<field name='name'>Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)</field>
+		</record>
+		<record id='script_Hmng' model='language.script'>
+			<field name='code'>Hmng</field>
+			<field name='name'>Pahawh Hmong</field>
+		</record>
+		<record id='script_Hmnp' model='language.script'>
+			<field name='code'>Hmnp</field>
+			<field name='name'>Nyiakeng Puachue Hmong</field>
+		</record>
+		<record id='script_Hrkt' model='language.script'>
+			<field name='code'>Hrkt</field>
+			<field name='name'>Japanese syllabaries (alias for Hiragana + Katakana)</field>
+		</record>
+		<record id='script_Hung' model='language.script'>
+			<field name='code'>Hung</field>
+			<field name='name'>Old Hungarian (Hungarian Runic)</field>
+		</record>
+		<record id='script_Inds' model='language.script'>
+			<field name='code'>Inds</field>
+			<field name='name'>Indus (Harappan)</field>
+		</record>
+		<record id='script_Ital' model='language.script'>
+			<field name='code'>Ital</field>
+			<field name='name'>Old Italic (Etruscan, Oscan, etc.)</field>
+		</record>
+		<record id='script_Jamo' model='language.script'>
+			<field name='code'>Jamo</field>
+			<field name='name'>Jamo (alias for Jamo subset of Hangul)</field>
+		</record>
+		<record id='script_Java' model='language.script'>
+			<field name='code'>Java</field>
+			<field name='name'>Javanese</field>
+		</record>
+		<record id='script_Jpan' model='language.script'>
+			<field name='code'>Jpan</field>
+			<field name='name'>Japanese (alias for Han + Hiragana + Katakana)</field>
+		</record>
+		<record id='script_Jurc' model='language.script'>
+			<field name='code'>Jurc</field>
+			<field name='name'>Jurchen</field>
+		</record>
+		<record id='script_Kali' model='language.script'>
+			<field name='code'>Kali</field>
+			<field name='name'>Kayah Li</field>
+		</record>
+		<record id='script_Kana' model='language.script'>
+			<field name='code'>Kana</field>
+			<field name='name'>Katakana</field>
+		</record>
+		<record id='script_Khar' model='language.script'>
+			<field name='code'>Khar</field>
+			<field name='name'>Kharoshthi</field>
+		</record>
+		<record id='script_Khmr' model='language.script'>
+			<field name='code'>Khmr</field>
+			<field name='name'>Khmer</field>
+		</record>
+		<record id='script_Khoj' model='language.script'>
+			<field name='code'>Khoj</field>
+			<field name='name'>Khojki</field>
+		</record>
+		<record id='script_Kitl' model='language.script'>
+			<field name='code'>Kitl</field>
+			<field name='name'>Khitan large script</field>
+		</record>
+		<record id='script_Kits' model='language.script'>
+			<field name='code'>Kits</field>
+			<field name='name'>Khitan small script</field>
+		</record>
+		<record id='script_Knda' model='language.script'>
+			<field name='code'>Knda</field>
+			<field name='name'>Kannada</field>
+		</record>
+		<record id='script_Kore' model='language.script'>
+			<field name='code'>Kore</field>
+			<field name='name'>Korean (alias for Hangul + Han)</field>
+		</record>
+		<record id='script_Kpel' model='language.script'>
+			<field name='code'>Kpel</field>
+			<field name='name'>Kpelle</field>
+		</record>
+		<record id='script_Kthi' model='language.script'>
+			<field name='code'>Kthi</field>
+			<field name='name'>Kaithi</field>
+		</record>
+		<record id='script_Lana' model='language.script'>
+			<field name='code'>Lana</field>
+			<field name='name'>Tai Tham (Lanna)</field>
+		</record>
+		<record id='script_Laoo' model='language.script'>
+			<field name='code'>Laoo</field>
+			<field name='name'>Lao</field>
+		</record>
+		<record id='script_Latf' model='language.script'>
+			<field name='code'>Latf</field>
+			<field name='name'>Latin (Fraktur variant)</field>
+		</record>
+		<record id='script_Latg' model='language.script'>
+			<field name='code'>Latg</field>
+			<field name='name'>Latin (Gaelic variant)</field>
+		</record>
+		<record id='script_Latn' model='language.script'>
+			<field name='code'>Latn</field>
+			<field name='name'>Latin</field>
+		</record>
+		<record id='script_Leke' model='language.script'>
+			<field name='code'>Leke</field>
+			<field name='name'>Leke</field>
+		</record>
+		<record id='script_Lepc' model='language.script'>
+			<field name='code'>Lepc</field>
+			<field name='name'>Lepcha (Róng)</field>
+		</record>
+		<record id='script_Limb' model='language.script'>
+			<field name='code'>Limb</field>
+			<field name='name'>Limbu</field>
+		</record>
+		<record id='script_Lina' model='language.script'>
+			<field name='code'>Lina</field>
+			<field name='name'>Linear A</field>
+		</record>
+		<record id='script_Linb' model='language.script'>
+			<field name='code'>Linb</field>
+			<field name='name'>Linear B</field>
+		</record>
+		<record id='script_Lisu' model='language.script'>
+			<field name='code'>Lisu</field>
+			<field name='name'>Lisu (Fraser)</field>
+		</record>
+		<record id='script_Loma' model='language.script'>
+			<field name='code'>Loma</field>
+			<field name='name'>Loma</field>
+		</record>
+		<record id='script_Lyci' model='language.script'>
+			<field name='code'>Lyci</field>
+			<field name='name'>Lycian</field>
+		</record>
+		<record id='script_Lydi' model='language.script'>
+			<field name='code'>Lydi</field>
+			<field name='name'>Lydian</field>
+		</record>
+		<record id='script_Mahj' model='language.script'>
+			<field name='code'>Mahj</field>
+			<field name='name'>Mahajani</field>
+		</record>
+		<record id='script_Maka' model='language.script'>
+			<field name='code'>Maka</field>
+			<field name='name'>Makasar</field>
+		</record>
+		<record id='script_Mand' model='language.script'>
+			<field name='code'>Mand</field>
+			<field name='name'>Mandaic, Mandaean</field>
+		</record>
+		<record id='script_Mani' model='language.script'>
+			<field name='code'>Mani</field>
+			<field name='name'>Manichaean</field>
+		</record>
+		<record id='script_Marc' model='language.script'>
+			<field name='code'>Marc</field>
+			<field name='name'>Marchen</field>
+		</record>
+		<record id='script_Maya' model='language.script'>
+			<field name='code'>Maya</field>
+			<field name='name'>Mayan hieroglyphs</field>
+		</record>
+		<record id='script_Medf' model='language.script'>
+			<field name='code'>Medf</field>
+			<field name='name'>Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)</field>
+		</record>
+		<record id='script_Mend' model='language.script'>
+			<field name='code'>Mend</field>
+			<field name='name'>Mende Kikakui</field>
+		</record>
+		<record id='script_Merc' model='language.script'>
+			<field name='code'>Merc</field>
+			<field name='name'>Meroitic Cursive</field>
+		</record>
+		<record id='script_Mero' model='language.script'>
+			<field name='code'>Mero</field>
+			<field name='name'>Meroitic Hieroglyphs</field>
+		</record>
+		<record id='script_Mlym' model='language.script'>
+			<field name='code'>Mlym</field>
+			<field name='name'>Malayalam</field>
+		</record>
+		<record id='script_Modi' model='language.script'>
+			<field name='code'>Modi</field>
+			<field name='name'>Modi, Moḍī</field>
+		</record>
+		<record id='script_Mong' model='language.script'>
+			<field name='code'>Mong</field>
+			<field name='name'>Mongolian</field>
+		</record>
+		<record id='script_Moon' model='language.script'>
+			<field name='code'>Moon</field>
+			<field name='name'>Moon (Moon code, Moon script, Moon type)</field>
+		</record>
+		<record id='script_Mroo' model='language.script'>
+			<field name='code'>Mroo</field>
+			<field name='name'>Mro, Mru</field>
+		</record>
+		<record id='script_Mtei' model='language.script'>
+			<field name='code'>Mtei</field>
+			<field name='name'>Meitei Mayek (Meithei, Meetei)</field>
+		</record>
+		<record id='script_Mult' model='language.script'>
+			<field name='code'>Mult</field>
+			<field name='name'>Multani</field>
+		</record>
+		<record id='script_Mymr' model='language.script'>
+			<field name='code'>Mymr</field>
+			<field name='name'>Myanmar (Burmese)</field>
+		</record>
+		<record id='script_Nand' model='language.script'>
+			<field name='code'>Nand</field>
+			<field name='name'>Nandinagari</field>
+		</record>
+		<record id='script_Narb' model='language.script'>
+			<field name='code'>Narb</field>
+			<field name='name'>Old North Arabian (Ancient North Arabian)</field>
+		</record>
+		<record id='script_Nbat' model='language.script'>
+			<field name='code'>Nbat</field>
+			<field name='name'>Nabataean</field>
+		</record>
+		<record id='script_Newa' model='language.script'>
+			<field name='code'>Newa</field>
+			<field name='name'>Newa, Newar, Newari, Nepāla lipi</field>
+		</record>
+		<record id='script_Nkdb' model='language.script'>
+			<field name='code'>Nkdb</field>
+			<field name='name'>Naxi Dongba</field>
+		</record>
+		<record id='script_Nkgb' model='language.script'>
+			<field name='code'>Nkgb</field>
+			<field name='name'>Nakhi Geba</field>
+		</record>
+		<record id='script_Nkoo' model='language.script'>
+			<field name='code'>Nkoo</field>
+			<field name='name'>N'Ko</field>
+		</record>
+		<record id='script_Nshu' model='language.script'>
+			<field name='code'>Nshu</field>
+			<field name='name'>Nüshu</field>
+		</record>
+		<record id='script_Ogam' model='language.script'>
+			<field name='code'>Ogam</field>
+			<field name='name'>Ogham</field>
+		</record>
+		<record id='script_Olck' model='language.script'>
+			<field name='code'>Olck</field>
+			<field name='name'>Ol Chiki (Ol Cemet', Ol, Santali)</field>
+		</record>
+		<record id='script_Orkh' model='language.script'>
+			<field name='code'>Orkh</field>
+			<field name='name'>Old Turkic, Orkhon Runic</field>
+		</record>
+		<record id='script_Orya' model='language.script'>
+			<field name='code'>Orya</field>
+			<field name='name'>Oriya (Odia)</field>
+		</record>
+		<record id='script_Osge' model='language.script'>
+			<field name='code'>Osge</field>
+			<field name='name'>Osage</field>
+		</record>
+		<record id='script_Osma' model='language.script'>
+			<field name='code'>Osma</field>
+			<field name='name'>Osmanya</field>
+		</record>
+		<record id='script_Palm' model='language.script'>
+			<field name='code'>Palm</field>
+			<field name='name'>Palmyrene</field>
+		</record>
+		<record id='script_Pauc' model='language.script'>
+			<field name='code'>Pauc</field>
+			<field name='name'>Pau Cin Hau</field>
+		</record>
+		<record id='script_Perm' model='language.script'>
+			<field name='code'>Perm</field>
+			<field name='name'>Old Permic</field>
+		</record>
+		<record id='script_Phag' model='language.script'>
+			<field name='code'>Phag</field>
+			<field name='name'>Phags-pa</field>
+		</record>
+		<record id='script_Phli' model='language.script'>
+			<field name='code'>Phli</field>
+			<field name='name'>Inscriptional Pahlavi</field>
+		</record>
+		<record id='script_Phlp' model='language.script'>
+			<field name='code'>Phlp</field>
+			<field name='name'>Psalter Pahlavi</field>
+		</record>
+		<record id='script_Phlv' model='language.script'>
+			<field name='code'>Phlv</field>
+			<field name='name'>Book Pahlavi</field>
+		</record>
+		<record id='script_Phnx' model='language.script'>
+			<field name='code'>Phnx</field>
+			<field name='name'>Phoenician</field>
+		</record>
+		<record id='script_Piqd' model='language.script'>
+			<field name='code'>Piqd</field>
+			<field name='name'>Klingon (KLI pIqaD)</field>
+		</record>
+		<record id='script_Plrd' model='language.script'>
+			<field name='code'>Plrd</field>
+			<field name='name'>Miao (Pollard)</field>
+		</record>
+		<record id='script_Prti' model='language.script'>
+			<field name='code'>Prti</field>
+			<field name='name'>Inscriptional Parthian</field>
+		</record>
+		<record id='script_Qaaa' model='language.script'>
+			<field name='code'>Qaaa</field>
+			<field name='name'>Reserved for private use (start)</field>
+		</record>
+		<record id='script_Qaai' model='language.script'>
+			<field name='code'>Qaai</field>
+			<field name='name'>(Private use)</field>
+		</record>
+		<record id='script_Qabx' model='language.script'>
+			<field name='code'>Qabx</field>
+			<field name='name'>Reserved for private use (end)</field>
+		</record>
+		<record id='script_Rjng' model='language.script'>
+			<field name='code'>Rjng</field>
+			<field name='name'>Rejang (Redjang, Kaganga)</field>
+		</record>
+		<record id='script_Rohg' model='language.script'>
+			<field name='code'>Rohg</field>
+			<field name='name'>Hanifi Rohingya</field>
+		</record>
+		<record id='script_Roro' model='language.script'>
+			<field name='code'>Roro</field>
+			<field name='name'>Rongorongo</field>
+		</record>
+		<record id='script_Runr' model='language.script'>
+			<field name='code'>Runr</field>
+			<field name='name'>Runic</field>
+		</record>
+		<record id='script_Samr' model='language.script'>
+			<field name='code'>Samr</field>
+			<field name='name'>Samaritan</field>
+		</record>
+		<record id='script_Sara' model='language.script'>
+			<field name='code'>Sara</field>
+			<field name='name'>Sarati</field>
+		</record>
+		<record id='script_Sarb' model='language.script'>
+			<field name='code'>Sarb</field>
+			<field name='name'>Old South Arabian</field>
+		</record>
+		<record id='script_Saur' model='language.script'>
+			<field name='code'>Saur</field>
+			<field name='name'>Saurashtra</field>
+		</record>
+		<record id='script_Sgnw' model='language.script'>
+			<field name='code'>Sgnw</field>
+			<field name='name'>SignWriting</field>
+		</record>
+		<record id='script_Shaw' model='language.script'>
+			<field name='code'>Shaw</field>
+			<field name='name'>Shavian (Shaw)</field>
+		</record>
+		<record id='script_Shrd' model='language.script'>
+			<field name='code'>Shrd</field>
+			<field name='name'>Sharada, Śāradā</field>
+		</record>
+		<record id='script_Shui' model='language.script'>
+			<field name='code'>Shui</field>
+			<field name='name'>Shuishu</field>
+		</record>
+		<record id='script_Sidd' model='language.script'>
+			<field name='code'>Sidd</field>
+			<field name='name'>Siddham, Siddhaṃ, Siddhamātṛkā</field>
+		</record>
+		<record id='script_Sind' model='language.script'>
+			<field name='code'>Sind</field>
+			<field name='name'>Khudawadi, Sindhi</field>
+		</record>
+		<record id='script_Sinh' model='language.script'>
+			<field name='code'>Sinh</field>
+			<field name='name'>Sinhala</field>
+		</record>
+		<record id='script_Sogd' model='language.script'>
+			<field name='code'>Sogd</field>
+			<field name='name'>Sogdian</field>
+		</record>
+		<record id='script_Sogo' model='language.script'>
+			<field name='code'>Sogo</field>
+			<field name='name'>Old Sogdian</field>
+		</record>
+		<record id='script_Sora' model='language.script'>
+			<field name='code'>Sora</field>
+			<field name='name'>Sora Sompeng</field>
+		</record>
+		<record id='script_Soyo' model='language.script'>
+			<field name='code'>Soyo</field>
+			<field name='name'>Soyombo</field>
+		</record>
+		<record id='script_Sund' model='language.script'>
+			<field name='code'>Sund</field>
+			<field name='name'>Sundanese</field>
+		</record>
+		<record id='script_Sylo' model='language.script'>
+			<field name='code'>Sylo</field>
+			<field name='name'>Syloti Nagri</field>
+		</record>
+		<record id='script_Syrc' model='language.script'>
+			<field name='code'>Syrc</field>
+			<field name='name'>Syriac</field>
+		</record>
+		<record id='script_Syre' model='language.script'>
+			<field name='code'>Syre</field>
+			<field name='name'>Syriac (Estrangelo variant)</field>
+		</record>
+		<record id='script_Syrj' model='language.script'>
+			<field name='code'>Syrj</field>
+			<field name='name'>Syriac (Western variant)</field>
+		</record>
+		<record id='script_Syrn' model='language.script'>
+			<field name='code'>Syrn</field>
+			<field name='name'>Syriac (Eastern variant)</field>
+		</record>
+		<record id='script_Tagb' model='language.script'>
+			<field name='code'>Tagb</field>
+			<field name='name'>Tagbanwa</field>
+		</record>
+		<record id='script_Takr' model='language.script'>
+			<field name='code'>Takr</field>
+			<field name='name'>Takri, Ṭākrī, Ṭāṅkrī</field>
+		</record>
+		<record id='script_Tale' model='language.script'>
+			<field name='code'>Tale</field>
+			<field name='name'>Tai Le</field>
+		</record>
+		<record id='script_Talu' model='language.script'>
+			<field name='code'>Talu</field>
+			<field name='name'>New Tai Lue</field>
+		</record>
+		<record id='script_Taml' model='language.script'>
+			<field name='code'>Taml</field>
+			<field name='name'>Tamil</field>
+		</record>
+		<record id='script_Tang' model='language.script'>
+			<field name='code'>Tang</field>
+			<field name='name'>Tangut</field>
+		</record>
+		<record id='script_Tavt' model='language.script'>
+			<field name='code'>Tavt</field>
+			<field name='name'>Tai Viet</field>
+		</record>
+		<record id='script_Telu' model='language.script'>
+			<field name='code'>Telu</field>
+			<field name='name'>Telugu</field>
+		</record>
+		<record id='script_Teng' model='language.script'>
+			<field name='code'>Teng</field>
+			<field name='name'>Tengwar</field>
+		</record>
+		<record id='script_Tfng' model='language.script'>
+			<field name='code'>Tfng</field>
+			<field name='name'>Tifinagh (Berber)</field>
+		</record>
+		<record id='script_Tglg' model='language.script'>
+			<field name='code'>Tglg</field>
+			<field name='name'>Tagalog (Baybayin, Alibata)</field>
+		</record>
+		<record id='script_Thaa' model='language.script'>
+			<field name='code'>Thaa</field>
+			<field name='name'>Thaana</field>
+		</record>
+		<record id='script_Thai' model='language.script'>
+			<field name='code'>Thai</field>
+			<field name='name'>Thai</field>
+		</record>
+		<record id='script_Tibt' model='language.script'>
+			<field name='code'>Tibt</field>
+			<field name='name'>Tibetan</field>
+		</record>
+		<record id='script_Tirh' model='language.script'>
+			<field name='code'>Tirh</field>
+			<field name='name'>Tirhuta</field>
+		</record>
+		<record id='script_Ugar' model='language.script'>
+			<field name='code'>Ugar</field>
+			<field name='name'>Ugaritic</field>
+		</record>
+		<record id='script_Vaii' model='language.script'>
+			<field name='code'>Vaii</field>
+			<field name='name'>Vai</field>
+		</record>
+		<record id='script_Visp' model='language.script'>
+			<field name='code'>Visp</field>
+			<field name='name'>Visible Speech</field>
+		</record>
+		<record id='script_Wara' model='language.script'>
+			<field name='code'>Wara</field>
+			<field name='name'>Warang Citi (Varang Kshiti)</field>
+		</record>
+		<record id='script_Wcho' model='language.script'>
+			<field name='code'>Wcho</field>
+			<field name='name'>Wancho</field>
+		</record>
+		<record id='script_Wole' model='language.script'>
+			<field name='code'>Wole</field>
+			<field name='name'>Woleai</field>
+		</record>
+		<record id='script_Xpeo' model='language.script'>
+			<field name='code'>Xpeo</field>
+			<field name='name'>Old Persian</field>
+		</record>
+		<record id='script_Xsux' model='language.script'>
+			<field name='code'>Xsux</field>
+			<field name='name'>Cuneiform, Sumero-Akkadian</field>
+		</record>
+		<record id='script_Yezi' model='language.script'>
+			<field name='code'>Yezi</field>
+			<field name='name'>Yezidi</field>
+		</record>
+		<record id='script_Yiii' model='language.script'>
+			<field name='code'>Yiii</field>
+			<field name='name'>Yi</field>
+		</record>
+		<record id='script_Zanb' model='language.script'>
+			<field name='code'>Zanb</field>
+			<field name='name'>Zanabazar Square</field>
+		</record>
+		<record id='script_Zinh' model='language.script'>
+			<field name='code'>Zinh</field>
+			<field name='name'>Code for inherited script</field>
+		</record>
+		<record id='script_Zmth' model='language.script'>
+			<field name='code'>Zmth</field>
+			<field name='name'>Mathematical notation</field>
+		</record>
+		<record id='script_Zsym' model='language.script'>
+			<field name='code'>Zsym</field>
+			<field name='name'>Symbols</field>
+		</record>
+		<record id='script_Zsye' model='language.script'>
+			<field name='code'>Zsye</field>
+			<field name='name'>Symbols (emoji variant)</field>
+		</record>
+		<record id='script_Zxxx' model='language.script'>
+			<field name='code'>Zxxx</field>
+			<field name='name'>Code for unwritten documents</field>
+		</record>
+		<record id='script_Zyyy' model='language.script'>
+			<field name='code'>Zyyy</field>
+			<field name='name'>Code for undetermined script</field>
+		</record>
+		<record id='script_Zzzz' model='language.script'>
+			<field name='code'>Zzzz</field>
+			<field name='name'>Code for uncoded script</field>
+		</record>
+	</data>
+</odoo>

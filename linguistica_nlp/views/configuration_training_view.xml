@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+
+<record model='ir.ui.view' id='algorithm_form'>
+            <field name="name">algorithm.form</field>
+            <field name="model">algorithm</field>
+            <field name="arch" type="xml">
+                <form string="Algorithm">
+                <group>
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="target_analysis" />
+
+
+                </group>
+   <notebook>
+                        <page string="Algorithm Parameters">
+                        <field name="parameter_ids">
+                            <tree string="Parameters" editable="bottom">
+                                <field name="parameter_id"/>
+                                <field name="value"/>
+                                <field name="algorithm_id"/>
+
+
+                            </tree>
+                        </field>
+
+                   </page>
+                   <page string="Description">
+                    <field name="description" />
+                  </page>
+
+
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='algorithm_tree'>
+            <field name="name">algorithm.tree</field>
+            <field name="model">algorithm</field>
+            <field name="arch" type="xml">
+                <tree string="Algorithm">
+                    <field name="name" />
+                   <field name="code" />
+                   <field name="target_analysis" />
+
+                </tree>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='parameter_form'>
+            <field name="name">parameter.form</field>
+            <field name="model">parameter</field>
+            <field name="arch" type="xml">
+                <form string="Parameter">
+                <group>
+                    <field name="name" />
+                    <field name="description" />
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+<record model='ir.ui.view' id='parameter_tree'>
+            <field name="name">paramater.tree</field>
+            <field name="model">parameter</field>
+            <field name="arch" type="xml">
+                <tree string="Parameters">
+                    <field name="name" />
+
+
+                </tree>
+            </field>
+        </record>
+
+<record model='ir.ui.view' id='feature_form'>
+            <field name="name">feature.form</field>
+            <field name="model">feature</field>
+            <field name="arch" type="xml">
+                <form string="Feature">
+                <group>
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="language_ids" />
+
+                </group>
+
+                </form>
+            </field>
+        </record>
+
+
+
+        <record model='ir.ui.view' id='feature_tree'>
+            <field name="name">feature.tree</field>
+            <field name="model">feature</field>
+            <field name="arch" type="xml">
+                <tree string="Feature">
+                    <field name="name" />
+                   <field name="description" />
+
+                </tree>
+            </field>
+        </record>
+
+
+           <record model='ir.actions.act_window' id='algorithm_act'>
+            <field name="name">Algorithm</field>
+            <field name="res_model">algorithm</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first Algrithm
+              </p>
+            </field>
+        </record>
+
+                <record model='ir.actions.act_window' id='param_act'>
+            <field name="name">Parameter</field>
+            <field name="res_model">parameter</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first parameter
+              </p>
+            </field>
+        </record>
+
+          <record model='ir.actions.act_window' id='feature_act'>
+            <field name="name">Feature</field>
+            <field name="res_model">feature</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="type">ir.actions.act_window</field>
+
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+               Add your first feature
+              </p>
+            </field>
+        </record>
+
+
+
+     <!-- <record model='ir.ui.view' id='lang_model_form'>
+            <field name="name">language.model.form</field>
+            <field name="model">language.model</field>
+            <field name="arch" type="xml">
+                <form string="Language Model">
+
+
+                <group>
+                    <field name="model_name" />
+                    <field name="model_algorithm" />
+                    <field name="file_path" />
+                    <field name="corpus_id" />
+               </group>
+                </form>
+            </field>
+        </record>
+
+         <record model='ir.ui.view' id='lang_model_tree'>
+            <field name="name">language.model.tree</field>
+            <field name="model">language.model</field>
+            <field name="arch" type="xml">
+                <tree string="Model">
+                   <field name="model_name" />
+                    <field name="model_algorithm" />
+                </tree>
+            </field>
+        </record>
+
+
+
+        <record model='ir.actions.act_window' id='lang_model_act'>
+            <field name="name">Language Model</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">language.model</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first language model
+              </p>
+            </field>
+        </record>-->
+
+        <!--<menuitem name="Language Detection"  id="lang_detect" sequence="2" />
+        <menuitem name="Language Models" parent="lang_detect" id="detec_lang_models" />
+        <menuitem name="Language Models" parent="detec_lang_models" id="language_models"
+        action="lang_model_act" sequence="0"/>-->
+
+
+
+
+       <menuitem name="Training" parent="param_menu" id="param_train_menu" />
+
+
+       <menuitem id="algorithm_menu" name="Algorithms" parent="param_train_menu"
+                  action="algorithm_act"/>
+       <menuitem id="feature_menu" name="Features" parent="param_train_menu"
+                  action="feature_act"/>
+
+       <menuitem id="parameter_menu" name="Parameters" parent="param_train_menu"
+                  action="param_act"/>
+
+
+         </data>
+</odoo>

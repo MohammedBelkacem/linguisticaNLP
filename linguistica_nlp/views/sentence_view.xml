@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+
+            <record model='ir.ui.view' id='sentence_form'>
+            <field name="name">sentence.form</field>
+            <field name="model">sentence</field>
+            <field name="arch" type="xml">
+                <form string="Sentence">
+                <header>
+                        <button name="create_units" type="object"  string="Tokenize"/>
+                        <button name="load_tagged_sentence" type="object"  string="Load tagged units"/>
+                        <button name="validate" type="object"  string="Validate"/>
+                        <button name="%(lang_model_selection_act)d" type="action"  string="Detect sentence language"/>
+                        <button name="%(model_selection_act)d" string="Tag the sentence" type="action"/>
+                        <field name="state" widget="statusbar" options="{'clickable': True, 'fold_field': 'fold'}" />
+                </header>
+                <group>
+                <group>
+                    <field name="name" />
+                    <field name="tagged_sentence" />
+                    <field name="number" />
+                    <field name="language_id" />
+                </group>
+                <!--<group>
+                                        <field name="progress" widget = "gauge"/>
+                </group>-->
+                </group>
+                <notebook>
+                        <page string="Units">
+                        <field name="unit_ids">
+                            <tree string="Units" editable="bottom">
+                                <field name="order"/>
+                                <field name="unit"/>
+                                <field name="tag_id"/>
+                                <field name="root_id"/>
+                                <field name="annotation_ids" widget="many2many_tags"/>
+
+
+                            </tree>
+                        </field>
+
+                   </page>
+
+                    </notebook>
+
+                </form>
+            </field>
+        </record>
+
+        <record model='ir.ui.view' id='sentence_tree'>
+            <field name="name">sentence.tree</field>
+            <field name="model">sentence</field>
+            <field name="arch" type="xml">
+            <tree string="Sentence">
+                    <field name="name" />
+                   <field name="tagged_sentence" />
+                    <field name="language_id"/>
+                    <!--<field name="progress" widget = "progressbar"/>-->
+                    <button name="%(model_selection_act)d" help="Tag the sentence" type="action"/>
+                </tree>
+            </field>
+        </record>
+
+         <record id="view_sentence_filter" model="ir.ui.view">
+            <field name="name">sentence.list.select</field>
+            <field name="model">sentence</field>
+
+            <field name="arch" type="xml">
+                <search string="Search Sentence">
+                    <field name="name" string="Sentence"/>
+                    <field name="tagged_sentence" string="Tagged Sentence"/>
+                    <filter string="Non tagged sentences" domain="[('tagged_sentence', '=', '')]" name="non_tagged_sentences"/>
+                    <!-- We only allow to search on the following sale order line fields (product, name) because the other fields, such as price, quantity, ...
+                        will not be searched as often, and if they need to be searched it's usually in the context of products
+                        and then they can be searched from the page listing the sale order lines related to a product (from the product itself).
+                    -->
+                    <group expand="0" string="Group By">
+                        <filter string="Language" name="language" domain="[]" context="{'group_by': 'language_id'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+
+
+         <record model='ir.actions.act_window' id='sentence_act1'>
+            <field name="name">Sentence</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sentence</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain">[('state', '!=', 'valid')]</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first sentence
+              </p>
+            </field>
+        </record>
+        <record model='ir.actions.act_window' id='sentence_act2'>
+            <field name="name">Sentence</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sentence</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state', '=', 'valid')]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_smiling_face">
+               Add your first sentence
+              </p>
+            </field>
+        </record>
+        <menuitem name="Morphology/Grammar"  id="morphology" sequence="0"  />
+        <menuitem name="Part of Speech"  id="postag" sequence="0" parent="morphology" />
+
+        <menuitem name="Sentences" parent="postag" id="sentence_menu" sequence="0" />
+        <menuitem id="tafyirt_menu_non_validated" name="Non validated Sentences" parent="sentence_menu"
+                  action="sentence_act1" sequence="0"/>
+        <menuitem id="tafyirt_menu_validated" name="Validated Sentences" parent="sentence_menu"
+                  action="sentence_act2" sequence="1"/>
+
+
+         </data>
+</odoo>
